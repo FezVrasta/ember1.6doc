@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-runtime/lib/system/core_object.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-runtime/lib/system/core_object.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+  @module ember
+  @submodule ember-runtime
+*/
+
+import Ember from &quot;ember-metal/core&quot;;
+// Ember.ENV.MANDATORY_SETTER, Ember.assert, Ember.K, Ember.config
+
+// NOTE: this object should never be included directly. Instead use &#x60;Ember.Object&#x60;.
+// We only define this separately so that &#x60;Ember.Set&#x60; can depend on it.
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {guidFor, apply} from &quot;ember-metal/utils&quot;;
+import {create} from &quot;ember-metal/platform&quot;;
+import {generateGuid, GUID_KEY, meta, META_KEY, makeArray} from &quot;ember-metal/utils&quot;;
+import {rewatch} from &quot;ember-metal/watching&quot;;
+import {finishChains} from &quot;ember-metal/chains&quot;;
+import {sendEvent} from &quot;ember-metal/events&quot;;
+import {IS_BINDING, Mixin, required} from &quot;ember-metal/mixin&quot;;
+import EnumerableUtils from &quot;ember-metal/enumerable_utils&quot;;
+import EmberError from &quot;ember-metal/error&quot;;
+import {platform} from &quot;ember-metal/platform&quot;;
+import keys from &quot;ember-runtime/keys&quot;;
+import ActionHandler from &quot;ember-runtime/mixins/action_handler&quot;;
+import {defineProperty} from &quot;ember-metal/properties&quot;;
+import {Binding} from &quot;ember-metal/binding&quot;;
+import {ComputedProperty} from &quot;ember-metal/computed&quot;;
+import run from &#x27;ember-metal/run_loop&#x27;;
+import {destroy} from &quot;ember-metal/watching&quot;;
+
+
+var o_create = create,
+    o_defineProperty = platform.defineProperty,
+    schedule = run.schedule,
+    applyMixin = Mixin._apply,
+    finishPartial = Mixin.finishPartial,
+    reopen = Mixin.prototype.reopen,
+    MANDATORY_SETTER = Ember.ENV.MANDATORY_SETTER,
+    indexOf = EnumerableUtils.indexOf,
+    K = Ember.K;
+
+var undefinedDescriptor = {
+  configurable: true,
+  writable: true,
+  enumerable: false,
+  value: undefined
+};
+
+var nullDescriptor = {
+  configurable: true,
+  writable: true,
+  enumerable: false,
+  value: null
+};
+
+function makeCtor() {
+
+  // Note: avoid accessing any properties on the object since it makes the
+  // method a lot faster. This is glue code so we want it to be as fast as
+  // possible.
+
+  var wasApplied = false, initMixins, initProperties;
+
+  var Class = function() {
+    if (!wasApplied) {
+      Class.proto(); // prepare prototype...
+    }
+    o_defineProperty(this, GUID_KEY, nullDescriptor);
+    o_defineProperty(this, &#x27;__nextSuper&#x27;, undefinedDescriptor);
+    var m = meta(this), proto = m.proto;
+    m.proto = this;
+    if (initMixins) {
+      // capture locally so we can clear the closed over variable
+      var mixins = initMixins;
+      initMixins = null;
+      apply(this, this.reopen, mixins);
+    }
+    if (initProperties) {
+      // capture locally so we can clear the closed over variable
+      var props = initProperties;
+      initProperties = null;
+
+      var concatenatedProperties = this.concatenatedProperties;
+
+      for (var i = 0, l = props.length; i &lt; l; i++) {
+        var properties = props[i];
+
+        Ember.assert(&quot;Ember.Object.create no longer supports mixing in other definitions, use createWithMixins instead.&quot;, !(properties instanceof Mixin));
+
+        if (typeof properties !== &#x27;object&#x27; &amp;&amp; properties !== undefined) {
+          throw new EmberError(&quot;Ember.Object.create only accepts objects.&quot;);
+        }
+
+        if (!properties) { continue; }
+
+        var keyNames = keys(properties);
+
+        for (var j = 0, ll = keyNames.length; j &lt; ll; j++) {
+          var keyName = keyNames[j];
+          if (!properties.hasOwnProperty(keyName)) { continue; }
+
+          var value = properties[keyName];
+
+          if (IS_BINDING.test(keyName)) {
+            var bindings = m.bindings;
+            if (!bindings) {
+              bindings = m.bindings = {};
+            } else if (!m.hasOwnProperty(&#x27;bindings&#x27;)) {
+              bindings = m.bindings = o_create(m.bindings);
+            }
+            bindings[keyName] = value;
+          }
+
+          var desc = m.descs[keyName];
+
+          Ember.assert(&quot;Ember.Object.create no longer supports defining computed properties. Define computed properties using extend() or reopen() before calling create().&quot;, !(value instanceof ComputedProperty));
+          Ember.assert(&quot;Ember.Object.create no longer supports defining methods that call _super.&quot;, !(typeof value === &#x27;function&#x27; &amp;&amp; value.toString().indexOf(&#x27;._super&#x27;) !== -1));
+          Ember.assert(&quot;&#x60;actions&#x60; must be provided at extend time, not at create &quot; +
+                       &quot;time, when Ember.ActionHandler is used (i.e. views, &quot; +
+                       &quot;controllers &amp; routes).&quot;, !((keyName === &#x27;actions&#x27;) &amp;&amp; ActionHandler.detect(this)));
+
+          if (concatenatedProperties &amp;&amp; indexOf(concatenatedProperties, keyName) &gt;= 0) {
+            var baseValue = this[keyName];
+
+            if (baseValue) {
+              if (&#x27;function&#x27; === typeof baseValue.concat) {
+                value = baseValue.concat(value);
+              } else {
+                value = makeArray(baseValue).concat(value);
+              }
+            } else {
+              value = makeArray(value);
+            }
+          }
+
+          if (desc) {
+            desc.set(this, keyName, value);
+          } else {
+            if (typeof this.setUnknownProperty === &#x27;function&#x27; &amp;&amp; !(keyName in this)) {
+              this.setUnknownProperty(keyName, value);
+            } else if (MANDATORY_SETTER) {
+              defineProperty(this, keyName, null, value); // setup mandatory setter
+            } else {
+              this[keyName] = value;
+            }
+          }
+        }
+      }
+    }
+    finishPartial(this, m);
+    apply(this, this.init, arguments);
+    m.proto = proto;
+    finishChains(this);
+    sendEvent(this, &quot;init&quot;);
+  };
+
+  Class.toString = Mixin.prototype.toString;
+  Class.willReopen = function() {
+    if (wasApplied) {
+      Class.PrototypeMixin = Mixin.create(Class.PrototypeMixin);
+    }
+
+    wasApplied = false;
+  };
+  Class._initMixins = function(args) { initMixins = args; };
+  Class._initProperties = function(args) { initProperties = args; };
+
+  Class.proto = function() {
+    var superclass = Class.superclass;
+    if (superclass) { superclass.proto(); }
+
+    if (!wasApplied) {
+      wasApplied = true;
+      Class.PrototypeMixin.applyPartial(Class.prototype);
+      rewatch(Class.prototype);
+    }
+
+    return this.prototype;
+  };
+
+  return Class;
+
+}
+
+/**
+  @class CoreObject
+  @namespace Ember
+*/
+var CoreObject = makeCtor();
+CoreObject.toString = function() { return &quot;Ember.CoreObject&quot;; };
+
+CoreObject.PrototypeMixin = Mixin.create({
+  reopen: function() {
+    applyMixin(this, arguments, true);
+    return this;
+  },
+
+  /**
+    An overridable method called when objects are instantiated. By default,
+    does nothing unless it is overridden during class definition.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Ember.Object.extend({
+      init: function() {
+        alert(&#x27;Name is &#x27; + this.get(&#x27;name&#x27;));
+      }
+    });
+
+    var steve = App.Person.create({
+      name: &quot;Steve&quot;
+    });
+
+    // alerts &#x27;Name is Steve&#x27;.
+    &#x60;&#x60;&#x60;
+
+    NOTE: If you do override &#x60;init&#x60; for a framework class like &#x60;Ember.View&#x60; or
+    &#x60;Ember.ArrayController&#x60;, be sure to call &#x60;this._super()&#x60; in your
+    &#x60;init&#x60; declaration! If you don&#x27;t, Ember may not have an opportunity to
+    do important setup work, and you&#x27;ll see strange behavior in your
+    application.
+
+    @method init
+  */
+  init: function() {},
+
+  /**
+    Defines the properties that will be concatenated from the superclass
+    (instead of overridden).
+
+    By default, when you extend an Ember class a property defined in
+    the subclass overrides a property with the same name that is defined
+    in the superclass. However, there are some cases where it is preferable
+    to build up a property&#x27;s value by combining the superclass&#x27; property
+    value with the subclass&#x27; value. An example of this in use within Ember
+    is the &#x60;classNames&#x60; property of &#x60;Ember.View&#x60;.
+
+    Here is some sample code showing the difference between a concatenated
+    property and a normal one:
+
+    &#x60;&#x60;&#x60;javascript
+    App.BarView = Ember.View.extend({
+      someNonConcatenatedProperty: [&#x27;bar&#x27;],
+      classNames: [&#x27;bar&#x27;]
+    });
+
+    App.FooBarView = App.BarView.extend({
+      someNonConcatenatedProperty: [&#x27;foo&#x27;],
+      classNames: [&#x27;foo&#x27;],
+    });
+
+    var fooBarView = App.FooBarView.create();
+    fooBarView.get(&#x27;someNonConcatenatedProperty&#x27;); // [&#x27;foo&#x27;]
+    fooBarView.get(&#x27;classNames&#x27;); // [&#x27;ember-view&#x27;, &#x27;bar&#x27;, &#x27;foo&#x27;]
+    &#x60;&#x60;&#x60;
+
+    This behavior extends to object creation as well. Continuing the
+    above example:
+
+    &#x60;&#x60;&#x60;javascript
+    var view = App.FooBarView.create({
+      someNonConcatenatedProperty: [&#x27;baz&#x27;],
+      classNames: [&#x27;baz&#x27;]
+    })
+    view.get(&#x27;someNonConcatenatedProperty&#x27;); // [&#x27;baz&#x27;]
+    view.get(&#x27;classNames&#x27;); // [&#x27;ember-view&#x27;, &#x27;bar&#x27;, &#x27;foo&#x27;, &#x27;baz&#x27;]
+    &#x60;&#x60;&#x60;
+    Adding a single property that is not an array will just add it in the array:
+
+    &#x60;&#x60;&#x60;javascript
+    var view = App.FooBarView.create({
+      classNames: &#x27;baz&#x27;
+    })
+    view.get(&#x27;classNames&#x27;); // [&#x27;ember-view&#x27;, &#x27;bar&#x27;, &#x27;foo&#x27;, &#x27;baz&#x27;]
+    &#x60;&#x60;&#x60;
+
+    Using the &#x60;concatenatedProperties&#x60; property, we can tell to Ember that mix
+    the content of the properties.
+
+    In &#x60;Ember.View&#x60; the &#x60;classNameBindings&#x60; and &#x60;attributeBindings&#x60; properties
+    are also concatenated, in addition to &#x60;classNames&#x60;.
+
+    This feature is available for you to use throughout the Ember object model,
+    although typical app developers are likely to use it infrequently. Since
+    it changes expectations about behavior of properties, you should properly
+    document its usage in each individual concatenated property (to not
+    mislead your users to think they can override the property in a subclass).
+
+    @property concatenatedProperties
+    @type Array
+    @default null
+  */
+  concatenatedProperties: null,
+
+  /**
+    Destroyed object property flag.
+
+    if this property is &#x60;true&#x60; the observers and bindings were already
+    removed by the effect of calling the &#x60;destroy()&#x60; method.
+
+    @property isDestroyed
+    @default false
+  */
+  isDestroyed: false,
+
+  /**
+    Destruction scheduled flag. The &#x60;destroy()&#x60; method has been called.
+
+    The object stays intact until the end of the run loop at which point
+    the &#x60;isDestroyed&#x60; flag is set.
+
+    @property isDestroying
+    @default false
+  */
+  isDestroying: false,
+
+  /**
+    Destroys an object by setting the &#x60;isDestroyed&#x60; flag and removing its
+    metadata, which effectively destroys observers and bindings.
+
+    If you try to set a property on a destroyed object, an exception will be
+    raised.
+
+    Note that destruction is scheduled for the end of the run loop and does not
+    happen immediately.  It will set an isDestroying flag immediately.
+
+    @method destroy
+    @return {Ember.Object} receiver
+  */
+  destroy: function() {
+    if (this.isDestroying) { return; }
+    this.isDestroying = true;
+
+    schedule(&#x27;actions&#x27;, this, this.willDestroy);
+    schedule(&#x27;destroy&#x27;, this, this._scheduledDestroy);
+    return this;
+  },
+
+  /**
+    Override to implement teardown.
+
+    @method willDestroy
+   */
+  willDestroy: K,
+
+  /**
+    Invoked by the run loop to actually destroy the object. This is
+    scheduled for execution by the &#x60;destroy&#x60; method.
+
+    @private
+    @method _scheduledDestroy
+  */
+  _scheduledDestroy: function() {
+    if (this.isDestroyed) { return; }
+    destroy(this);
+    this.isDestroyed = true;
+  },
+
+  bind: function(to, from) {
+    if (!(from instanceof Binding)) { from = Binding.from(from); }
+    from.to(to).connect(this);
+    return from;
+  },
+
+  /**
+    Returns a string representation which attempts to provide more information
+    than Javascript&#x27;s &#x60;toString&#x60; typically does, in a generic way for all Ember
+    objects.
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Em.Object.extend()
+    person = App.Person.create()
+    person.toString() //=&gt; &quot;&lt;App.Person:ember1024&gt;&quot;
+    &#x60;&#x60;&#x60;
+
+    If the object&#x27;s class is not defined on an Ember namespace, it will
+    indicate it is a subclass of the registered superclass:
+
+   &#x60;&#x60;&#x60;javascript
+    Student = App.Person.extend()
+    student = Student.create()
+    student.toString() //=&gt; &quot;&lt;(subclass of App.Person):ember1025&gt;&quot;
+    &#x60;&#x60;&#x60;
+
+    If the method &#x60;toStringExtension&#x60; is defined, its return value will be
+    included in the output.
+
+    &#x60;&#x60;&#x60;javascript
+    App.Teacher = App.Person.extend({
+      toStringExtension: function() {
+        return this.get(&#x27;fullName&#x27;);
+      }
+    });
+    teacher = App.Teacher.create()
+    teacher.toString(); //=&gt; &quot;&lt;App.Teacher:ember1026:Tom Dale&gt;&quot;
+    &#x60;&#x60;&#x60;
+
+    @method toString
+    @return {String} string representation
+  */
+  toString: function toString() {
+    var hasToStringExtension = typeof this.toStringExtension === &#x27;function&#x27;,
+        extension = hasToStringExtension ? &quot;:&quot; + this.toStringExtension() : &#x27;&#x27;;
+    var ret = &#x27;&lt;&#x27;+this.constructor.toString()+&#x27;:&#x27;+guidFor(this)+extension+&#x27;&gt;&#x27;;
+    this.toString = makeToString(ret);
+    return ret;
+  }
+});
+
+CoreObject.PrototypeMixin.ownerConstructor = CoreObject;
+
+function makeToString(ret) {
+  return function() { return ret; };
+}
+
+if (Ember.config.overridePrototypeMixin) {
+  Ember.config.overridePrototypeMixin(CoreObject.PrototypeMixin);
+}
+
+CoreObject.__super__ = null;
+
+var ClassMixin = Mixin.create({
+
+  ClassMixin: required(),
+
+  PrototypeMixin: required(),
+
+  isClass: true,
+
+  isMethod: false,
+
+  /**
+    Creates a new subclass.
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Ember.Object.extend({
+      say: function(thing) {
+        alert(thing);
+       }
+    });
+    &#x60;&#x60;&#x60;
+
+    This defines a new subclass of Ember.Object: &#x60;App.Person&#x60;. It contains one method: &#x60;say()&#x60;.
+
+    You can also create a subclass from any existing class by calling its &#x60;extend()&#x60;  method. For example, you might want to create a subclass of Ember&#x27;s built-in &#x60;Ember.View&#x60; class:
+
+    &#x60;&#x60;&#x60;javascript
+    App.PersonView = Ember.View.extend({
+      tagName: &#x27;li&#x27;,
+      classNameBindings: [&#x27;isAdministrator&#x27;]
+    });
+    &#x60;&#x60;&#x60;
+
+    When defining a subclass, you can override methods but still access the implementation of your parent class by calling the special &#x60;_super()&#x60; method:
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Ember.Object.extend({
+      say: function(thing) {
+        var name = this.get(&#x27;name&#x27;);
+        alert(name + &#x27; says: &#x27; + thing);
+      }
+    });
+
+    App.Soldier = App.Person.extend({
+      say: function(thing) {
+        this._super(thing + &quot;, sir!&quot;);
+      },
+      march: function(numberOfHours) {
+        alert(this.get(&#x27;name&#x27;) + &#x27; marches for &#x27; + numberOfHours + &#x27; hours.&#x27;)
+      }
+    });
+
+    var yehuda = App.Soldier.create({
+      name: &quot;Yehuda Katz&quot;
+    });
+
+    yehuda.say(&quot;Yes&quot;);  // alerts &quot;Yehuda Katz says: Yes, sir!&quot;
+    &#x60;&#x60;&#x60;
+
+    The &#x60;create()&#x60; on line #17 creates an *instance* of the &#x60;App.Soldier&#x60; class. The &#x60;extend()&#x60; on line #8 creates a *subclass* of &#x60;App.Person&#x60;. Any instance of the &#x60;App.Person&#x60; class will *not* have the &#x60;march()&#x60; method.
+
+    You can also pass &#x60;Mixin&#x60; classes to add additional properties to the subclass.
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Ember.Object.extend({
+      say: function(thing) {
+        alert(this.get(&#x27;name&#x27;) + &#x27; says: &#x27; + thing);
+      }
+    });
+
+    App.SingingMixin = Mixin.create({
+      sing: function(thing){
+        alert(this.get(&#x27;name&#x27;) + &#x27; sings: la la la &#x27; + thing);
+      }
+    });
+
+    App.BroadwayStar = App.Person.extend(App.SingingMixin, {
+      dance: function() {
+        alert(this.get(&#x27;name&#x27;) + &#x27; dances: tap tap tap tap &#x27;);
+      }
+    });
+    &#x60;&#x60;&#x60;
+
+    The &#x60;App.BroadwayStar&#x60; class contains three methods: &#x60;say()&#x60;, &#x60;sing()&#x60;, and &#x60;dance()&#x60;.
+
+    @method extend
+    @static
+
+    @param {Mixin} [mixins]* One or more Mixin classes
+    @param {Object} [arguments]* Object containing values to use within the new class
+  */
+  extend: function() {
+    var Class = makeCtor(), proto;
+    Class.ClassMixin = Mixin.create(this.ClassMixin);
+    Class.PrototypeMixin = Mixin.create(this.PrototypeMixin);
+
+    Class.ClassMixin.ownerConstructor = Class;
+    Class.PrototypeMixin.ownerConstructor = Class;
+
+    reopen.apply(Class.PrototypeMixin, arguments);
+
+    Class.superclass = this;
+    Class.__super__  = this.prototype;
+
+    proto = Class.prototype = o_create(this.prototype);
+    proto.constructor = Class;
+    generateGuid(proto);
+    meta(proto).proto = proto; // this will disable observers on prototype
+
+    Class.ClassMixin.apply(Class);
+    return Class;
+  },
+
+  /**
+    Equivalent to doing &#x60;extend(arguments).create()&#x60;.
+    If possible use the normal &#x60;create&#x60; method instead.
+
+    @method createWithMixins
+    @static
+    @param [arguments]*
+  */
+  createWithMixins: function() {
+    var C = this;
+    if (arguments.length&gt;0) { this._initMixins(arguments); }
+    return new C();
+  },
+
+  /**
+    Creates an instance of a class. Accepts either no arguments, or an object
+    containing values to initialize the newly instantiated object with.
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Ember.Object.extend({
+      helloWorld: function() {
+        alert(&quot;Hi, my name is &quot; + this.get(&#x27;name&#x27;));
+      }
+    });
+
+    var tom = App.Person.create({
+      name: &#x27;Tom Dale&#x27;
+    });
+
+    tom.helloWorld(); // alerts &quot;Hi, my name is Tom Dale&quot;.
+    &#x60;&#x60;&#x60;
+
+    &#x60;create&#x60; will call the &#x60;init&#x60; function if defined during
+    &#x60;Ember.AnyObject.extend&#x60;
+
+    If no arguments are passed to &#x60;create&#x60;, it will not set values to the new
+    instance during initialization:
+
+    &#x60;&#x60;&#x60;javascript
+    var noName = App.Person.create();
+    noName.helloWorld(); // alerts undefined
+    &#x60;&#x60;&#x60;
+
+    NOTE: For performance reasons, you cannot declare methods or computed
+    properties during &#x60;create&#x60;. You should instead declare methods and computed
+    properties when using &#x60;extend&#x60; or use the &#x60;createWithMixins&#x60; shorthand.
+
+    @method create
+    @static
+    @param [arguments]*
+  */
+  create: function() {
+    var C = this;
+    if (arguments.length&gt;0) { this._initProperties(arguments); }
+    return new C();
+  },
+
+  /**
+    Augments a constructor&#x27;s prototype with additional
+    properties and functions:
+
+    &#x60;&#x60;&#x60;javascript
+    MyObject = Ember.Object.extend({
+      name: &#x27;an object&#x27;
+    });
+
+    o = MyObject.create();
+    o.get(&#x27;name&#x27;); // &#x27;an object&#x27;
+
+    MyObject.reopen({
+      say: function(msg){
+        console.log(msg);
+      }
+    })
+
+    o2 = MyObject.create();
+    o2.say(&quot;hello&quot;); // logs &quot;hello&quot;
+
+    o.say(&quot;goodbye&quot;); // logs &quot;goodbye&quot;
+    &#x60;&#x60;&#x60;
+
+    To add functions and properties to the constructor itself,
+    see &#x60;reopenClass&#x60;
+
+    @method reopen
+  */
+  reopen: function() {
+    this.willReopen();
+    apply(this.PrototypeMixin, reopen, arguments);
+    return this;
+  },
+
+  /**
+    Augments a constructor&#x27;s own properties and functions:
+
+    &#x60;&#x60;&#x60;javascript
+    MyObject = Ember.Object.extend({
+      name: &#x27;an object&#x27;
+    });
+
+    MyObject.reopenClass({
+      canBuild: false
+    });
+
+    MyObject.canBuild; // false
+    o = MyObject.create();
+    &#x60;&#x60;&#x60;
+
+    In other words, this creates static properties and functions for the class. These are only available on the class
+    and not on any instance of that class.
+
+    &#x60;&#x60;&#x60;javascript
+    App.Person = Ember.Object.extend({
+      name : &quot;&quot;,
+      sayHello : function(){
+        alert(&quot;Hello. My name is &quot; + this.get(&#x27;name&#x27;));
+      }
+    });
+
+    App.Person.reopenClass({
+      species : &quot;Homo sapiens&quot;,
+      createPerson: function(newPersonsName){
+        return App.Person.create({
+          name:newPersonsName
+        });
+      }
+    });
+
+    var tom = App.Person.create({
+      name : &quot;Tom Dale&quot;
+    });
+    var yehuda = App.Person.createPerson(&quot;Yehuda Katz&quot;);
+
+    tom.sayHello(); // &quot;Hello. My name is Tom Dale&quot;
+    yehuda.sayHello(); // &quot;Hello. My name is Yehuda Katz&quot;
+    alert(App.Person.species); // &quot;Homo sapiens&quot;
+    &#x60;&#x60;&#x60;
+
+    Note that &#x60;species&#x60; and &#x60;createPerson&#x60; are *not* valid on the &#x60;tom&#x60; and &#x60;yehuda&#x60;
+    variables. They are only valid on &#x60;App.Person&#x60;.
+
+    To add functions and properties to instances of
+    a constructor by extending the constructor&#x27;s prototype
+    see &#x60;reopen&#x60;
+
+    @method reopenClass
+  */
+  reopenClass: function() {
+    apply(this.ClassMixin, reopen, arguments);
+    applyMixin(this, arguments, false);
+    return this;
+  },
+
+  detect: function(obj) {
+    if (&#x27;function&#x27; !== typeof obj) { return false; }
+    while(obj) {
+      if (obj===this) { return true; }
+      obj = obj.superclass;
+    }
+    return false;
+  },
+
+  detectInstance: function(obj) {
+    return obj instanceof this;
+  },
+
+  /**
+    In some cases, you may want to annotate computed properties with additional
+    metadata about how they function or what values they operate on. For
+    example, computed property functions may close over variables that are then
+    no longer available for introspection.
+
+    You can pass a hash of these values to a computed property like this:
+
+    &#x60;&#x60;&#x60;javascript
+    person: function() {
+      var personId = this.get(&#x27;personId&#x27;);
+      return App.Person.create({ id: personId });
+    }.property().meta({ type: App.Person })
+    &#x60;&#x60;&#x60;
+
+    Once you&#x27;ve done this, you can retrieve the values saved to the computed
+    property from your class like this:
+
+    &#x60;&#x60;&#x60;javascript
+    MyClass.metaForProperty(&#x27;person&#x27;);
+    &#x60;&#x60;&#x60;
+
+    This will return the original hash that was passed to &#x60;meta()&#x60;.
+
+    @method metaForProperty
+    @param key {String} property name
+  */
+  metaForProperty: function(key) {
+    var meta = this.proto()[META_KEY],
+        desc = meta &amp;&amp; meta.descs[key];
+
+    Ember.assert(&quot;metaForProperty() could not find a computed property with key &#x27;&quot;+key+&quot;&#x27;.&quot;, !!desc &amp;&amp; desc instanceof ComputedProperty);
+    return desc._meta || {};
+  },
+
+  /**
+    Iterate over each computed property for the class, passing its name
+    and any associated metadata (see &#x60;metaForProperty&#x60;) to the callback.
+
+    @method eachComputedProperty
+    @param {Function} callback
+    @param {Object} binding
+  */
+  eachComputedProperty: function(callback, binding) {
+    var proto = this.proto(),
+        descs = meta(proto).descs,
+        empty = {},
+        property;
+
+    for (var name in descs) {
+      property = descs[name];
+
+      if (property instanceof ComputedProperty) {
+        callback.call(binding || this, name, property._meta || empty);
+      }
+    }
+  }
+
+});
+
+ClassMixin.ownerConstructor = CoreObject;
+
+if (Ember.config.overrideClassMixin) {
+  Ember.config.overrideClassMixin(ClassMixin);
+}
+
+CoreObject.ClassMixin = ClassMixin;
+ClassMixin.apply(CoreObject);
+
+export default CoreObject;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

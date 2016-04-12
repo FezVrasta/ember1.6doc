@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-handlebars/lib/helpers/binding.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-handlebars/lib/helpers/binding.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-handlebars
+*/
+
+import Ember from &quot;ember-metal/core&quot;; // Ember.assert, Ember.warn, uuid
+// var emberAssert = Ember.assert, Ember.warn = Ember.warn;
+
+import EmberHandlebars from &quot;ember-handlebars-compiler&quot;;
+var helpers = EmberHandlebars.helpers;
+var SafeString = EmberHandlebars.SafeString;
+
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {fmt} from &quot;ember-runtime/system/string&quot;;
+import { apply } from &quot;ember-metal/utils&quot;;
+import {create as o_create} from &quot;ember-metal/platform&quot;;
+import isNone from &#x27;ember-metal/is_none&#x27;;
+import EnumerableUtils from &quot;ember-metal/enumerable_utils&quot;;
+import {forEach} from &quot;ember-metal/array&quot;;
+import {View} from &quot;ember-views/views/view&quot;;
+import run from &quot;ember-metal/run_loop&quot;;
+import {_HandlebarsBoundView, SimpleHandlebarsView} from &quot;ember-handlebars/views/handlebars_bound_view&quot;;
+import {removeObserver} from &quot;ember-metal/observer&quot;;
+import {isGlobalPath} from &quot;ember-metal/binding&quot;;
+import {bind as emberBind} from &quot;ember-metal/binding&quot;;
+import {guidFor, typeOf} from &quot;ember-metal/utils&quot;;
+import jQuery from &quot;ember-views/system/jquery&quot;;
+import {isArray} from &quot;ember-metal/utils&quot;;
+import {normalizePath, handlebarsGet, getEscaped} from &quot;ember-handlebars/ext&quot;;
+import {getEscaped as handlebarsGetEscaped} from &quot;ember-handlebars/ext&quot;;
+import keys from &quot;ember-runtime/keys&quot;;
+
+function exists(value) {
+  return !isNone(value);
+}
+
+var WithView = _HandlebarsBoundView.extend({
+  init: function() {
+    var controller;
+
+    apply(this, this._super, arguments);
+
+    var keywords        = this.templateData.keywords;
+    var keywordName     = this.templateHash.keywordName;
+    var keywordPath     = this.templateHash.keywordPath;
+    var controllerName  = this.templateHash.controller;
+    var preserveContext = this.preserveContext;
+
+    if (controllerName) {
+      var previousContext = this.previousContext;
+      controller = this.container.lookupFactory(&#x27;controller:&#x27;+controllerName).create({
+        parentController: previousContext,
+        target: previousContext
+      });
+
+      this._generatedController = controller;
+
+      if (!preserveContext) {
+        this.set(&#x27;controller&#x27;, controller);
+
+        this.valueNormalizerFunc = function(result) {
+            controller.set(&#x27;model&#x27;, result);
+            return controller;
+        };
+      } else {
+        var controllerPath = jQuery.expando + guidFor(controller);
+        keywords[controllerPath] = controller;
+        emberBind(keywords, controllerPath + &#x27;.model&#x27;, keywordPath);
+        keywordPath = controllerPath;
+      }
+    }
+
+    if (preserveContext) {
+      emberBind(keywords, keywordName, keywordPath);
+    }
+
+  },
+  willDestroy: function() {
+    this._super();
+
+    if (this._generatedController) {
+      this._generatedController.destroy();
+    }
+  }
+});
+
+// Binds a property into the DOM. This will create a hook in DOM that the
+// KVO system will look for and update if the property changes.
+function bind(property, options, preserveContext, shouldDisplay, valueNormalizer, childProperties) {
+  var data = options.data,
+      fn = options.fn,
+      inverse = options.inverse,
+      view = data.view,
+      normalized, observer, i;
+
+  // we relied on the behavior of calling without
+  // context to mean this === window, but when running
+  // &quot;use strict&quot;, it&#x27;s possible for this to === undefined;
+  var currentContext = this || window;
+
+  normalized = normalizePath(currentContext, property, data);
+
+  // Set up observers for observable objects
+  if (&#x27;object&#x27; === typeof this) {
+    if (data.insideGroup) {
+      observer = function() {
+        run.once(view, &#x27;rerender&#x27;);
+      };
+
+      var template, context, result = handlebarsGet(currentContext, property, options);
+
+      result = valueNormalizer ? valueNormalizer(result) : result;
+
+      context = preserveContext ? currentContext : result;
+      if (shouldDisplay(result)) {
+        template = fn;
+      } else if (inverse) {
+        template = inverse;
+      }
+
+      template(context, { data: options.data });
+    } else {
+      var viewClass = _HandlebarsBoundView;
+      var viewOptions = {
+        preserveContext: preserveContext,
+        shouldDisplayFunc: shouldDisplay,
+        valueNormalizerFunc: valueNormalizer,
+        displayTemplate: fn,
+        inverseTemplate: inverse,
+        path: property,
+        pathRoot: currentContext,
+        previousContext: currentContext,
+        isEscaped: !options.hash.unescaped,
+        templateData: options.data,
+        templateHash: options.hash,
+        helperName: options.helperName
+      };
+
+      if (options.isWithHelper) {
+        viewClass = WithView;
+      }
+
+      // Create the view that will wrap the output of this template/property
+      // and add it to the nearest view&#x27;s childViews array.
+      // See the documentation of Ember._HandlebarsBoundView for more.
+      var bindView = view.createChildView(viewClass, viewOptions);
+
+      view.appendChild(bindView);
+
+      observer = function() {
+        run.scheduleOnce(&#x27;render&#x27;, bindView, &#x27;rerenderIfNeeded&#x27;);
+      };
+    }
+
+    // Observes the given property on the context and
+    // tells the Ember._HandlebarsBoundView to re-render. If property
+    // is an empty string, we are printing the current context
+    // object ({{this}}) so updating it is not our responsibility.
+    if (normalized.path !== &#x27;&#x27;) {
+      view.registerObserver(normalized.root, normalized.path, observer);
+      if (childProperties) {
+        for (i=0; i&lt;childProperties.length; i++) {
+          view.registerObserver(normalized.root, normalized.path+&#x27;.&#x27;+childProperties[i], observer);
+        }
+      }
+    }
+  } else {
+    // The object is not observable, so just render it out and
+    // be done with it.
+    data.buffer.push(handlebarsGetEscaped(currentContext, property, options));
+  }
+}
+
+function simpleBind(currentContext, property, options) {
+  var data = options.data,
+      view = data.view,
+      normalized, observer, pathRoot, output;
+
+  normalized = normalizePath(currentContext, property, data);
+  pathRoot = normalized.root;
+
+  // Set up observers for observable objects
+  if (pathRoot &amp;&amp; (&#x27;object&#x27; === typeof pathRoot)) {
+    if (data.insideGroup) {
+      observer = function() {
+        run.once(view, &#x27;rerender&#x27;);
+      };
+
+      output = handlebarsGetEscaped(currentContext, property, options);
+
+      data.buffer.push(output);
+    } else {
+      var bindView = new SimpleHandlebarsView(
+        property, currentContext, !options.hash.unescaped, options.data
+      );
+
+      bindView._parentView = view;
+      view.appendChild(bindView);
+
+      observer = function() {
+        run.scheduleOnce(&#x27;render&#x27;, bindView, &#x27;rerender&#x27;);
+      };
+    }
+
+    // Observes the given property on the context and
+    // tells the Ember._HandlebarsBoundView to re-render. If property
+    // is an empty string, we are printing the current context
+    // object ({{this}}) so updating it is not our responsibility.
+    if (normalized.path !== &#x27;&#x27;) {
+      view.registerObserver(normalized.root, normalized.path, observer);
+    }
+  } else {
+    // The object is not observable, so just render it out and
+    // be done with it.
+    output = handlebarsGetEscaped(currentContext, property, options);
+    data.buffer.push(output);
+  }
+}
+
+function shouldDisplayIfHelperContent(result) {
+  var truthy = result &amp;&amp; get(result, &#x27;isTruthy&#x27;);
+  if (typeof truthy === &#x27;boolean&#x27;) { return truthy; }
+
+  if (isArray(result)) {
+    return get(result, &#x27;length&#x27;) !== 0;
+  } else {
+    return !!result;
+  }
+}
+
+/**
+  &#x27;_triageMustache&#x27; is used internally select between a binding, helper, or component for
+  the given context. Until this point, it would be hard to determine if the
+  mustache is a property reference or a regular helper reference. This triage
+  helper resolves that.
+
+  This would not be typically invoked by directly.
+
+  @private
+  @method _triageMustache
+  @for Ember.Handlebars.helpers
+  @param {String} property Property/helperID to triage
+  @param {Object} options hash of template/rendering options
+  @return {String} HTML string
+*/
+function _triageMustacheHelper(property, options) {
+  Ember.assert(&quot;You cannot pass more than one argument to the _triageMustache helper&quot;, arguments.length &lt;= 2);
+
+  var helper = EmberHandlebars.resolveHelper(options.data.view.container, property);
+  if (helper) {
+    return helper.call(this, options);
+  }
+
+  return helpers.bind.call(this, property, options);
+}
+
+/**
+  Used to lookup/resolve handlebars helpers. The lookup order is:
+
+  * Look for a registered helper
+  * If a dash exists in the name:
+    * Look for a helper registed in the container
+    * Use Ember.ComponentLookup to find an Ember.Component that resolves
+      to the given name
+
+  @private
+  @method resolveHelper
+  @param {Container} container
+  @param {String} name the name of the helper to lookup
+  @return {Handlebars Helper}
+*/
+function resolveHelper(container, name) {
+  if (helpers[name]) {
+    return helpers[name];
+  }
+
+  if (!container || name.indexOf(&#x27;-&#x27;) === -1) {
+    return;
+  }
+
+  var helper = container.lookup(&#x27;helper:&#x27; + name);
+  if (!helper) {
+    var componentLookup = container.lookup(&#x27;component-lookup:main&#x27;);
+    Ember.assert(&quot;Could not find &#x27;component-lookup:main&#x27; on the provided container, which is necessary for performing component lookups&quot;, componentLookup);
+
+    var Component = componentLookup.lookupFactory(name, container);
+    if (Component) {
+      helper = EmberHandlebars.makeViewHelper(Component);
+      container.register(&#x27;helper:&#x27; + name, helper);
+    }
+  }
+  return helper;
+}
+
+
+/**
+  &#x60;bind&#x60; can be used to display a value, then update that value if it
+  changes. For example, if you wanted to print the &#x60;title&#x60; property of
+  &#x60;content&#x60;:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{bind &quot;content.title&quot;}}
+  &#x60;&#x60;&#x60;
+
+  This will return the &#x60;title&#x60; property as a string, then create a new observer
+  at the specified path. If it changes, it will update the value in DOM. Note
+  that if you need to support IE7 and IE8 you must modify the model objects
+  properties using &#x60;Ember.get()&#x60; and &#x60;Ember.set()&#x60; for this to work as it
+  relies on Ember&#x27;s KVO system. For all other browsers this will be handled for
+  you automatically.
+
+  @private
+  @method bind
+  @for Ember.Handlebars.helpers
+  @param {String} property Property to bind
+  @param {Function} fn Context to provide for rendering
+  @return {String} HTML string
+*/
+function bindHelper(property, options) {
+  Ember.assert(&quot;You cannot pass more than one argument to the bind helper&quot;, arguments.length &lt;= 2);
+
+  var context = (options.contexts &amp;&amp; options.contexts.length) ? options.contexts[0] : this;
+
+  if (!options.fn) {
+    return simpleBind(context, property, options);
+  }
+
+  options.helperName = &#x27;bind&#x27;;
+
+  return bind.call(context, property, options, false, exists);
+}
+
+/**
+  Use the &#x60;boundIf&#x60; helper to create a conditional that re-evaluates
+  whenever the truthiness of the bound value changes.
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#boundIf &quot;content.shouldDisplayTitle&quot;}}
+    {{content.title}}
+  {{/boundIf}}
+  &#x60;&#x60;&#x60;
+
+  @private
+  @method boundIf
+  @for Ember.Handlebars.helpers
+  @param {String} property Property to bind
+  @param {Function} fn Context to provide for rendering
+  @return {String} HTML string
+*/
+function boundIfHelper(property, fn) {
+  var context = (fn.contexts &amp;&amp; fn.contexts.length) ? fn.contexts[0] : this;
+
+  fn.helperName = fn.helperName || &#x27;boundIf&#x27;;
+
+  return bind.call(context, property, fn, true, shouldDisplayIfHelperContent, shouldDisplayIfHelperContent, [&#x27;isTruthy&#x27;, &#x27;length&#x27;]);
+}
+
+
+/**
+  @private
+
+  Use the &#x60;unboundIf&#x60; helper to create a conditional that evaluates once.
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#unboundIf &quot;content.shouldDisplayTitle&quot;}}
+    {{content.title}}
+  {{/unboundIf}}
+  &#x60;&#x60;&#x60;
+
+  @method unboundIf
+  @for Ember.Handlebars.helpers
+  @param {String} property Property to bind
+  @param {Function} fn Context to provide for rendering
+  @return {String} HTML string
+  @since 1.4.0
+*/
+function unboundIfHelper(property, fn) {
+  var context = (fn.contexts &amp;&amp; fn.contexts.length) ? fn.contexts[0] : this,
+      data = fn.data,
+      template = fn.fn,
+      inverse = fn.inverse,
+      normalized, propertyValue, result;
+
+  normalized = normalizePath(context, property, data);
+  propertyValue = handlebarsGet(context, property, fn);
+
+  if (!shouldDisplayIfHelperContent(propertyValue)) {
+    template = inverse;
+  }
+
+  template(context, { data: data });
+}
+
+/**
+  Use the &#x60;{{with}}&#x60; helper when you want to scope context. Take the following code as an example:
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;h5&gt;{{user.name}}&lt;/h5&gt;
+
+  &lt;div class=&quot;role&quot;&gt;
+    &lt;h6&gt;{{user.role.label}}&lt;/h6&gt;
+    &lt;span class=&quot;role-id&quot;&gt;{{user.role.id}}&lt;/span&gt;
+
+    &lt;p class=&quot;role-desc&quot;&gt;{{user.role.description}}&lt;/p&gt;
+  &lt;/div&gt;
+  &#x60;&#x60;&#x60;
+
+  &#x60;{{with}}&#x60; can be our best friend in these cases,
+  instead of writing &#x60;user.role.*&#x60; over and over, we use &#x60;{{#with user.role}}&#x60;.
+  Now the context within the &#x60;{{#with}} .. {{/with}}&#x60; block is &#x60;user.role&#x60; so you can do the following:
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;h5&gt;{{user.name}}&lt;/h5&gt;
+
+  &lt;div class=&quot;role&quot;&gt;
+    {{#with user.role}}
+      &lt;h6&gt;{{label}}&lt;/h6&gt;
+      &lt;span class=&quot;role-id&quot;&gt;{{id}}&lt;/span&gt;
+
+      &lt;p class=&quot;role-desc&quot;&gt;{{description}}&lt;/p&gt;
+    {{/with}}
+  &lt;/div&gt;
+  &#x60;&#x60;&#x60;
+
+  ### &#x60;as&#x60; operator
+
+  This operator aliases the scope to a new name. It&#x27;s helpful for semantic clarity and to retain
+  default scope or to reference from another &#x60;{{with}}&#x60; block.
+
+  &#x60;&#x60;&#x60;handlebars
+  // posts might not be
+  {{#with user.posts as blogPosts}}
+    &lt;div class=&quot;notice&quot;&gt;
+      There are {{blogPosts.length}} blog posts written by {{user.name}}.
+    &lt;/div&gt;
+
+    {{#each post in blogPosts}}
+      &lt;li&gt;{{post.title}}&lt;/li&gt;
+    {{/each}}
+  {{/with}}
+  &#x60;&#x60;&#x60;
+
+  Without the &#x60;as&#x60; operator, it would be impossible to reference &#x60;user.name&#x60; in the example above.
+
+  NOTE: The alias should not reuse a name from the bound property path.
+  For example: &#x60;{{#with foo.bar as foo}}&#x60; is not supported because it attempts to alias using
+  the first part of the property path, &#x60;foo&#x60;. Instead, use &#x60;{{#with foo.bar as baz}}&#x60;.
+
+  ### &#x60;controller&#x60; option
+
+  Adding &#x60;controller=&#x27;something&#x27;&#x60; instructs the &#x60;{{with}}&#x60; helper to create and use an instance of
+  the specified controller with the new context as its content.
+
+  This is very similar to using an &#x60;itemController&#x60; option with the &#x60;{{each}}&#x60; helper.
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#with users.posts controller=&#x27;userBlogPosts&#x27;}}
+    {{!- The current context is wrapped in our controller instance }}
+  {{/with}}
+  &#x60;&#x60;&#x60;
+
+  In the above example, the template provided to the &#x60;{{with}}&#x60; block is now wrapped in the
+  &#x60;userBlogPost&#x60; controller, which provides a very elegant way to decorate the context with custom
+  functions/properties.
+
+  @method with
+  @for Ember.Handlebars.helpers
+  @param {Function} context
+  @param {Hash} options
+  @return {String} HTML string
+*/
+function withHelper(context, options) {
+  var bindContext, preserveContext, controller, helperName = &#x27;with&#x27;;
+
+  if (arguments.length === 4) {
+    var keywordName, path, rootPath, normalized, contextPath;
+
+    Ember.assert(&quot;If you pass more than one argument to the with helper, it must be in the form #with foo as bar&quot;, arguments[1] === &quot;as&quot;);
+    options = arguments[3];
+    keywordName = arguments[2];
+    path = arguments[0];
+
+    if (path) {
+      helperName += &#x27; &#x27; + path + &#x27; as &#x27; + keywordName;
+    }
+
+    Ember.assert(&quot;You must pass a block to the with helper&quot;, options.fn &amp;&amp; options.fn !== Handlebars.VM.noop);
+
+    var localizedOptions = o_create(options);
+    localizedOptions.data = o_create(options.data);
+    localizedOptions.data.keywords = o_create(options.data.keywords || {});
+
+    if (isGlobalPath(path)) {
+      contextPath = path;
+    } else {
+      normalized = normalizePath(this, path, options.data);
+      path = normalized.path;
+      rootPath = normalized.root;
+
+      // This is a workaround for the fact that you cannot bind separate objects
+      // together. When we implement that functionality, we should use it here.
+      var contextKey = jQuery.expando + guidFor(rootPath);
+      localizedOptions.data.keywords[contextKey] = rootPath;
+      // if the path is &#x27;&#x27; (&quot;this&quot;), just bind directly to the current context
+      contextPath = path ? contextKey + &#x27;.&#x27; + path : contextKey;
+    }
+
+    localizedOptions.hash.keywordName = keywordName;
+    localizedOptions.hash.keywordPath = contextPath;
+
+    bindContext = this;
+    context = path;
+    options = localizedOptions;
+    preserveContext = true;
+  } else {
+    Ember.assert(&quot;You must pass exactly one argument to the with helper&quot;, arguments.length === 2);
+    Ember.assert(&quot;You must pass a block to the with helper&quot;, options.fn &amp;&amp; options.fn !== Handlebars.VM.noop);
+
+    helperName += &#x27; &#x27; + context;
+    bindContext = options.contexts[0];
+    preserveContext = false;
+  }
+
+  options.helperName = helperName;
+  options.isWithHelper = true;
+
+  return bind.call(bindContext, context, options, preserveContext, exists);
+}
+/**
+  See [boundIf](/api/classes/Ember.Handlebars.helpers.html#method_boundIf)
+  and [unboundIf](/api/classes/Ember.Handlebars.helpers.html#method_unboundIf)
+
+  @method if
+  @for Ember.Handlebars.helpers
+  @param {Function} context
+  @param {Hash} options
+  @return {String} HTML string
+*/
+function ifHelper(context, options) {
+  Ember.assert(&quot;You must pass exactly one argument to the if helper&quot;, arguments.length === 2);
+  Ember.assert(&quot;You must pass a block to the if helper&quot;, options.fn &amp;&amp; options.fn !== Handlebars.VM.noop);
+
+  options.helperName = options.helperName || (&#x27;if &#x27; + context);
+
+  if (options.data.isUnbound) {
+    return helpers.unboundIf.call(options.contexts[0], context, options);
+  } else {
+    return helpers.boundIf.call(options.contexts[0], context, options);
+  }
+}
+
+/**
+  @method unless
+  @for Ember.Handlebars.helpers
+  @param {Function} context
+  @param {Hash} options
+  @return {String} HTML string
+*/
+function unlessHelper(context, options) {
+  Ember.assert(&quot;You must pass exactly one argument to the unless helper&quot;, arguments.length === 2);
+  Ember.assert(&quot;You must pass a block to the unless helper&quot;, options.fn &amp;&amp; options.fn !== Handlebars.VM.noop);
+
+  var fn = options.fn, inverse = options.inverse, helperName = &#x27;unless&#x27;;
+
+  if (context) {
+    helperName += &#x27; &#x27; + context;
+  }
+
+  options.fn = inverse;
+  options.inverse = fn;
+
+  options.helperName = options.helperName || helperName;
+
+  if (options.data.isUnbound) {
+    return helpers.unboundIf.call(options.contexts[0], context, options);
+  } else {
+    return helpers.boundIf.call(options.contexts[0], context, options);
+  }
+}
+
+/**
+  &#x60;bind-attr&#x60; allows you to create a binding between DOM element attributes and
+  Ember objects. For example:
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img {{bind-attr src=&quot;imageUrl&quot; alt=&quot;imageTitle&quot;}}&gt;
+  &#x60;&#x60;&#x60;
+
+  The above handlebars template will fill the &#x60;&lt;img&gt;&#x60;&#x27;s &#x60;src&#x60; attribute will
+  the value of the property referenced with &#x60;&quot;imageUrl&quot;&#x60; and its &#x60;alt&#x60;
+  attribute with the value of the property referenced with &#x60;&quot;imageTitle&quot;&#x60;.
+
+  If the rendering context of this template is the following object:
+
+  &#x60;&#x60;&#x60;javascript
+  {
+    imageUrl: &#x27;http://lolcats.info/haz-a-funny&#x27;,
+    imageTitle: &#x27;A humorous image of a cat&#x27;
+  }
+  &#x60;&#x60;&#x60;
+
+  The resulting HTML output will be:
+
+  &#x60;&#x60;&#x60;html
+  &lt;img src=&quot;http://lolcats.info/haz-a-funny&quot; alt=&quot;A humorous image of a cat&quot;&gt;
+  &#x60;&#x60;&#x60;
+
+  &#x60;bind-attr&#x60; cannot redeclare existing DOM element attributes. The use of &#x60;src&#x60;
+  in the following &#x60;bind-attr&#x60; example will be ignored and the hard coded value
+  of &#x60;src=&quot;/failwhale.gif&quot;&#x60; will take precedence:
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img src=&quot;/failwhale.gif&quot; {{bind-attr src=&quot;imageUrl&quot; alt=&quot;imageTitle&quot;}}&gt;
+  &#x60;&#x60;&#x60;
+
+  ### &#x60;bind-attr&#x60; and the &#x60;class&#x60; attribute
+
+  &#x60;bind-attr&#x60; supports a special syntax for handling a number of cases unique
+  to the &#x60;class&#x60; DOM element attribute. The &#x60;class&#x60; attribute combines
+  multiple discrete values into a single attribute as a space-delimited
+  list of strings. Each string can be:
+
+  * a string return value of an object&#x27;s property.
+  * a boolean return value of an object&#x27;s property
+  * a hard-coded value
+
+  A string return value works identically to other uses of &#x60;bind-attr&#x60;. The
+  return value of the property will become the value of the attribute. For
+  example, the following view and template:
+
+  &#x60;&#x60;&#x60;javascript
+    AView = View.extend({
+      someProperty: function() {
+        return &quot;aValue&quot;;
+      }.property()
+    })
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img {{bind-attr class=&quot;view.someProperty}}&gt;
+  &#x60;&#x60;&#x60;
+
+  Result in the following rendered output:
+
+  &#x60;&#x60;&#x60;html
+  &lt;img class=&quot;aValue&quot;&gt;
+  &#x60;&#x60;&#x60;
+
+  A boolean return value will insert a specified class name if the property
+  returns &#x60;true&#x60; and remove the class name if the property returns &#x60;false&#x60;.
+
+  A class name is provided via the syntax
+  &#x60;somePropertyName:class-name-if-true&#x60;.
+
+  &#x60;&#x60;&#x60;javascript
+  AView = View.extend({
+    someBool: true
+  })
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img {{bind-attr class=&quot;view.someBool:class-name-if-true&quot;}}&gt;
+  &#x60;&#x60;&#x60;
+
+  Result in the following rendered output:
+
+  &#x60;&#x60;&#x60;html
+  &lt;img class=&quot;class-name-if-true&quot;&gt;
+  &#x60;&#x60;&#x60;
+
+  An additional section of the binding can be provided if you want to
+  replace the existing class instead of removing it when the boolean
+  value changes:
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img {{bind-attr class=&quot;view.someBool:class-name-if-true:class-name-if-false&quot;}}&gt;
+  &#x60;&#x60;&#x60;
+
+  A hard-coded value can be used by prepending &#x60;:&#x60; to the desired
+  class name: &#x60;:class-name-to-always-apply&#x60;.
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img {{bind-attr class=&quot;:class-name-to-always-apply&quot;}}&gt;
+  &#x60;&#x60;&#x60;
+
+  Results in the following rendered output:
+
+  &#x60;&#x60;&#x60;html
+  &lt;img class=&quot;class-name-to-always-apply&quot;&gt;
+  &#x60;&#x60;&#x60;
+
+  All three strategies - string return value, boolean return value, and
+  hard-coded value – can be combined in a single declaration:
+
+  &#x60;&#x60;&#x60;handlebars
+  &lt;img {{bind-attr class=&quot;:class-name-to-always-apply view.someBool:class-name-if-true view.someProperty&quot;}}&gt;
+  &#x60;&#x60;&#x60;
+
+  @method bind-attr
+  @for Ember.Handlebars.helpers
+  @param {Hash} options
+  @return {String} HTML string
+*/
+function bindAttrHelper(options) {
+  var attrs = options.hash;
+
+  Ember.assert(&quot;You must specify at least one hash argument to bind-attr&quot;, !!keys(attrs).length);
+
+  var view = options.data.view;
+  var ret = [];
+
+  // we relied on the behavior of calling without
+  // context to mean this === window, but when running
+  // &quot;use strict&quot;, it&#x27;s possible for this to === undefined;
+  var ctx = this || window;
+
+  // Generate a unique id for this element. This will be added as a
+  // data attribute to the element so it can be looked up when
+  // the bound property changes.
+  var dataId = ++Ember.uuid;
+
+  // Handle classes differently, as we can bind multiple classes
+  var classBindings = attrs[&#x27;class&#x27;];
+  if (classBindings != null) {
+    var classResults = bindClasses(ctx, classBindings, view, dataId, options);
+
+    ret.push(&#x27;class=&quot;&#x27; + Handlebars.Utils.escapeExpression(classResults.join(&#x27; &#x27;)) + &#x27;&quot;&#x27;);
+    delete attrs[&#x27;class&#x27;];
+  }
+
+  var attrKeys = keys(attrs);
+
+  // For each attribute passed, create an observer and emit the
+  // current value of the property as an attribute.
+  forEach.call(attrKeys, function(attr) {
+    var path = attrs[attr],
+        normalized;
+
+    Ember.assert(fmt(&quot;You must provide an expression as the value of bound attribute. You specified: %@=%@&quot;, [attr, path]), typeof path === &#x27;string&#x27;);
+
+    normalized = normalizePath(ctx, path, options.data);
+
+    var value = (path === &#x27;this&#x27;) ? normalized.root : handlebarsGet(ctx, path, options),
+        type = typeOf(value);
+
+    Ember.assert(fmt(&quot;Attributes must be numbers, strings or booleans, not %@&quot;, [value]), value === null || value === undefined || type === &#x27;number&#x27; || type === &#x27;string&#x27; || type === &#x27;boolean&#x27;);
+
+    var observer, invoker;
+
+    observer = function observer() {
+      var result = handlebarsGet(ctx, path, options);
+
+      Ember.assert(fmt(&quot;Attributes must be numbers, strings or booleans, not %@&quot;, [result]),
+                   result === null || result === undefined || typeof result === &#x27;number&#x27; ||
+                     typeof result === &#x27;string&#x27; || typeof result === &#x27;boolean&#x27;);
+
+      var elem = view.$(&quot;[data-bindattr-&quot; + dataId + &quot;=&#x27;&quot; + dataId + &quot;&#x27;]&quot;);
+
+      // If we aren&#x27;t able to find the element, it means the element
+      // to which we were bound has been removed from the view.
+      // In that case, we can assume the template has been re-rendered
+      // and we need to clean up the observer.
+      if (!elem || elem.length === 0) {
+        removeObserver(normalized.root, normalized.path, invoker);
+        return;
+      }
+
+      View.applyAttributeBindings(elem, attr, result);
+    };
+
+    // Add an observer to the view for when the property changes.
+    // When the observer fires, find the element using the
+    // unique data id and update the attribute to the new value.
+    // Note: don&#x27;t add observer when path is &#x27;this&#x27; or path
+    // is whole keyword e.g. {{#each x in list}} ... {{bind-attr attr=&quot;x&quot;}}
+    if (path !== &#x27;this&#x27; &amp;&amp; !(normalized.isKeyword &amp;&amp; normalized.path === &#x27;&#x27; )) {
+      view.registerObserver(normalized.root, normalized.path, observer);
+    }
+
+    // if this changes, also change the logic in ember-views/lib/views/view.js
+    if ((type === &#x27;string&#x27; || (type === &#x27;number&#x27; &amp;&amp; !isNaN(value)))) {
+      ret.push(attr + &#x27;=&quot;&#x27; + Handlebars.Utils.escapeExpression(value) + &#x27;&quot;&#x27;);
+    } else if (value &amp;&amp; type === &#x27;boolean&#x27;) {
+      // The developer controls the attr name, so it should always be safe
+      ret.push(attr + &#x27;=&quot;&#x27; + attr + &#x27;&quot;&#x27;);
+    }
+  }, this);
+
+  // Add the unique identifier
+  // NOTE: We use all lower-case since Firefox has problems with mixed case in SVG
+  ret.push(&#x27;data-bindattr-&#x27; + dataId + &#x27;=&quot;&#x27; + dataId + &#x27;&quot;&#x27;);
+  return new SafeString(ret.join(&#x27; &#x27;));
+}
+
+/**
+  See &#x60;bind-attr&#x60;
+
+  @method bindAttr
+  @for Ember.Handlebars.helpers
+  @deprecated
+  @param {Function} context
+  @param {Hash} options
+  @return {String} HTML string
+*/
+function bindAttrHelperDeprecated() {
+  Ember.warn(&quot;The &#x27;bindAttr&#x27; view helper is deprecated in favor of &#x27;bind-attr&#x27;&quot;);
+  return helpers[&#x27;bind-attr&#x27;].apply(this, arguments);
+}
+
+/**
+  Helper that, given a space-separated string of property paths and a context,
+  returns an array of class names. Calling this method also has the side
+  effect of setting up observers at those property paths, such that if they
+  change, the correct class name will be reapplied to the DOM element.
+
+  For example, if you pass the string &quot;fooBar&quot;, it will first look up the
+  &quot;fooBar&quot; value of the context. If that value is true, it will add the
+  &quot;foo-bar&quot; class to the current element (i.e., the dasherized form of
+  &quot;fooBar&quot;). If the value is a string, it will add that string as the class.
+  Otherwise, it will not add any new class name.
+
+  @private
+  @method bindClasses
+  @for Ember.Handlebars
+  @param {Ember.Object} context The context from which to lookup properties
+  @param {String} classBindings A string, space-separated, of class bindings
+    to use
+  @param {View} view The view in which observers should look for the
+    element to update
+  @param {Srting} bindAttrId Optional bindAttr id used to lookup elements
+  @return {Array} An array of class names to add
+*/
+function bindClasses(context, classBindings, view, bindAttrId, options) {
+  var ret = [], newClass, value, elem;
+
+  // Helper method to retrieve the property from the context and
+  // determine which class string to return, based on whether it is
+  // a Boolean or not.
+  var classStringForPath = function(root, parsedPath, options) {
+    var val,
+        path = parsedPath.path;
+
+    if (path === &#x27;this&#x27;) {
+      val = root;
+    } else if (path === &#x27;&#x27;) {
+      val = true;
+    } else {
+      val = handlebarsGet(root, path, options);
+    }
+
+    return View._classStringForValue(path, val, parsedPath.className, parsedPath.falsyClassName);
+  };
+
+  // For each property passed, loop through and setup
+  // an observer.
+  forEach.call(classBindings.split(&#x27; &#x27;), function(binding) {
+
+    // Variable in which the old class value is saved. The observer function
+    // closes over this variable, so it knows which string to remove when
+    // the property changes.
+    var oldClass;
+
+    var observer, invoker;
+
+    var parsedPath = View._parsePropertyPath(binding),
+        path = parsedPath.path,
+        pathRoot = context,
+        normalized;
+
+    if (path !== &#x27;&#x27; &amp;&amp; path !== &#x27;this&#x27;) {
+      normalized = normalizePath(context, path, options.data);
+
+      pathRoot = normalized.root;
+      path = normalized.path;
+    }
+
+    // Set up an observer on the context. If the property changes, toggle the
+    // class name.
+    observer = function() {
+      // Get the current value of the property
+      newClass = classStringForPath(context, parsedPath, options);
+      elem = bindAttrId ? view.$(&quot;[data-bindattr-&quot; + bindAttrId + &quot;=&#x27;&quot; + bindAttrId + &quot;&#x27;]&quot;) : view.$();
+
+      // If we can&#x27;t find the element anymore, a parent template has been
+      // re-rendered and we&#x27;ve been nuked. Remove the observer.
+      if (!elem || elem.length === 0) {
+        removeObserver(pathRoot, path, invoker);
+      } else {
+        // If we had previously added a class to the element, remove it.
+        if (oldClass) {
+          elem.removeClass(oldClass);
+        }
+
+        // If necessary, add a new class. Make sure we keep track of it so
+        // it can be removed in the future.
+        if (newClass) {
+          elem.addClass(newClass);
+          oldClass = newClass;
+        } else {
+          oldClass = null;
+        }
+      }
+    };
+
+    if (path !== &#x27;&#x27; &amp;&amp; path !== &#x27;this&#x27;) {
+      view.registerObserver(pathRoot, path, observer);
+    }
+
+    // We&#x27;ve already setup the observer; now we just need to figure out the
+    // correct behavior right now on the first pass through.
+    value = classStringForPath(context, parsedPath, options);
+
+    if (value) {
+      ret.push(value);
+
+      // Make sure we save the current value so that it can be removed if the
+      // observer fires.
+      oldClass = value;
+    }
+  });
+
+  return ret;
+};
+
+export {bind, _triageMustacheHelper, resolveHelper, bindHelper, boundIfHelper, unboundIfHelper, withHelper, ifHelper, unlessHelper, bindAttrHelper, bindAttrHelperDeprecated, bindClasses}
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

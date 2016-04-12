@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-runtime/lib/computed/reduce_computed.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-runtime/lib/computed/reduce_computed.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import Ember from &quot;ember-metal/core&quot;; // Ember.assert
+import {get as e_get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {guidFor, meta as metaFor} from &quot;ember-metal/utils&quot;;
+import EmberError from &quot;ember-metal/error&quot;;
+import {propertyWillChange, propertyDidChange} from &quot;ember-metal/property_events&quot;;
+import expandProperties from &quot;ember-metal/expand_properties&quot;;
+import {addObserver, observersFor, removeObserver, addBeforeObserver, removeBeforeObserver} from &quot;ember-metal/observer&quot;;
+import {ComputedProperty, cacheFor} from &quot;ember-metal/computed&quot;;
+import {create} from &quot;ember-metal/platform&quot;;
+import EnumerableUtils from &quot;ember-metal/enumerable_utils&quot;;
+import TrackedArray from &quot;ember-runtime/system/tracked_array&quot;;
+import EmberArray from &quot;ember-runtime/mixins/array&quot;;
+import run from &quot;ember-metal/run_loop&quot;;
+import Set from &quot;ember-runtime/system/set&quot;;
+import {isArray} from &quot;ember-metal/utils&quot;;
+
+var cacheSet = cacheFor.set,
+    cacheGet = cacheFor.get,
+    cacheRemove = cacheFor.remove,
+    a_slice = [].slice,
+    o_create = create,
+    forEach = EnumerableUtils.forEach,
+    // Here we explicitly don&#x27;t allow &#x60;@each.foo&#x60;; it would require some special
+    // testing, but there&#x27;s no particular reason why it should be disallowed.
+    eachPropertyPattern = /^(.*)\.@each\.(.*)/,
+    doubleEachPropertyPattern = /(.*\.@each){2,}/,
+    arrayBracketPattern = /\.\[\]$/;
+
+function get(obj, key) {
+  if (key === &#x27;@this&#x27;) {
+    return obj;
+  }
+
+  return e_get(obj, key);
+}
+
+/*
+  Tracks changes to dependent arrays, as well as to properties of items in
+  dependent arrays.
+
+  @class DependentArraysObserver
+*/
+function DependentArraysObserver(callbacks, cp, instanceMeta, context, propertyName, sugarMeta) {
+  // user specified callbacks for &#x60;addedItem&#x60; and &#x60;removedItem&#x60;
+  this.callbacks = callbacks;
+
+  // the computed property: remember these are shared across instances
+  this.cp = cp;
+
+  // the ReduceComputedPropertyInstanceMeta this DependentArraysObserver is
+  // associated with
+  this.instanceMeta = instanceMeta;
+
+  // A map of array guids to dependentKeys, for the given context.  We track
+  // this because we want to set up the computed property potentially before the
+  // dependent array even exists, but when the array observer fires, we lack
+  // enough context to know what to update: we can recover that context by
+  // getting the dependentKey.
+  this.dependentKeysByGuid = {};
+
+  // a map of dependent array guids -&gt; TrackedArray instances.  We use
+  // this to lazily recompute indexes for item property observers.
+  this.trackedArraysByGuid = {};
+
+  // We suspend observers to ignore replacements from &#x60;reset&#x60; when totally
+  // recomputing.  Unfortunately we cannot properly suspend the observers
+  // because we only have the key; instead we make the observers no-ops
+  this.suspended = false;
+
+  // This is used to coalesce item changes from property observers.
+  this.changedItems = {};
+}
+
+function ItemPropertyObserverContext (dependentArray, index, trackedArray) {
+  Ember.assert(&quot;Internal error: trackedArray is null or undefined&quot;, trackedArray);
+
+  this.dependentArray = dependentArray;
+  this.index = index;
+  this.item = dependentArray.objectAt(index);
+  this.trackedArray = trackedArray;
+  this.beforeObserver = null;
+  this.observer = null;
+
+  this.destroyed = false;
+}
+
+DependentArraysObserver.prototype = {
+  setValue: function (newValue) {
+    this.instanceMeta.setValue(newValue, true);
+  },
+  getValue: function () {
+    return this.instanceMeta.getValue();
+  },
+
+  setupObservers: function (dependentArray, dependentKey) {
+    this.dependentKeysByGuid[guidFor(dependentArray)] = dependentKey;
+
+    dependentArray.addArrayObserver(this, {
+      willChange: &#x27;dependentArrayWillChange&#x27;,
+      didChange: &#x27;dependentArrayDidChange&#x27;
+    });
+
+    if (this.cp._itemPropertyKeys[dependentKey]) {
+      this.setupPropertyObservers(dependentKey, this.cp._itemPropertyKeys[dependentKey]);
+    }
+  },
+
+  teardownObservers: function (dependentArray, dependentKey) {
+    var itemPropertyKeys = this.cp._itemPropertyKeys[dependentKey] || [];
+
+    delete this.dependentKeysByGuid[guidFor(dependentArray)];
+
+    this.teardownPropertyObservers(dependentKey, itemPropertyKeys);
+
+    dependentArray.removeArrayObserver(this, {
+      willChange: &#x27;dependentArrayWillChange&#x27;,
+      didChange: &#x27;dependentArrayDidChange&#x27;
+    });
+  },
+
+  suspendArrayObservers: function (callback, binding) {
+    var oldSuspended = this.suspended;
+    this.suspended = true;
+    callback.call(binding);
+    this.suspended = oldSuspended;
+  },
+
+  setupPropertyObservers: function (dependentKey, itemPropertyKeys) {
+    var dependentArray = get(this.instanceMeta.context, dependentKey),
+        length = get(dependentArray, &#x27;length&#x27;),
+        observerContexts = new Array(length);
+
+    this.resetTransformations(dependentKey, observerContexts);
+
+    forEach(dependentArray, function (item, index) {
+      var observerContext = this.createPropertyObserverContext(dependentArray, index, this.trackedArraysByGuid[dependentKey]);
+      observerContexts[index] = observerContext;
+
+      forEach(itemPropertyKeys, function (propertyKey) {
+        addBeforeObserver(item, propertyKey, this, observerContext.beforeObserver);
+        addObserver(item, propertyKey, this, observerContext.observer);
+      }, this);
+    }, this);
+  },
+
+  teardownPropertyObservers: function (dependentKey, itemPropertyKeys) {
+    var dependentArrayObserver = this,
+        trackedArray = this.trackedArraysByGuid[dependentKey],
+        beforeObserver,
+        observer,
+        item;
+
+    if (!trackedArray) { return; }
+
+    trackedArray.apply(function (observerContexts, offset, operation) {
+      if (operation === TrackedArray.DELETE) { return; }
+
+      forEach(observerContexts, function (observerContext) {
+        observerContext.destroyed = true;
+        beforeObserver = observerContext.beforeObserver;
+        observer = observerContext.observer;
+        item = observerContext.item;
+
+        forEach(itemPropertyKeys, function (propertyKey) {
+          removeBeforeObserver(item, propertyKey, dependentArrayObserver, beforeObserver);
+          removeObserver(item, propertyKey, dependentArrayObserver, observer);
+        });
+      });
+    });
+  },
+
+  createPropertyObserverContext: function (dependentArray, index, trackedArray) {
+    var observerContext = new ItemPropertyObserverContext(dependentArray, index, trackedArray);
+
+    this.createPropertyObserver(observerContext);
+
+    return observerContext;
+  },
+
+  createPropertyObserver: function (observerContext) {
+    var dependentArrayObserver = this;
+
+    observerContext.beforeObserver = function (obj, keyName) {
+      return dependentArrayObserver.itemPropertyWillChange(obj, keyName, observerContext.dependentArray, observerContext);
+    };
+    observerContext.observer = function (obj, keyName) {
+      return dependentArrayObserver.itemPropertyDidChange(obj, keyName, observerContext.dependentArray, observerContext);
+    };
+  },
+
+  resetTransformations: function (dependentKey, observerContexts) {
+    this.trackedArraysByGuid[dependentKey] = new TrackedArray(observerContexts);
+  },
+
+  trackAdd: function (dependentKey, index, newItems) {
+    var trackedArray = this.trackedArraysByGuid[dependentKey];
+    if (trackedArray) {
+      trackedArray.addItems(index, newItems);
+    }
+  },
+
+  trackRemove: function (dependentKey, index, removedCount) {
+    var trackedArray = this.trackedArraysByGuid[dependentKey];
+
+    if (trackedArray) {
+      return trackedArray.removeItems(index, removedCount);
+    }
+
+    return [];
+  },
+
+  updateIndexes: function (trackedArray, array) {
+    var length = get(array, &#x27;length&#x27;);
+    // OPTIMIZE: we could stop updating once we hit the object whose observer
+    // fired; ie partially apply the transformations
+    trackedArray.apply(function (observerContexts, offset, operation, operationIndex) {
+      // we don&#x27;t even have observer contexts for removed items, even if we did,
+      // they no longer have any index in the array
+      if (operation === TrackedArray.DELETE) { return; }
+      if (operationIndex === 0 &amp;&amp; operation === TrackedArray.RETAIN &amp;&amp; observerContexts.length === length &amp;&amp; offset === 0) {
+        // If we update many items we don&#x27;t want to walk the array each time: we
+        // only need to update the indexes at most once per run loop.
+        return;
+      }
+
+      forEach(observerContexts, function (context, index) {
+        context.index = index + offset;
+      });
+    });
+  },
+
+  dependentArrayWillChange: function (dependentArray, index, removedCount, addedCount) {
+    if (this.suspended) { return; }
+
+    var removedItem = this.callbacks.removedItem,
+        changeMeta,
+        guid = guidFor(dependentArray),
+        dependentKey = this.dependentKeysByGuid[guid],
+        itemPropertyKeys = this.cp._itemPropertyKeys[dependentKey] || [],
+        length = get(dependentArray, &#x27;length&#x27;),
+        normalizedIndex = normalizeIndex(index, length, 0),
+        normalizedRemoveCount = normalizeRemoveCount(normalizedIndex, length, removedCount),
+        item,
+        itemIndex,
+        sliceIndex,
+        observerContexts;
+
+    observerContexts = this.trackRemove(dependentKey, normalizedIndex, normalizedRemoveCount);
+
+    function removeObservers(propertyKey) {
+      observerContexts[sliceIndex].destroyed = true;
+      removeBeforeObserver(item, propertyKey, this, observerContexts[sliceIndex].beforeObserver);
+      removeObserver(item, propertyKey, this, observerContexts[sliceIndex].observer);
+    }
+
+    for (sliceIndex = normalizedRemoveCount - 1; sliceIndex &gt;= 0; --sliceIndex) {
+      itemIndex = normalizedIndex + sliceIndex;
+      if (itemIndex &gt;= length) { break; }
+
+      item = dependentArray.objectAt(itemIndex);
+
+      forEach(itemPropertyKeys, removeObservers, this);
+
+      changeMeta = createChangeMeta(dependentArray, item, itemIndex, this.instanceMeta.propertyName, this.cp);
+      this.setValue( removedItem.call(
+        this.instanceMeta.context, this.getValue(), item, changeMeta, this.instanceMeta.sugarMeta));
+    }
+  },
+
+  dependentArrayDidChange: function (dependentArray, index, removedCount, addedCount) {
+    if (this.suspended) { return; }
+
+    var addedItem = this.callbacks.addedItem,
+        guid = guidFor(dependentArray),
+        dependentKey = this.dependentKeysByGuid[guid],
+        observerContexts = new Array(addedCount),
+        itemPropertyKeys = this.cp._itemPropertyKeys[dependentKey],
+        length = get(dependentArray, &#x27;length&#x27;),
+        normalizedIndex = normalizeIndex(index, length, addedCount),
+        changeMeta,
+        observerContext;
+
+    forEach(dependentArray.slice(normalizedIndex, normalizedIndex + addedCount), function (item, sliceIndex) {
+      if (itemPropertyKeys) {
+        observerContext =
+          observerContexts[sliceIndex] =
+          this.createPropertyObserverContext(dependentArray, normalizedIndex + sliceIndex, this.trackedArraysByGuid[dependentKey]);
+        forEach(itemPropertyKeys, function (propertyKey) {
+          addBeforeObserver(item, propertyKey, this, observerContext.beforeObserver);
+          addObserver(item, propertyKey, this, observerContext.observer);
+        }, this);
+      }
+
+      changeMeta = createChangeMeta(dependentArray, item, normalizedIndex + sliceIndex, this.instanceMeta.propertyName, this.cp);
+      this.setValue( addedItem.call(
+        this.instanceMeta.context, this.getValue(), item, changeMeta, this.instanceMeta.sugarMeta));
+    }, this);
+
+    this.trackAdd(dependentKey, normalizedIndex, observerContexts);
+  },
+
+  itemPropertyWillChange: function (obj, keyName, array, observerContext) {
+    var guid = guidFor(obj);
+
+    if (!this.changedItems[guid]) {
+      this.changedItems[guid] = {
+        array:            array,
+        observerContext:  observerContext,
+        obj:              obj,
+        previousValues:   {}
+      };
+    }
+
+    this.changedItems[guid].previousValues[keyName] = get(obj, keyName);
+  },
+
+  itemPropertyDidChange: function(obj, keyName, array, observerContext) {
+    this.flushChanges();
+  },
+
+  flushChanges: function() {
+    var changedItems = this.changedItems, key, c, changeMeta;
+
+    for (key in changedItems) {
+      c = changedItems[key];
+      if (c.observerContext.destroyed) { continue; }
+
+      this.updateIndexes(c.observerContext.trackedArray, c.observerContext.dependentArray);
+
+      changeMeta = createChangeMeta(c.array, c.obj, c.observerContext.index, this.instanceMeta.propertyName, this.cp, c.previousValues);
+      this.setValue(
+        this.callbacks.removedItem.call(this.instanceMeta.context, this.getValue(), c.obj, changeMeta, this.instanceMeta.sugarMeta));
+      this.setValue(
+        this.callbacks.addedItem.call(this.instanceMeta.context, this.getValue(), c.obj, changeMeta, this.instanceMeta.sugarMeta));
+    }
+    this.changedItems = {};
+  }
+};
+
+function normalizeIndex(index, length, newItemsOffset) {
+  if (index &lt; 0) {
+    return Math.max(0, length + index);
+  } else if (index &lt; length) {
+    return index;
+  } else /* index &gt; length */ {
+    return Math.min(length - newItemsOffset, index);
+  }
+}
+
+function normalizeRemoveCount(index, length, removedCount) {
+  return Math.min(removedCount, length - index);
+}
+
+function createChangeMeta(dependentArray, item, index, propertyName, property, previousValues) {
+  var meta = {
+    arrayChanged: dependentArray,
+    index: index,
+    item: item,
+    propertyName: propertyName,
+    property: property
+  };
+
+  if (previousValues) {
+    // previous values only available for item property changes
+    meta.previousValues = previousValues;
+  }
+
+  return meta;
+}
+
+function addItems (dependentArray, callbacks, cp, propertyName, meta) {
+  forEach(dependentArray, function (item, index) {
+    meta.setValue( callbacks.addedItem.call(
+      this, meta.getValue(), item, createChangeMeta(dependentArray, item, index, propertyName, cp), meta.sugarMeta));
+  }, this);
+}
+
+function reset(cp, propertyName) {
+  var callbacks = cp._callbacks(),
+      meta;
+
+  if (cp._hasInstanceMeta(this, propertyName)) {
+    meta = cp._instanceMeta(this, propertyName);
+    meta.setValue(cp.resetValue(meta.getValue()));
+  } else {
+    meta = cp._instanceMeta(this, propertyName);
+  }
+
+  if (cp.options.initialize) {
+    cp.options.initialize.call(this, meta.getValue(), { property: cp, propertyName: propertyName }, meta.sugarMeta);
+  }
+}
+
+function partiallyRecomputeFor(obj, dependentKey) {
+  if (arrayBracketPattern.test(dependentKey)) {
+    return false;
+  }
+
+  var value = get(obj, dependentKey);
+  return EmberArray.detect(value);
+}
+
+function ReduceComputedPropertyInstanceMeta(context, propertyName, initialValue) {
+  this.context = context;
+  this.propertyName = propertyName;
+  this.cache = metaFor(context).cache;
+
+  this.dependentArrays = {};
+  this.sugarMeta = {};
+
+  this.initialValue = initialValue;
+}
+
+ReduceComputedPropertyInstanceMeta.prototype = {
+  getValue: function () {
+    var value = cacheGet(this.cache, this.propertyName);
+    if (value !== undefined) {
+      return value;
+    } else {
+      return this.initialValue;
+    }
+  },
+
+  setValue: function(newValue, triggerObservers) {
+    // This lets sugars force a recomputation, handy for very simple
+    // implementations of eg max.
+    if (newValue === cacheGet(this.cache, this.propertyName)) {
+      return;
+    }
+
+    if (triggerObservers) {
+      propertyWillChange(this.context, this.propertyName);
+    }
+
+    if (newValue === undefined) {
+      cacheRemove(this.cache, this.propertyName);
+    } else {
+      cacheSet(this.cache, this.propertyName, newValue);
+    }
+
+    if (triggerObservers) {
+      propertyDidChange(this.context, this.propertyName);
+    }
+  }
+};
+
+/**
+  A computed property whose dependent keys are arrays and which is updated with
+  &quot;one at a time&quot; semantics.
+
+  @class ReduceComputedProperty
+  @namespace Ember
+  @extends Ember.ComputedProperty
+  @constructor
+*/
+function ReduceComputedProperty(options) {
+  var cp = this;
+
+  this.options = options;
+
+  this._dependentKeys = null;
+  // A map of dependentKey -&gt; [itemProperty, ...] that tracks what properties of
+  // items in the array we must track to update this property.
+  this._itemPropertyKeys = {};
+  this._previousItemPropertyKeys = {};
+
+  this.readOnly();
+  this.cacheable();
+
+  this.recomputeOnce = function(propertyName) {
+    // What we really want to do is coalesce by &lt;cp, propertyName&gt;.
+    // We need a form of &#x60;scheduleOnce&#x60; that accepts an arbitrary token to
+    // coalesce by, in addition to the target and method.
+    run.once(this, recompute, propertyName);
+  };
+  var recompute = function(propertyName) {
+    var dependentKeys = cp._dependentKeys,
+        meta = cp._instanceMeta(this, propertyName),
+        callbacks = cp._callbacks();
+
+    reset.call(this, cp, propertyName);
+
+    meta.dependentArraysObserver.suspendArrayObservers(function () {
+      forEach(cp._dependentKeys, function (dependentKey) {
+        Ember.assert(
+          &quot;dependent array &quot; + dependentKey + &quot; must be an &#x60;Ember.Array&#x60;.  &quot; +
+          &quot;If you are not extending arrays, you will need to wrap native arrays with &#x60;Ember.A&#x60;&quot;,
+          !(isArray(get(this, dependentKey)) &amp;&amp; !EmberArray.detect(get(this, dependentKey))));
+
+        if (!partiallyRecomputeFor(this, dependentKey)) { return; }
+
+        var dependentArray = get(this, dependentKey),
+            previousDependentArray = meta.dependentArrays[dependentKey];
+
+        if (dependentArray === previousDependentArray) {
+          // The array may be the same, but our item property keys may have
+          // changed, so we set them up again.  We can&#x27;t easily tell if they&#x27;ve
+          // changed: the array may be the same object, but with different
+          // contents.
+          if (cp._previousItemPropertyKeys[dependentKey]) {
+            delete cp._previousItemPropertyKeys[dependentKey];
+            meta.dependentArraysObserver.setupPropertyObservers(dependentKey, cp._itemPropertyKeys[dependentKey]);
+          }
+        } else {
+          meta.dependentArrays[dependentKey] = dependentArray;
+
+          if (previousDependentArray) {
+            meta.dependentArraysObserver.teardownObservers(previousDependentArray, dependentKey);
+          }
+
+          if (dependentArray) {
+            meta.dependentArraysObserver.setupObservers(dependentArray, dependentKey);
+          }
+        }
+      }, this);
+    }, this);
+
+    forEach(cp._dependentKeys, function(dependentKey) {
+      if (!partiallyRecomputeFor(this, dependentKey)) { return; }
+
+      var dependentArray = get(this, dependentKey);
+      if (dependentArray) {
+        addItems.call(this, dependentArray, callbacks, cp, propertyName, meta);
+      }
+    }, this);
+  };
+
+
+  this.func = function (propertyName) {
+    Ember.assert(&quot;Computed reduce values require at least one dependent key&quot;, cp._dependentKeys);
+
+    recompute.call(this, propertyName);
+
+    return cp._instanceMeta(this, propertyName).getValue();
+  };
+}
+
+ReduceComputedProperty.prototype = o_create(ComputedProperty.prototype);
+
+function defaultCallback(computedValue) {
+  return computedValue;
+}
+
+ReduceComputedProperty.prototype._callbacks = function () {
+  if (!this.callbacks) {
+    var options = this.options;
+    this.callbacks = {
+      removedItem: options.removedItem || defaultCallback,
+      addedItem: options.addedItem || defaultCallback
+    };
+  }
+  return this.callbacks;
+};
+
+ReduceComputedProperty.prototype._hasInstanceMeta = function (context, propertyName) {
+  return !!metaFor(context).cacheMeta[propertyName];
+};
+
+ReduceComputedProperty.prototype._instanceMeta = function (context, propertyName) {
+  var cacheMeta = metaFor(context).cacheMeta,
+      meta = cacheMeta[propertyName];
+
+  if (!meta) {
+    meta = cacheMeta[propertyName] = new ReduceComputedPropertyInstanceMeta(context, propertyName, this.initialValue());
+    meta.dependentArraysObserver = new DependentArraysObserver(this._callbacks(), this, meta, context, propertyName, meta.sugarMeta);
+  }
+
+  return meta;
+};
+
+ReduceComputedProperty.prototype.initialValue = function () {
+  if (typeof this.options.initialValue === &#x27;function&#x27;) {
+    return this.options.initialValue();
+  }
+  else {
+    return this.options.initialValue;
+  }
+};
+
+ReduceComputedProperty.prototype.resetValue = function (value) {
+  return this.initialValue();
+};
+
+ReduceComputedProperty.prototype.itemPropertyKey = function (dependentArrayKey, itemPropertyKey) {
+  this._itemPropertyKeys[dependentArrayKey] = this._itemPropertyKeys[dependentArrayKey] || [];
+  this._itemPropertyKeys[dependentArrayKey].push(itemPropertyKey);
+};
+
+ReduceComputedProperty.prototype.clearItemPropertyKeys = function (dependentArrayKey) {
+  if (this._itemPropertyKeys[dependentArrayKey]) {
+    this._previousItemPropertyKeys[dependentArrayKey] = this._itemPropertyKeys[dependentArrayKey];
+    this._itemPropertyKeys[dependentArrayKey] = [];
+  }
+};
+
+ReduceComputedProperty.prototype.property = function () {
+  var cp = this,
+      args = a_slice.call(arguments),
+      propertyArgs = new Set(),
+      match,
+      dependentArrayKey,
+      itemPropertyKey;
+
+  forEach(args, function (dependentKey) {
+    if (doubleEachPropertyPattern.test(dependentKey)) {
+      throw new EmberError(&quot;Nested @each properties not supported: &quot; + dependentKey);
+    } else if (match = eachPropertyPattern.exec(dependentKey)) {
+      dependentArrayKey = match[1];
+
+      var itemPropertyKeyPattern = match[2],
+          addItemPropertyKey = function (itemPropertyKey) {
+            cp.itemPropertyKey(dependentArrayKey, itemPropertyKey);
+          };
+
+      expandProperties(itemPropertyKeyPattern, addItemPropertyKey);
+      propertyArgs.add(dependentArrayKey);
+    } else {
+      propertyArgs.add(dependentKey);
+    }
+  });
+
+  return ComputedProperty.prototype.property.apply(this, propertyArgs.toArray());
+
+};
+
+/**
+  Creates a computed property which operates on dependent arrays and
+  is updated with &quot;one at a time&quot; semantics. When items are added or
+  removed from the dependent array(s) a reduce computed only operates
+  on the change instead of re-evaluating the entire array.
+
+  If there are more than one arguments the first arguments are
+  considered to be dependent property keys. The last argument is
+  required to be an options object. The options object can have the
+  following four properties:
+
+  &#x60;initialValue&#x60; - A value or function that will be used as the initial
+  value for the computed. If this property is a function the result of calling
+  the function will be used as the initial value. This property is required.
+
+  &#x60;initialize&#x60; - An optional initialize function. Typically this will be used
+  to set up state on the instanceMeta object.
+
+  &#x60;removedItem&#x60; - A function that is called each time an element is removed
+  from the array.
+
+  &#x60;addedItem&#x60; - A function that is called each time an element is added to
+  the array.
+
+
+  The &#x60;initialize&#x60; function has the following signature:
+
+  &#x60;&#x60;&#x60;javascript
+   function (initialValue, changeMeta, instanceMeta)
+  &#x60;&#x60;&#x60;
+
+  &#x60;initialValue&#x60; - The value of the &#x60;initialValue&#x60; property from the
+  options object.
+
+  &#x60;changeMeta&#x60; - An object which contains meta information about the
+  computed. It contains the following properties:
+
+     - &#x60;property&#x60; the computed property
+     - &#x60;propertyName&#x60; the name of the property on the object
+
+  &#x60;instanceMeta&#x60; - An object that can be used to store meta
+  information needed for calculating your computed. For example a
+  unique computed might use this to store the number of times a given
+  element is found in the dependent array.
+
+
+  The &#x60;removedItem&#x60; and &#x60;addedItem&#x60; functions both have the following signature:
+
+  &#x60;&#x60;&#x60;javascript
+  function (accumulatedValue, item, changeMeta, instanceMeta)
+  &#x60;&#x60;&#x60;
+
+  &#x60;accumulatedValue&#x60; - The value returned from the last time
+  &#x60;removedItem&#x60; or &#x60;addedItem&#x60; was called or &#x60;initialValue&#x60;.
+
+  &#x60;item&#x60; - the element added or removed from the array
+
+  &#x60;changeMeta&#x60; - An object which contains meta information about the
+  change. It contains the following properties:
+
+    - &#x60;property&#x60; the computed property
+    - &#x60;propertyName&#x60; the name of the property on the object
+    - &#x60;index&#x60; the index of the added or removed item
+    - &#x60;item&#x60; the added or removed item: this is exactly the same as
+      the second arg
+    - &#x60;arrayChanged&#x60; the array that triggered the change. Can be
+      useful when depending on multiple arrays.
+
+  For property changes triggered on an item property change (when
+  depKey is something like &#x60;someArray.@each.someProperty&#x60;),
+  &#x60;changeMeta&#x60; will also contain the following property:
+
+    - &#x60;previousValues&#x60; an object whose keys are the properties that changed on
+    the item, and whose values are the item&#x27;s previous values.
+
+  &#x60;previousValues&#x60; is important Ember coalesces item property changes via
+  Ember.run.once. This means that by the time removedItem gets called, item has
+  the new values, but you may need the previous value (eg for sorting &amp;
+  filtering).
+
+  &#x60;instanceMeta&#x60; - An object that can be used to store meta
+  information needed for calculating your computed. For example a
+  unique computed might use this to store the number of times a given
+  element is found in the dependent array.
+
+  The &#x60;removedItem&#x60; and &#x60;addedItem&#x60; functions should return the accumulated
+  value. It is acceptable to not return anything (ie return undefined)
+  to invalidate the computation. This is generally not a good idea for
+  arrayComputed but it&#x27;s used in eg max and min.
+
+  Note that observers will be fired if either of these functions return a value
+  that differs from the accumulated value.  When returning an object that
+  mutates in response to array changes, for example an array that maps
+  everything from some other array (see &#x60;Ember.computed.map&#x60;), it is usually
+  important that the *same* array be returned to avoid accidentally triggering observers.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.computed.max = function (dependentKey) {
+    return Ember.reduceComputed(dependentKey, {
+      initialValue: -Infinity,
+
+      addedItem: function (accumulatedValue, item, changeMeta, instanceMeta) {
+        return Math.max(accumulatedValue, item);
+      },
+
+      removedItem: function (accumulatedValue, item, changeMeta, instanceMeta) {
+        if (item &lt; accumulatedValue) {
+          return accumulatedValue;
+        }
+      }
+    });
+  };
+  &#x60;&#x60;&#x60;
+
+  Dependent keys may refer to &#x60;@this&#x60; to observe changes to the object itself,
+  which must be array-like, rather than a property of the object.  This is
+  mostly useful for array proxies, to ensure objects are retrieved via
+  &#x60;objectAtContent&#x60;.  This is how you could sort items by properties defined on an item controller.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  App.PeopleController = Ember.ArrayController.extend({
+    itemController: &#x27;person&#x27;,
+
+    sortedPeople: Ember.computed.sort(&#x27;@this.@each.reversedName&#x27;, function(personA, personB) {
+      // &#x60;reversedName&#x60; isn&#x27;t defined on Person, but we have access to it via
+      // the item controller App.PersonController.  If we&#x27;d used
+      // &#x60;content.@each.reversedName&#x60; above, we would be getting the objects
+      // directly and not have access to &#x60;reversedName&#x60;.
+      //
+      var reversedNameA = get(personA, &#x27;reversedName&#x27;),
+          reversedNameB = get(personB, &#x27;reversedName&#x27;);
+
+      return Ember.compare(reversedNameA, reversedNameB);
+    })
+  });
+
+  App.PersonController = Ember.ObjectController.extend({
+    reversedName: function () {
+      return reverse(get(this, &#x27;name&#x27;));
+    }.property(&#x27;name&#x27;)
+  })
+  &#x60;&#x60;&#x60;
+
+  Dependent keys whose values are not arrays are treated as regular
+  dependencies: when they change, the computed property is completely
+  recalculated.  It is sometimes useful to have dependent arrays with similar
+  semantics.  Dependent keys which end in &#x60;.[]&#x60; do not use &quot;one at a time&quot;
+  semantics.  When an item is added or removed from such a dependency, the
+  computed property is completely recomputed.
+
+  When the computed property is completely recomputed, the &#x60;accumulatedValue&#x60;
+  is discarded, it starts with &#x60;initialValue&#x60; again, and each item is passed
+  to &#x60;addedItem&#x60; in turn.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.Object.extend({
+    // When &#x60;string&#x60; is changed, &#x60;computed&#x60; is completely recomputed.
+    string: &#x27;a string&#x27;,
+
+    // When an item is added to &#x60;array&#x60;, &#x60;addedItem&#x60; is called.
+    array: [],
+
+    // When an item is added to &#x60;anotherArray&#x60;, &#x60;computed&#x60; is completely
+    // recomputed.
+    anotherArray: [],
+
+    computed: Ember.reduceComputed(&#x27;string&#x27;, &#x27;array&#x27;, &#x27;anotherArray.[]&#x27;, {
+      addedItem: addedItemCallback,
+      removedItem: removedItemCallback
+    })
+  });
+  &#x60;&#x60;&#x60;
+
+  @method reduceComputed
+  @for Ember
+  @param {String} [dependentKeys*]
+  @param {Object} options
+  @return {Ember.ComputedProperty}
+*/
+function reduceComputed(options) {
+  var args;
+
+  if (arguments.length &gt; 1) {
+    args = a_slice.call(arguments, 0, -1);
+    options = a_slice.call(arguments, -1)[0];
+  }
+
+  if (typeof options !== &quot;object&quot;) {
+    throw new EmberError(&quot;Reduce Computed Property declared without an options hash&quot;);
+  }
+
+  if (!(&#x27;initialValue&#x27; in options)) {
+    throw new EmberError(&quot;Reduce Computed Property declared without an initial value&quot;);
+  }
+
+  var cp = new ReduceComputedProperty(options);
+
+  if (args) {
+    cp.property.apply(cp, args);
+  }
+
+  return cp;
+}
+
+export {reduceComputed, ReduceComputedProperty};
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

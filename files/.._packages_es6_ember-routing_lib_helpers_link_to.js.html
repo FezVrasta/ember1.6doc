@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-routing/lib/helpers/link_to.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-routing/lib/helpers/link_to.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import Ember from &quot;ember-metal/core&quot;; // FEATURES, Logger, Handlebars, warn, assert
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import merge from &quot;ember-metal/merge&quot;;
+import run from &quot;ember-metal/run_loop&quot;;
+import {computed} from &quot;ember-metal/computed&quot;;
+
+import {onLoad} from &quot;ember-runtime/system/lazy_load&quot;;
+import {fmt} from &quot;ember-runtime/system/string&quot;;
+import EmberObject from &quot;ember-runtime/system/object&quot;;
+import keys from &quot;ember-runtime/keys&quot;;
+import {isSimpleClick} from &quot;ember-views/system/utils&quot;;
+import {View as EmberView} from &quot;ember-views/views/view&quot;;
+import EmberHandlebars from &quot;ember-handlebars&quot;;
+import {viewHelper} from &quot;ember-handlebars/helpers/view&quot;;
+import EmberRouter from &quot;ember-routing/system/router&quot;;
+import {resolveParams, resolvePaths} from &quot;ember-routing/helpers/shared&quot;;
+
+// requireModule(&#x27;ember-handlebars&#x27;);
+
+/**
+@module ember
+@submodule ember-routing
+*/
+
+var slice = [].slice;
+
+requireModule(&#x27;ember-handlebars&#x27;);
+
+var numberOfContextsAcceptedByHandler = function(handler, handlerInfos) {
+  var req = 0;
+  for (var i = 0, l = handlerInfos.length; i &lt; l; i++) {
+    req = req + handlerInfos[i].names.length;
+    if (handlerInfos[i].handler === handler)
+      break;
+  }
+
+  // query params adds an additional context
+  if (Ember.FEATURES.isEnabled(&quot;query-params-new&quot;)) {
+    req = req + 1;
+  }
+  return req;
+};
+
+var QueryParams = EmberObject.extend({
+  values: null
+});
+
+function computeQueryParams(linkView, stripDefaultValues) {
+  var helperParameters = linkView.parameters,
+      queryParamsObject = get(linkView, &#x27;queryParamsObject&#x27;),
+      suppliedParams = {};
+
+  if (queryParamsObject) {
+    merge(suppliedParams, queryParamsObject.values);
+  }
+
+  var resolvedParams = get(linkView, &#x27;resolvedParams&#x27;),
+      router = get(linkView, &#x27;router&#x27;),
+      routeName = resolvedParams[0],
+      paramsForRoute = router._queryParamsFor(routeName),
+      qps = paramsForRoute.qps,
+      paramsForRecognizer = {};
+
+  // We need to collect all non-default query params for this route.
+  for (var i = 0, len = qps.length; i &lt; len; ++i) {
+    var qp = qps[i];
+
+    // Check if the link-to provides a value for this qp.
+    var providedType = null, value;
+    if (qp.prop in suppliedParams) {
+      value = suppliedParams[qp.prop];
+      providedType = queryParamsObject.types[qp.prop];
+      delete suppliedParams[qp.prop];
+    } else if (qp.urlKey in suppliedParams) {
+      value = suppliedParams[qp.urlKey];
+      providedType = queryParamsObject.types[qp.urlKey];
+      delete suppliedParams[qp.urlKey];
+    }
+
+    if (providedType) {
+      if (providedType === &#x27;ID&#x27;) {
+        var normalizedPath = EmberHandlebars.normalizePath(helperParameters.context, value, helperParameters.options.data);
+        value = EmberHandlebars.get(normalizedPath.root, normalizedPath.path, helperParameters.options);
+      }
+
+      value = qp.route.serializeQueryParam(value, qp.urlKey, qp.type);
+    } else {
+      value = qp.svalue;
+    }
+
+    if (stripDefaultValues &amp;&amp; value === qp.sdef) {
+      continue;
+    }
+
+    paramsForRecognizer[qp.urlKey] = value;
+  }
+
+  return paramsForRecognizer;
+}
+
+function routeArgsWithoutDefaultQueryParams(linkView) {
+  var routeArgs = linkView.get(&#x27;routeArgs&#x27;);
+
+  if (!routeArgs[routeArgs.length-1].queryParams) {
+    return routeArgs;
+  }
+
+  routeArgs = routeArgs.slice();
+  routeArgs[routeArgs.length-1] = {
+    queryParams: computeQueryParams(linkView, true)
+  };
+  return routeArgs;
+}
+
+function getResolvedPaths(options) {
+
+  var types = options.options.types,
+      data = options.options.data;
+
+  return resolvePaths(options.context, options.params, { types: types, data: data });
+}
+
+/**
+  &#x60;Ember.LinkView&#x60; renders an element whose &#x60;click&#x60; event triggers a
+  transition of the application&#x27;s instance of &#x60;Ember.Router&#x60; to
+  a supplied route by name.
+
+  Instances of &#x60;LinkView&#x60; will most likely be created through
+  the &#x60;link-to&#x60; Handlebars helper, but properties of this class
+  can be overridden to customize application-wide behavior.
+
+  @class LinkView
+  @namespace Ember
+  @extends Ember.View
+  @see {Handlebars.helpers.link-to}
+**/
+var LinkView = Ember.LinkView = EmberView.extend({
+  tagName: &#x27;a&#x27;,
+  currentWhen: null,
+
+  /**
+    Sets the &#x60;title&#x60; attribute of the &#x60;LinkView&#x60;&#x27;s HTML element.
+
+    @property title
+    @default null
+  **/
+  title: null,
+
+  /**
+    Sets the &#x60;rel&#x60; attribute of the &#x60;LinkView&#x60;&#x27;s HTML element.
+
+    @property rel
+    @default null
+  **/
+  rel: null,
+
+  /**
+    The CSS class to apply to &#x60;LinkView&#x60;&#x27;s element when its &#x60;active&#x60;
+    property is &#x60;true&#x60;.
+
+    @property activeClass
+    @type String
+    @default active
+  **/
+  activeClass: &#x27;active&#x27;,
+
+  /**
+    The CSS class to apply to &#x60;LinkView&#x60;&#x27;s element when its &#x60;loading&#x60;
+    property is &#x60;true&#x60;.
+
+    @property loadingClass
+    @type String
+    @default loading
+  **/
+  loadingClass: &#x27;loading&#x27;,
+
+  /**
+    The CSS class to apply to a &#x60;LinkView&#x60;&#x27;s element when its &#x60;disabled&#x60;
+    property is &#x60;true&#x60;.
+
+    @property disabledClass
+    @type String
+    @default disabled
+  **/
+  disabledClass: &#x27;disabled&#x27;,
+  _isDisabled: false,
+
+  /**
+    Determines whether the &#x60;LinkView&#x60; will trigger routing via
+    the &#x60;replaceWith&#x60; routing strategy.
+
+    @property replace
+    @type Boolean
+    @default false
+  **/
+  replace: false,
+
+  /**
+    By default the &#x60;{{link-to}}&#x60; helper will bind to the &#x60;href&#x60; and
+    &#x60;title&#x60; attributes. It&#x27;s discourage that you override these defaults,
+    however you can push onto the array if needed.
+
+    @property attributeBindings
+    @type Array | String
+    @default [&#x27;href&#x27;, &#x27;title&#x27;, &#x27;rel&#x27;]
+   **/
+  attributeBindings: [&#x27;href&#x27;, &#x27;title&#x27;, &#x27;rel&#x27;],
+
+  /**
+    By default the &#x60;{{link-to}}&#x60; helper will bind to the &#x60;active&#x60;, &#x60;loading&#x60;, and
+    &#x60;disabled&#x60; classes. It is discouraged to override these directly.
+
+    @property classNameBindings
+    @type Array
+    @default [&#x27;active&#x27;, &#x27;loading&#x27;, &#x27;disabled&#x27;]
+   **/
+  classNameBindings: [&#x27;active&#x27;, &#x27;loading&#x27;, &#x27;disabled&#x27;],
+
+  /**
+    By default the &#x60;{{link-to}}&#x60; helper responds to the &#x60;click&#x60; event. You
+    can override this globally by setting this property to your custom
+    event name.
+
+    This is particularly useful on mobile when one wants to avoid the 300ms
+    click delay using some sort of custom &#x60;tap&#x60; event.
+
+    @property eventName
+    @type String
+    @default click
+  */
+  eventName: &#x27;click&#x27;,
+
+  // this is doc&#x27;ed here so it shows up in the events
+  // section of the API documentation, which is where
+  // people will likely go looking for it.
+  /**
+    Triggers the &#x60;LinkView&#x60;&#x27;s routing behavior. If
+    &#x60;eventName&#x60; is changed to a value other than &#x60;click&#x60;
+    the routing behavior will trigger on that custom event
+    instead.
+
+    @event click
+  **/
+
+  /**
+    An overridable method called when LinkView objects are instantiated.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    App.MyLinkView = Ember.LinkView.extend({
+      init: function() {
+        this._super();
+        Ember.Logger.log(&#x27;Event is &#x27; + this.get(&#x27;eventName&#x27;));
+      }
+    });
+    &#x60;&#x60;&#x60;
+
+    NOTE: If you do override &#x60;init&#x60; for a framework class like &#x60;Ember.View&#x60; or
+    &#x60;Ember.ArrayController&#x60;, be sure to call &#x60;this._super()&#x60; in your
+    &#x60;init&#x60; declaration! If you don&#x27;t, Ember may not have an opportunity to
+    do important setup work, and you&#x27;ll see strange behavior in your
+    application.
+
+    @method init
+  */
+  init: function() {
+    this._super.apply(this, arguments);
+
+    // Map desired event name to invoke function
+    var eventName = get(this, &#x27;eventName&#x27;);
+    this.on(eventName, this, this._invoke);
+  },
+
+  /**
+    This method is invoked by observers installed during &#x60;init&#x60; that fire
+    whenever the params change
+
+    @private
+    @method _paramsChanged
+    @since 1.3.0
+   */
+  _paramsChanged: function() {
+    this.notifyPropertyChange(&#x27;resolvedParams&#x27;);
+  },
+
+  /**
+   This is called to setup observers that will trigger a rerender.
+
+   @private
+   @method _setupPathObservers
+   @since 1.3.0
+  **/
+  _setupPathObservers: function(){
+    var helperParameters = this.parameters,
+        linkTextPath     = helperParameters.options.linkTextPath,
+        paths = getResolvedPaths(helperParameters),
+        length = paths.length,
+        path, i, normalizedPath;
+
+    if (linkTextPath) {
+      normalizedPath = EmberHandlebars.normalizePath(helperParameters.context, linkTextPath, helperParameters.options.data);
+      this.registerObserver(normalizedPath.root, normalizedPath.path, this, this.rerender);
+    }
+
+    for(i=0; i &lt; length; i++) {
+      path = paths[i];
+      if (null === path) {
+        // A literal value was provided, not a path, so nothing to observe.
+        continue;
+      }
+
+      normalizedPath = EmberHandlebars.normalizePath(helperParameters.context, path, helperParameters.options.data);
+      this.registerObserver(normalizedPath.root, normalizedPath.path, this, this._paramsChanged);
+    }
+
+    var queryParamsObject = this.queryParamsObject;
+    if (queryParamsObject) {
+      var values = queryParamsObject.values;
+
+      // Install observers for all of the hash options
+      // provided in the (query-params) subexpression.
+      for (var k in values) {
+        if (!values.hasOwnProperty(k)) { continue; }
+
+        if (queryParamsObject.types[k] === &#x27;ID&#x27;) {
+          normalizedPath = EmberHandlebars.normalizePath(helperParameters.context, values[k], helperParameters.options.data);
+          this.registerObserver(normalizedPath.root, normalizedPath.path, this, this._paramsChanged);
+        }
+      }
+    }
+  },
+
+  afterRender: function(){
+    this._super.apply(this, arguments);
+    this._setupPathObservers();
+  },
+
+  /**
+    Even though this isn&#x27;t a virtual view, we want to treat it as if it is
+    so that you can access the parent with {{view.prop}}
+
+    @private
+    @method concreteView
+  **/
+  concreteView: computed(function() {
+    return get(this, &#x27;parentView&#x27;);
+  }).property(&#x27;parentView&#x27;),
+
+  /**
+
+    Accessed as a classname binding to apply the &#x60;LinkView&#x60;&#x27;s &#x60;disabledClass&#x60;
+    CSS &#x60;class&#x60; to the element when the link is disabled.
+
+    When &#x60;true&#x60; interactions with the element will not trigger route changes.
+    @property disabled
+  */
+  disabled: computed(function computeLinkViewDisabled(key, value) {
+    if (value !== undefined) { this.set(&#x27;_isDisabled&#x27;, value); }
+
+    return value ? get(this, &#x27;disabledClass&#x27;) : false;
+  }),
+
+  /**
+    Accessed as a classname binding to apply the &#x60;LinkView&#x60;&#x27;s &#x60;activeClass&#x60;
+    CSS &#x60;class&#x60; to the element when the link is active.
+
+    A &#x60;LinkView&#x60; is considered active when its &#x60;currentWhen&#x60; property is &#x60;true&#x60;
+    or the application&#x27;s current route is the route the &#x60;LinkView&#x60; would trigger
+    transitions into.
+
+    @property active
+  **/
+  active: computed(function computeLinkViewActive() {
+    if (get(this, &#x27;loading&#x27;)) { return false; }
+
+    var router = get(this, &#x27;router&#x27;),
+        routeArgs = get(this, &#x27;routeArgs&#x27;),
+        contexts = routeArgs.slice(1),
+        resolvedParams = get(this, &#x27;resolvedParams&#x27;),
+        currentWhen = this.currentWhen || routeArgs[0],
+        maximumContexts = numberOfContextsAcceptedByHandler(currentWhen, router.router.recognizer.handlersFor(currentWhen));
+
+    // if we don&#x27;t have enough contexts revert back to full route name
+    // this is because the leaf route will use one of the contexts
+    if (contexts.length &gt; maximumContexts)
+      currentWhen = routeArgs[0];
+
+    var isActive = router.isActive.apply(router, [currentWhen].concat(contexts));
+
+    if (isActive) { return get(this, &#x27;activeClass&#x27;); }
+  }).property(&#x27;resolvedParams&#x27;, &#x27;routeArgs&#x27;),
+
+  /**
+    Accessed as a classname binding to apply the &#x60;LinkView&#x60;&#x27;s &#x60;loadingClass&#x60;
+    CSS &#x60;class&#x60; to the element when the link is loading.
+
+    A &#x60;LinkView&#x60; is considered loading when it has at least one
+    parameter whose value is currently null or undefined. During
+    this time, clicking the link will perform no transition and
+    emit a warning that the link is still in a loading state.
+
+    @property loading
+  **/
+  loading: computed(function computeLinkViewLoading() {
+    if (!get(this, &#x27;routeArgs&#x27;)) { return get(this, &#x27;loadingClass&#x27;); }
+  }).property(&#x27;routeArgs&#x27;),
+
+  /**
+    Returns the application&#x27;s main router from the container.
+
+    @private
+    @property router
+  **/
+  router: computed(function() {
+    return get(this, &#x27;controller&#x27;).container.lookup(&#x27;router:main&#x27;);
+  }),
+
+  /**
+    Event handler that invokes the link, activating the associated route.
+
+    @private
+    @method _invoke
+    @param {Event} event
+  */
+  _invoke: function(event) {
+    if (!isSimpleClick(event)) { return true; }
+
+    if (this.preventDefault !== false) { event.preventDefault(); }
+    if (this.bubbles === false) { event.stopPropagation(); }
+
+    if (get(this, &#x27;_isDisabled&#x27;)) { return false; }
+
+    if (get(this, &#x27;loading&#x27;)) {
+      Ember.Logger.warn(&quot;This link-to is in an inactive loading state because at least one of its parameters presently has a null/undefined value, or the provided route name is invalid.&quot;);
+      return false;
+    }
+
+    var router = get(this, &#x27;router&#x27;),
+        routeArgs = get(this, &#x27;routeArgs&#x27;);
+
+    var transition;
+    if (get(this, &#x27;replace&#x27;)) {
+      transition = router.replaceWith.apply(router, routeArgs);
+    } else {
+      transition = router.transitionTo.apply(router, routeArgs);
+    }
+
+    // Schedule eager URL update, but after we&#x27;ve given the transition
+    // a chance to synchronously redirect.
+    // We need to always generate the URL instead of using the href because
+    // the href will include any rootURL set, but the router expects a URL
+    // without it! Note that we don&#x27;t use the first level router because it
+    // calls location.formatURL(), which also would add the rootURL!
+    var url = router.router.generate.apply(router.router, routeArgsWithoutDefaultQueryParams(this));
+    run.scheduleOnce(&#x27;routerTransitions&#x27;, this, this._eagerUpdateUrl, transition, url);
+  },
+
+  /**
+    @private
+    @method _eagerUpdateUrl
+    @param transition
+    @param href
+   */
+  _eagerUpdateUrl: function(transition, href) {
+    if (!transition.isActive || !transition.urlMethod) {
+      // transition was aborted, already ran to completion,
+      // or it has a null url-updated method.
+      return;
+    }
+
+    if (href.indexOf(&#x27;#&#x27;) === 0) {
+      href = href.slice(1);
+    }
+
+    // Re-use the routerjs hooks set up by the Ember router.
+    var routerjs = get(this, &#x27;router.router&#x27;);
+    if (transition.urlMethod === &#x27;update&#x27;) {
+      routerjs.updateURL(href);
+    } else if (transition.urlMethod === &#x27;replace&#x27;) {
+      routerjs.replaceURL(href);
+    }
+
+    // Prevent later update url refire.
+    transition.method(null);
+  },
+
+  /**
+    Computed property that returns an array of the
+    resolved parameters passed to the &#x60;link-to&#x60; helper,
+    e.g.:
+
+    &#x60;&#x60;&#x60;hbs
+    {{link-to a b &#x27;123&#x27; c}}
+    &#x60;&#x60;&#x60;
+
+    will generate a &#x60;resolvedParams&#x60; of:
+
+    &#x60;&#x60;&#x60;js
+    [aObject, bObject, &#x27;123&#x27;, cObject]
+    &#x60;&#x60;&#x60;
+
+    @private
+    @property
+    @return {Array}
+   */
+  resolvedParams: computed(function() {
+    var parameters = this.parameters,
+        options = parameters.options,
+        types = options.types,
+        data = options.data;
+
+    if (parameters.params.length === 0) {
+      var appController = this.container.lookup(&#x27;controller:application&#x27;);
+      return [get(appController, &#x27;currentRouteName&#x27;)];
+    } else {
+      return resolveParams(parameters.context, parameters.params, { types: types, data: data });
+    }
+  }).property(&#x27;router.url&#x27;),
+
+  /**
+    Computed property that returns the current route name and
+    any dynamic segments.
+
+    @private
+    @property
+    @return {Array} An array with the route name and any dynamic segments
+   */
+  routeArgs: computed(function computeLinkViewRouteArgs() {
+    var resolvedParams = get(this, &#x27;resolvedParams&#x27;).slice(0),
+        router = get(this, &#x27;router&#x27;),
+        namedRoute = resolvedParams[0];
+
+    if (!namedRoute) { return; }
+
+    Ember.assert(fmt(&quot;The attempt to link-to route &#x27;%@&#x27; failed. &quot; +
+                     &quot;The router did not find &#x27;%@&#x27; in its possible routes: &#x27;%@&#x27;&quot;,
+                     [namedRoute, namedRoute, keys(router.router.recognizer.names).join(&quot;&#x27;, &#x27;&quot;)]),
+                     router.hasRoute(namedRoute));
+
+    //normalize route name
+    var handlers = router.router.recognizer.handlersFor(namedRoute);
+    var normalizedPath = handlers[handlers.length - 1].handler;
+    if (namedRoute !== normalizedPath) {
+      //set namedRoute as currentWhen only when currentWhen is not given explicitly
+      if (!this.currentWhen) {
+        this.set(&#x27;currentWhen&#x27;, namedRoute);
+      }
+      namedRoute = handlers[handlers.length - 1].handler;
+      resolvedParams[0] = namedRoute;
+    }
+
+    for (var i = 1, len = resolvedParams.length; i &lt; len; ++i) {
+      var param = resolvedParams[i];
+      if (param === null || typeof param === &#x27;undefined&#x27;) {
+        // If contexts aren&#x27;t present, consider the linkView unloaded.
+        return;
+      }
+    }
+
+    if (Ember.FEATURES.isEnabled(&quot;query-params-new&quot;)) {
+      resolvedParams.push({ queryParams: get(this, &#x27;queryParams&#x27;) });
+    }
+
+    return resolvedParams;
+  }).property(&#x27;resolvedParams&#x27;, &#x27;queryParams&#x27;),
+
+  queryParamsObject: null,
+  queryParams: computed(function computeLinkViewQueryParams() {
+    return computeQueryParams(this, false);
+  }).property(&#x27;resolvedParams.[]&#x27;),
+
+  /**
+    Sets the element&#x27;s &#x60;href&#x60; attribute to the url for
+    the &#x60;LinkView&#x60;&#x27;s targeted route.
+
+    If the &#x60;LinkView&#x60;&#x27;s &#x60;tagName&#x60; is changed to a value other
+    than &#x60;a&#x60;, this property will be ignored.
+
+    @property href
+  **/
+  href: computed(function computeLinkViewHref() {
+    if (get(this, &#x27;tagName&#x27;) !== &#x27;a&#x27;) { return; }
+
+    var router = get(this, &#x27;router&#x27;),
+        routeArgs = get(this, &#x27;routeArgs&#x27;);
+
+    if (!routeArgs) {
+      return get(this, &#x27;loadingHref&#x27;);
+    }
+
+    if (Ember.FEATURES.isEnabled(&quot;query-params-new&quot;)) {
+      routeArgs = routeArgsWithoutDefaultQueryParams(this);
+    }
+
+    return router.generate.apply(router, routeArgs);
+  }).property(&#x27;routeArgs&#x27;),
+
+  /**
+    The default href value to use while a link-to is loading.
+    Only applies when tagName is &#x27;a&#x27;
+
+    @property loadingHref
+    @type String
+    @default #
+  */
+  loadingHref: &#x27;#&#x27;
+});
+
+LinkView.toString = function() { return &quot;LinkView&quot;; };
+
+/**
+  The &#x60;{{link-to}}&#x60; helper renders a link to the supplied
+  &#x60;routeName&#x60; passing an optionally supplied model to the
+  route as its &#x60;model&#x60; context of the route. The block
+  for &#x60;{{link-to}}&#x60; becomes the innerHTML of the rendered
+  element:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27;}}
+    Great Hamster Photos
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;html
+  &lt;a href=&quot;/hamster-photos&quot;&gt;
+    Great Hamster Photos
+  &lt;/a&gt;
+  &#x60;&#x60;&#x60;
+
+  ### Supplying a tagName
+  By default &#x60;{{link-to}}&#x60; renders an &#x60;&lt;a&gt;&#x60; element. This can
+  be overridden for a single use of &#x60;{{link-to}}&#x60; by supplying
+  a &#x60;tagName&#x60; option:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27; tagName=&quot;li&quot;}}
+    Great Hamster Photos
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;html
+  &lt;li&gt;
+    Great Hamster Photos
+  &lt;/li&gt;
+  &#x60;&#x60;&#x60;
+
+  To override this option for your entire application, see
+  &quot;Overriding Application-wide Defaults&quot;.
+
+  ### Disabling the &#x60;link-to&#x60; helper
+  By default &#x60;{{link-to}}&#x60; is enabled.
+  any passed value to &#x60;disabled&#x60; helper property will disable the &#x60;link-to&#x60; helper.
+
+  static use: the &#x60;disabled&#x60; option:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27; disabled=true}}
+    Great Hamster Photos
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  dynamic use: the &#x60;disabledWhen&#x60; option:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27; disabledWhen=controller.someProperty}}
+    Great Hamster Photos
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  any passed value to &#x60;disabled&#x60; will disable it except &#x60;undefined&#x60;.
+  to ensure that only &#x60;true&#x60; disable the &#x60;link-to&#x60; helper you can
+  override the global behaviour of &#x60;Ember.LinkView&#x60;.
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.LinkView.reopen({
+    disabled: Ember.computed(function(key, value) {
+      if (value !== undefined) {
+        this.set(&#x27;_isDisabled&#x27;, value === true);
+      }
+      return value === true ? get(this, &#x27;disabledClass&#x27;) : false;
+    })
+  });
+  &#x60;&#x60;&#x60;
+
+  see &quot;Overriding Application-wide Defaults&quot; for more.
+
+  ### Handling &#x60;href&#x60;
+  &#x60;{{link-to}}&#x60; will use your application&#x27;s Router to
+  fill the element&#x27;s &#x60;href&#x60; property with a url that
+  matches the path to the supplied &#x60;routeName&#x60; for your
+  routers&#x27;s configured &#x60;Location&#x60; scheme, which defaults
+  to Ember.HashLocation.
+
+  ### Handling current route
+  &#x60;{{link-to}}&#x60; will apply a CSS class name of &#x27;active&#x27;
+  when the application&#x27;s current route matches
+  the supplied routeName. For example, if the application&#x27;s
+  current route is &#x27;photoGallery.recent&#x27; the following
+  use of &#x60;{{link-to}}&#x60;:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery.recent&#x27;}}
+    Great Hamster Photos from the last week
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  will result in
+
+  &#x60;&#x60;&#x60;html
+  &lt;a href=&quot;/hamster-photos/this-week&quot; class=&quot;active&quot;&gt;
+    Great Hamster Photos
+  &lt;/a&gt;
+  &#x60;&#x60;&#x60;
+
+  The CSS class name used for active classes can be customized
+  for a single use of &#x60;{{link-to}}&#x60; by passing an &#x60;activeClass&#x60;
+  option:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery.recent&#x27; activeClass=&quot;current-url&quot;}}
+    Great Hamster Photos from the last week
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;html
+  &lt;a href=&quot;/hamster-photos/this-week&quot; class=&quot;current-url&quot;&gt;
+    Great Hamster Photos
+  &lt;/a&gt;
+  &#x60;&#x60;&#x60;
+
+  To override this option for your entire application, see
+  &quot;Overriding Application-wide Defaults&quot;.
+
+  ### Supplying a model
+  An optional model argument can be used for routes whose
+  paths contain dynamic segments. This argument will become
+  the model context of the linked route:
+
+  &#x60;&#x60;&#x60;javascript
+  App.Router.map(function() {
+    this.resource(&quot;photoGallery&quot;, {path: &quot;hamster-photos/:photo_id&quot;});
+  });
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27; aPhoto}}
+    {{aPhoto.title}}
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;html
+  &lt;a href=&quot;/hamster-photos/42&quot;&gt;
+    Tomster
+  &lt;/a&gt;
+  &#x60;&#x60;&#x60;
+
+  ### Supplying multiple models
+  For deep-linking to route paths that contain multiple
+  dynamic segments, multiple model arguments can be used.
+  As the router transitions through the route path, each
+  supplied model argument will become the context for the
+  route with the dynamic segments:
+
+  &#x60;&#x60;&#x60;javascript
+  App.Router.map(function() {
+    this.resource(&quot;photoGallery&quot;, {path: &quot;hamster-photos/:photo_id&quot;}, function() {
+      this.route(&quot;comment&quot;, {path: &quot;comments/:comment_id&quot;});
+    });
+  });
+  &#x60;&#x60;&#x60;
+  This argument will become the model context of the linked route:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery.comment&#x27; aPhoto comment}}
+    {{comment.body}}
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;html
+  &lt;a href=&quot;/hamster-photos/42/comment/718&quot;&gt;
+    A+++ would snuggle again.
+  &lt;/a&gt;
+  &#x60;&#x60;&#x60;
+
+  ### Supplying an explicit dynamic segment value
+  If you don&#x27;t have a model object available to pass to &#x60;{{link-to}}&#x60;,
+  an optional string or integer argument can be passed for routes whose
+  paths contain dynamic segments. This argument will become the value
+  of the dynamic segment:
+
+  &#x60;&#x60;&#x60;javascript
+  App.Router.map(function() {
+    this.resource(&quot;photoGallery&quot;, {path: &quot;hamster-photos/:photo_id&quot;});
+  });
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27; aPhotoId}}
+    {{aPhoto.title}}
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;html
+  &lt;a href=&quot;/hamster-photos/42&quot;&gt;
+    Tomster
+  &lt;/a&gt;
+  &#x60;&#x60;&#x60;
+
+  When transitioning into the linked route, the &#x60;model&#x60; hook will
+  be triggered with parameters including this passed identifier.
+
+  ### Allowing Default Action
+
+ By default the &#x60;{{link-to}}&#x60; helper prevents the default browser action
+ by calling &#x60;preventDefault()&#x60; as this sort of action bubbling is normally
+ handled internally and we do not want to take the browser to a new URL (for
+ example).
+
+ If you need to override this behavior specify &#x60;preventDefault=false&#x60; in
+ your template:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to &#x27;photoGallery&#x27; aPhotoId preventDefault=false}}
+    {{aPhotoId.title}}
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  ### Overriding attributes
+  You can override any given property of the Ember.LinkView
+  that is generated by the &#x60;{{link-to}}&#x60; helper by passing
+  key/value pairs, like so:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#link-to  aPhoto tagName=&#x27;li&#x27; title=&#x27;Following this link will change your life&#x27; classNames=&#x27;pic sweet&#x27;}}
+    Uh-mazing!
+  {{/link-to}}
+  &#x60;&#x60;&#x60;
+
+  See [Ember.LinkView](/api/classes/Ember.LinkView.html) for a
+  complete list of overrideable properties. Be sure to also
+  check out inherited properties of &#x60;LinkView&#x60;.
+
+  ### Overriding Application-wide Defaults
+  &#x60;&#x60;{{link-to}}&#x60;&#x60; creates an instance of Ember.LinkView
+  for rendering. To override options for your entire
+  application, reopen Ember.LinkView and supply the
+  desired values:
+
+  &#x60;&#x60;&#x60; javascript
+  Ember.LinkView.reopen({
+    activeClass: &quot;is-active&quot;,
+    tagName: &#x27;li&#x27;
+  })
+  &#x60;&#x60;&#x60;
+
+  It is also possible to override the default event in
+  this manner:
+
+  &#x60;&#x60;&#x60; javascript
+  Ember.LinkView.reopen({
+    eventName: &#x27;customEventName&#x27;
+  });
+  &#x60;&#x60;&#x60;
+
+  @method link-to
+  @for Ember.Handlebars.helpers
+  @param {String} routeName
+  @param {Object} [context]*
+  @param [options] {Object} Handlebars key/value pairs of options, you can override any property of Ember.LinkView
+  @return {String} HTML string
+  @see {Ember.LinkView}
+*/
+function linkToHelper(name) {
+  var options = slice.call(arguments, -1)[0],
+      params = slice.call(arguments, 0, -1),
+      hash = options.hash;
+
+  if (params[params.length - 1] instanceof QueryParams) {
+    hash.queryParamsObject = params.pop();
+  }
+
+  hash.disabledBinding = hash.disabledWhen;
+
+  if (!options.fn) {
+    var linkTitle = params.shift();
+    var linkType = options.types.shift();
+    var context = this;
+    if (linkType === &#x27;ID&#x27;) {
+      options.linkTextPath = linkTitle;
+      options.fn = function() {
+        return EmberHandlebars.getEscaped(context, linkTitle, options);
+      };
+    } else {
+      options.fn = function() {
+        return linkTitle;
+      };
+    }
+  }
+
+  hash.parameters = {
+    context: this,
+    options: options,
+    params: params
+  };
+
+  options.helperName = options.helperName || &#x27;link-to&#x27;;
+
+  return viewHelper.call(this, LinkView, options);
+};
+
+
+if (Ember.FEATURES.isEnabled(&quot;query-params-new&quot;)) {
+  EmberHandlebars.registerHelper(&#x27;query-params&#x27;, function queryParamsHelper(options) {
+    Ember.assert(fmt(&quot;The &#x60;query-params&#x60; helper only accepts hash parameters, e.g. (query-params queryParamPropertyName=&#x27;%@&#x27;) as opposed to just (query-params &#x27;%@&#x27;)&quot;, [options, options]), arguments.length === 1);
+
+    return QueryParams.create({
+      values: options.hash,
+      types: options.hashTypes
+    });
+  });
+}
+
+/**
+  See [link-to](/api/classes/Ember.Handlebars.helpers.html#method_link-to)
+
+  @method linkTo
+  @for Ember.Handlebars.helpers
+  @deprecated
+  @param {String} routeName
+  @param {Object} [context]*
+  @return {String} HTML string
+*/
+function deprecatedLinkToHelper() {
+  Ember.warn(&quot;The &#x27;linkTo&#x27; view helper is deprecated in favor of &#x27;link-to&#x27;&quot;);
+  return linkToHelper.apply(this, arguments);
+};
+
+export {LinkView, deprecatedLinkToHelper, linkToHelper}
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

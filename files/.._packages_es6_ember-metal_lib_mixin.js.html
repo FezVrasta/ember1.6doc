@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-metal/lib/mixin.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-metal/lib/mixin.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-metal
+*/
+
+import Ember from &quot;ember-metal/core&quot;; // warn, assert, wrap, et;
+import merge from &quot;ember-metal/merge&quot;;
+import {map, indexOf, forEach} from &quot;ember-metal/array&quot;;
+import {create} from &quot;ember-metal/platform&quot;;
+import {guidFor, meta, META_KEY, wrap, makeArray, apply} from &quot;ember-metal/utils&quot;;
+import expandProperties from &quot;ember-metal/expand_properties&quot;;
+import {Descriptor, defineProperty} from &quot;ember-metal/properties&quot;;
+import {ComputedProperty} from &quot;ember-metal/computed&quot;;
+import {Binding} from &quot;ember-metal/binding&quot;;
+import {addObserver, removeObserver, addBeforeObserver, removeBeforeObserver} from &quot;ember-metal/observer&quot;;
+import {addListener, removeListener} from &quot;ember-metal/events&quot;;
+
+var REQUIRED, Alias,
+    a_map = map,
+    a_indexOf = indexOf,
+    a_forEach = forEach,
+    a_slice = [].slice,
+    o_create = create,
+    defineProperty = defineProperty,
+    metaFor = meta;
+
+function superFunction(){
+  var ret, func = this.__nextSuper;
+  if (func) {
+    this.__nextSuper = null;
+    ret = apply(this, func, arguments);
+    this.__nextSuper = func;
+  }
+  return ret;
+}
+
+function mixinsMeta(obj) {
+  var m = metaFor(obj, true), ret = m.mixins;
+  if (!ret) {
+    ret = m.mixins = {};
+  } else if (!m.hasOwnProperty(&#x27;mixins&#x27;)) {
+    ret = m.mixins = o_create(ret);
+  }
+  return ret;
+}
+
+function initMixin(mixin, args) {
+  if (args &amp;&amp; args.length &gt; 0) {
+    mixin.mixins = a_map.call(args, function(x) {
+      if (x instanceof Mixin) { return x; }
+
+      // Note: Manually setup a primitive mixin here. This is the only
+      // way to actually get a primitive mixin. This way normal creation
+      // of mixins will give you combined mixins...
+      var mixin = new Mixin();
+      mixin.properties = x;
+      return mixin;
+    });
+  }
+  return mixin;
+}
+
+function isMethod(obj) {
+  return &#x27;function&#x27; === typeof obj &amp;&amp;
+         obj.isMethod !== false &amp;&amp;
+         obj !== Boolean &amp;&amp; obj !== Object &amp;&amp; obj !== Number &amp;&amp; obj !== Array &amp;&amp; obj !== Date &amp;&amp; obj !== String;
+}
+
+var CONTINUE = {};
+
+function mixinProperties(mixinsMeta, mixin) {
+  var guid;
+
+  if (mixin instanceof Mixin) {
+    guid = guidFor(mixin);
+    if (mixinsMeta[guid]) { return CONTINUE; }
+    mixinsMeta[guid] = mixin;
+    return mixin.properties;
+  } else {
+    return mixin; // apply anonymous mixin properties
+  }
+}
+
+function concatenatedMixinProperties(concatProp, props, values, base) {
+  var concats;
+
+  // reset before adding each new mixin to pickup concats from previous
+  concats = values[concatProp] || base[concatProp];
+  if (props[concatProp]) {
+    concats = concats ? concats.concat(props[concatProp]) : props[concatProp];
+  }
+
+  return concats;
+}
+
+function giveDescriptorSuper(meta, key, property, values, descs) {
+  var superProperty;
+
+  // Computed properties override methods, and do not call super to them
+  if (values[key] === undefined) {
+    // Find the original descriptor in a parent mixin
+    superProperty = descs[key];
+  }
+
+  // If we didn&#x27;t find the original descriptor in a parent mixin, find
+  // it on the original object.
+  superProperty = superProperty || meta.descs[key];
+
+  if (!superProperty || !(superProperty instanceof ComputedProperty)) {
+    return property;
+  }
+
+  // Since multiple mixins may inherit from the same parent, we need
+  // to clone the computed property so that other mixins do not receive
+  // the wrapped version.
+  property = o_create(property);
+  property.func = wrap(property.func, superProperty.func);
+
+  return property;
+}
+
+function giveMethodSuper(obj, key, method, values, descs) {
+  var superMethod;
+
+  // Methods overwrite computed properties, and do not call super to them.
+  if (descs[key] === undefined) {
+    // Find the original method in a parent mixin
+    superMethod = values[key];
+  }
+
+  // If we didn&#x27;t find the original value in a parent mixin, find it in
+  // the original object
+  superMethod = superMethod || obj[key];
+
+  // Only wrap the new method if the original method was a function
+  if (&#x27;function&#x27; !== typeof superMethod) {
+    return method;
+  }
+
+  return wrap(method, superMethod);
+}
+
+function applyConcatenatedProperties(obj, key, value, values) {
+  var baseValue = values[key] || obj[key];
+
+  if (baseValue) {
+    if (&#x27;function&#x27; === typeof baseValue.concat) {
+      return baseValue.concat(value);
+    } else {
+      return makeArray(baseValue).concat(value);
+    }
+  } else {
+    return makeArray(value);
+  }
+}
+
+function applyMergedProperties(obj, key, value, values) {
+  var baseValue = values[key] || obj[key];
+
+  if (!baseValue) { return value; }
+
+  var newBase = merge({}, baseValue),
+      hasFunction = false;
+
+  for (var prop in value) {
+    if (!value.hasOwnProperty(prop)) { continue; }
+
+    var propValue = value[prop];
+    if (isMethod(propValue)) {
+      // TODO: support for Computed Properties, etc?
+      hasFunction = true;
+      newBase[prop] = giveMethodSuper(obj, prop, propValue, baseValue, {});
+    } else {
+      newBase[prop] = propValue;
+    }
+  }
+
+  if (hasFunction) {
+    newBase._super = superFunction;
+  }
+
+  return newBase;
+}
+
+function addNormalizedProperty(base, key, value, meta, descs, values, concats, mergings) {
+  if (value instanceof Descriptor) {
+    if (value === REQUIRED &amp;&amp; descs[key]) { return CONTINUE; }
+
+    // Wrap descriptor function to implement
+    // __nextSuper() if needed
+    if (value.func) {
+      value = giveDescriptorSuper(meta, key, value, values, descs);
+    }
+
+    descs[key]  = value;
+    values[key] = undefined;
+  } else {
+    if ((concats &amp;&amp; a_indexOf.call(concats, key) &gt;= 0) ||
+                key === &#x27;concatenatedProperties&#x27; ||
+                key === &#x27;mergedProperties&#x27;) {
+      value = applyConcatenatedProperties(base, key, value, values);
+    } else if ((mergings &amp;&amp; a_indexOf.call(mergings, key) &gt;= 0)) {
+      value = applyMergedProperties(base, key, value, values);
+    } else if (isMethod(value)) {
+      value = giveMethodSuper(base, key, value, values, descs);
+    }
+
+    descs[key] = undefined;
+    values[key] = value;
+  }
+}
+
+function mergeMixins(mixins, m, descs, values, base, keys) {
+  var mixin, props, key, concats, mergings, meta;
+
+  function removeKeys(keyName) {
+    delete descs[keyName];
+    delete values[keyName];
+  }
+
+  for(var i=0, l=mixins.length; i&lt;l; i++) {
+    mixin = mixins[i];
+    Ember.assert(&#x27;Expected hash or Mixin instance, got &#x27; + Object.prototype.toString.call(mixin),
+                 typeof mixin === &#x27;object&#x27; &amp;&amp; mixin !== null &amp;&amp; Object.prototype.toString.call(mixin) !== &#x27;[object Array]&#x27;);
+
+    props = mixinProperties(m, mixin);
+    if (props === CONTINUE) { continue; }
+
+    if (props) {
+      meta = metaFor(base);
+      if (base.willMergeMixin) { base.willMergeMixin(props); }
+      concats = concatenatedMixinProperties(&#x27;concatenatedProperties&#x27;, props, values, base);
+      mergings = concatenatedMixinProperties(&#x27;mergedProperties&#x27;, props, values, base);
+
+      for (key in props) {
+        if (!props.hasOwnProperty(key)) { continue; }
+        keys.push(key);
+        addNormalizedProperty(base, key, props[key], meta, descs, values, concats, mergings);
+      }
+
+      // manually copy toString() because some JS engines do not enumerate it
+      if (props.hasOwnProperty(&#x27;toString&#x27;)) { base.toString = props.toString; }
+    } else if (mixin.mixins) {
+      mergeMixins(mixin.mixins, m, descs, values, base, keys);
+      if (mixin._without) { a_forEach.call(mixin._without, removeKeys); }
+    }
+  }
+}
+
+var IS_BINDING = /^.+Binding$/;
+
+function detectBinding(obj, key, value, m) {
+  if (IS_BINDING.test(key)) {
+    var bindings = m.bindings;
+    if (!bindings) {
+      bindings = m.bindings = {};
+    } else if (!m.hasOwnProperty(&#x27;bindings&#x27;)) {
+      bindings = m.bindings = o_create(m.bindings);
+    }
+    bindings[key] = value;
+  }
+}
+
+function connectBindings(obj, m) {
+  // TODO Mixin.apply(instance) should disconnect binding if exists
+  var bindings = m.bindings, key, binding, to;
+  if (bindings) {
+    for (key in bindings) {
+      binding = bindings[key];
+      if (binding) {
+        to = key.slice(0, -7); // strip Binding off end
+        if (binding instanceof Binding) {
+          binding = binding.copy(); // copy prototypes&#x27; instance
+          binding.to(to);
+        } else { // binding is string path
+          binding = new Binding(to, binding);
+        }
+        binding.connect(obj);
+        obj[key] = binding;
+      }
+    }
+    // mark as applied
+    m.bindings = {};
+  }
+}
+
+function finishPartial(obj, m) {
+  connectBindings(obj, m || metaFor(obj));
+  return obj;
+}
+
+function followAlias(obj, desc, m, descs, values) {
+  var altKey = desc.methodName, value;
+  if (descs[altKey] || values[altKey]) {
+    value = values[altKey];
+    desc  = descs[altKey];
+  } else if (m.descs[altKey]) {
+    desc  = m.descs[altKey];
+    value = undefined;
+  } else {
+    desc = undefined;
+    value = obj[altKey];
+  }
+
+  return { desc: desc, value: value };
+}
+
+function updateObserversAndListeners(obj, key, observerOrListener, pathsKey, updateMethod) {
+  var paths = observerOrListener[pathsKey];
+
+  if (paths) {
+    for (var i=0, l=paths.length; i&lt;l; i++) {
+      updateMethod(obj, paths[i], null, key);
+    }
+  }
+}
+
+function replaceObserversAndListeners(obj, key, observerOrListener) {
+  var prev = obj[key];
+
+  if (&#x27;function&#x27; === typeof prev) {
+    updateObserversAndListeners(obj, key, prev, &#x27;__ember_observesBefore__&#x27;, removeBeforeObserver);
+    updateObserversAndListeners(obj, key, prev, &#x27;__ember_observes__&#x27;, removeObserver);
+    updateObserversAndListeners(obj, key, prev, &#x27;__ember_listens__&#x27;, removeListener);
+  }
+
+  if (&#x27;function&#x27; === typeof observerOrListener) {
+    updateObserversAndListeners(obj, key, observerOrListener, &#x27;__ember_observesBefore__&#x27;, addBeforeObserver);
+    updateObserversAndListeners(obj, key, observerOrListener, &#x27;__ember_observes__&#x27;, addObserver);
+    updateObserversAndListeners(obj, key, observerOrListener, &#x27;__ember_listens__&#x27;, addListener);
+  }
+}
+
+function applyMixin(obj, mixins, partial) {
+  var descs = {}, values = {}, m = metaFor(obj),
+      key, value, desc, keys = [];
+
+  obj._super = superFunction;
+
+  // Go through all mixins and hashes passed in, and:
+  //
+  // * Handle concatenated properties
+  // * Handle merged properties
+  // * Set up _super wrapping if necessary
+  // * Set up computed property descriptors
+  // * Copying &#x60;toString&#x60; in broken browsers
+  mergeMixins(mixins, mixinsMeta(obj), descs, values, obj, keys);
+
+  for(var i = 0, l = keys.length; i &lt; l; i++) {
+    key = keys[i];
+    if (key === &#x27;constructor&#x27; || !values.hasOwnProperty(key)) { continue; }
+
+    desc = descs[key];
+    value = values[key];
+
+    if (desc === REQUIRED) { continue; }
+
+    while (desc &amp;&amp; desc instanceof Alias) {
+      var followed = followAlias(obj, desc, m, descs, values);
+      desc = followed.desc;
+      value = followed.value;
+    }
+
+    if (desc === undefined &amp;&amp; value === undefined) { continue; }
+
+    replaceObserversAndListeners(obj, key, value);
+    detectBinding(obj, key, value, m);
+    defineProperty(obj, key, desc, value, m);
+  }
+
+  if (!partial) { // don&#x27;t apply to prototype
+    finishPartial(obj, m);
+  }
+
+  return obj;
+}
+
+/**
+  @method mixin
+  @for Ember
+  @param obj
+  @param mixins*
+  @return obj
+*/
+function mixin(obj) {
+  var args = a_slice.call(arguments, 1);
+  applyMixin(obj, args, false);
+  return obj;
+};
+
+/**
+  The &#x60;Ember.Mixin&#x60; class allows you to create mixins, whose properties can be
+  added to other classes. For instance,
+
+  &#x60;&#x60;&#x60;javascript
+  App.Editable = Ember.Mixin.create({
+    edit: function() {
+      console.log(&#x27;starting to edit&#x27;);
+      this.set(&#x27;isEditing&#x27;, true);
+    },
+    isEditing: false
+  });
+
+  // Mix mixins into classes by passing them as the first arguments to
+  // .extend.
+  App.CommentView = Ember.View.extend(App.Editable, {
+    template: Ember.Handlebars.compile(&#x27;{{#if view.isEditing}}...{{else}}...{{/if}}&#x27;)
+  });
+
+  commentView = App.CommentView.create();
+  commentView.edit(); // outputs &#x27;starting to edit&#x27;
+  &#x60;&#x60;&#x60;
+
+  Note that Mixins are created with &#x60;Ember.Mixin.create&#x60;, not
+  &#x60;Ember.Mixin.extend&#x60;.
+
+  Note that mixins extend a constructor&#x27;s prototype so arrays and object literals
+  defined as properties will be shared amongst objects that implement the mixin.
+  If you want to define a property in a mixin that is not shared, you can define
+  it either as a computed property or have it be created on initialization of the object.
+
+  &#x60;&#x60;&#x60;javascript
+  //filters array will be shared amongst any object implementing mixin
+  App.Filterable = Ember.Mixin.create({
+    filters: Ember.A()
+  });
+
+  //filters will be a separate  array for every object implementing the mixin
+  App.Filterable = Ember.Mixin.create({
+    filters: Ember.computed(function(){return Ember.A();})
+  });
+
+  //filters will be created as a separate array during the object&#x27;s initialization
+  App.Filterable = Ember.Mixin.create({
+    init: function() {
+      this._super();
+      this.set(&quot;filters&quot;, Ember.A());
+    }
+  });
+  &#x60;&#x60;&#x60;
+
+  @class Mixin
+  @namespace Ember
+*/
+function Mixin() { return initMixin(this, arguments); };
+
+Mixin.prototype = {
+  properties: null,
+  mixins: null,
+  ownerConstructor: null
+};
+
+Mixin._apply = applyMixin;
+
+Mixin.applyPartial = function(obj) {
+  var args = a_slice.call(arguments, 1);
+  return applyMixin(obj, args, true);
+};
+
+Mixin.finishPartial = finishPartial;
+
+// ES6TODO: this relies on a global state?
+Ember.anyUnprocessedMixins = false;
+
+/**
+  @method create
+  @static
+  @param arguments*
+*/
+Mixin.create = function() {
+  // ES6TODO: this relies on a global state?
+  Ember.anyUnprocessedMixins = true;
+  var M = this;
+  return initMixin(new M(), arguments);
+};
+
+var MixinPrototype = Mixin.prototype;
+
+/**
+  @method reopen
+  @param arguments*
+*/
+MixinPrototype.reopen = function() {
+  var mixin, tmp;
+
+  if (this.properties) {
+    mixin = Mixin.create();
+    mixin.properties = this.properties;
+    delete this.properties;
+    this.mixins = [mixin];
+  } else if (!this.mixins) {
+    this.mixins = [];
+  }
+
+  var len = arguments.length, mixins = this.mixins, idx;
+
+  for(idx=0; idx &lt; len; idx++) {
+    mixin = arguments[idx];
+    Ember.assert(&#x27;Expected hash or Mixin instance, got &#x27; + Object.prototype.toString.call(mixin),
+                 typeof mixin === &#x27;object&#x27; &amp;&amp; mixin !== null &amp;&amp; Object.prototype.toString.call(mixin) !== &#x27;[object Array]&#x27;);
+
+    if (mixin instanceof Mixin) {
+      mixins.push(mixin);
+    } else {
+      tmp = Mixin.create();
+      tmp.properties = mixin;
+      mixins.push(tmp);
+    }
+  }
+
+  return this;
+};
+
+/**
+  @method apply
+  @param obj
+  @return applied object
+*/
+MixinPrototype.apply = function(obj) {
+  return applyMixin(obj, [this], false);
+};
+
+MixinPrototype.applyPartial = function(obj) {
+  return applyMixin(obj, [this], true);
+};
+
+function _detect(curMixin, targetMixin, seen) {
+  var guid = guidFor(curMixin);
+
+  if (seen[guid]) { return false; }
+  seen[guid] = true;
+
+  if (curMixin === targetMixin) { return true; }
+  var mixins = curMixin.mixins, loc = mixins ? mixins.length : 0;
+  while (--loc &gt;= 0) {
+    if (_detect(mixins[loc], targetMixin, seen)) { return true; }
+  }
+  return false;
+}
+
+/**
+  @method detect
+  @param obj
+  @return {Boolean}
+*/
+MixinPrototype.detect = function(obj) {
+  if (!obj) { return false; }
+  if (obj instanceof Mixin) { return _detect(obj, this, {}); }
+  var m = obj[META_KEY],
+      mixins = m &amp;&amp; m.mixins;
+  if (mixins) {
+    return !!mixins[guidFor(this)];
+  }
+  return false;
+};
+
+MixinPrototype.without = function() {
+  var ret = new Mixin(this);
+  ret._without = a_slice.call(arguments);
+  return ret;
+};
+
+function _keys(ret, mixin, seen) {
+  if (seen[guidFor(mixin)]) { return; }
+  seen[guidFor(mixin)] = true;
+
+  if (mixin.properties) {
+    var props = mixin.properties;
+    for (var key in props) {
+      if (props.hasOwnProperty(key)) { ret[key] = true; }
+    }
+  } else if (mixin.mixins) {
+    a_forEach.call(mixin.mixins, function(x) { _keys(ret, x, seen); });
+  }
+}
+
+MixinPrototype.keys = function() {
+  var keys = {}, seen = {}, ret = [];
+  _keys(keys, this, seen);
+  for(var key in keys) {
+    if (keys.hasOwnProperty(key)) { ret.push(key); }
+  }
+  return ret;
+};
+
+// returns the mixins currently applied to the specified object
+// TODO: Make Ember.mixin
+Mixin.mixins = function(obj) {
+  var m = obj[META_KEY],
+      mixins = m &amp;&amp; m.mixins, ret = [];
+
+  if (!mixins) { return ret; }
+
+  for (var key in mixins) {
+    var mixin = mixins[key];
+
+    // skip primitive mixins since these are always anonymous
+    if (!mixin.properties) { ret.push(mixin); }
+  }
+
+  return ret;
+};
+
+REQUIRED = new Descriptor();
+REQUIRED.toString = function() { return &#x27;(Required Property)&#x27;; };
+
+/**
+  Denotes a required property for a mixin
+
+  @method required
+  @for Ember
+*/
+function required() {
+  return REQUIRED;
+};
+
+Alias = function(methodName) {
+  this.methodName = methodName;
+};
+Alias.prototype = new Descriptor();
+
+/**
+  Makes a method available via an additional name.
+
+  &#x60;&#x60;&#x60;javascript
+  App.Person = Ember.Object.extend({
+    name: function() {
+      return &#x27;Tomhuda Katzdale&#x27;;
+    },
+    moniker: Ember.aliasMethod(&#x27;name&#x27;)
+  });
+
+  var goodGuy = App.Person.create()
+  &#x60;&#x60;&#x60;
+
+  @method aliasMethod
+  @for Ember
+  @param {String} methodName name of the method to alias
+  @return {Ember.Descriptor}
+*/
+function aliasMethod(methodName) {
+  return new Alias(methodName);
+};
+
+// ..........................................................
+// OBSERVER HELPER
+//
+
+/**
+  Specify a method that observes property changes.
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.Object.extend({
+    valueObserver: Ember.observer(&#x27;value&#x27;, function() {
+      // Executes whenever the &quot;value&quot; property changes
+    })
+  });
+  &#x60;&#x60;&#x60;
+
+  In the future this method may become asynchronous. If you want to ensure
+  synchronous behavior, use &#x60;immediateObserver&#x60;.
+
+  Also available as &#x60;Function.prototype.observes&#x60; if prototype extensions are
+  enabled.
+
+  @method observer
+  @for Ember
+  @param {String} propertyNames*
+  @param {Function} func
+  @return func
+*/
+function observer() {
+  var func  = a_slice.call(arguments, -1)[0];
+  var paths;
+
+  var addWatchedProperty = function (path) { paths.push(path); };
+  var _paths = a_slice.call(arguments, 0, -1);
+
+  if (typeof func !== &quot;function&quot;) {
+    // revert to old, soft-deprecated argument ordering
+
+    func  = arguments[0];
+    _paths = a_slice.call(arguments, 1);
+  }
+
+  paths = [];
+
+  for (var i=0; i&lt;_paths.length; ++i) {
+    expandProperties(_paths[i], addWatchedProperty);
+  }
+
+  if (typeof func !== &quot;function&quot;) {
+    throw new Ember.Error(&quot;Ember.observer called without a function&quot;);
+  }
+
+  func.__ember_observes__ = paths;
+  return func;
+};
+
+/**
+  Specify a method that observes property changes.
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.Object.extend({
+    valueObserver: Ember.immediateObserver(&#x27;value&#x27;, function() {
+      // Executes whenever the &quot;value&quot; property changes
+    })
+  });
+  &#x60;&#x60;&#x60;
+
+  In the future, &#x60;Ember.observer&#x60; may become asynchronous. In this event,
+  &#x60;Ember.immediateObserver&#x60; will maintain the synchronous behavior.
+
+  Also available as &#x60;Function.prototype.observesImmediately&#x60; if prototype extensions are
+  enabled.
+
+  @method immediateObserver
+  @for Ember
+  @param {String} propertyNames*
+  @param {Function} func
+  @return func
+*/
+function immediateObserver() {
+  for (var i=0, l=arguments.length; i&lt;l; i++) {
+    var arg = arguments[i];
+    Ember.assert(&quot;Immediate observers must observe internal properties only, not properties on other objects.&quot;, typeof arg !== &quot;string&quot; || arg.indexOf(&#x27;.&#x27;) === -1);
+  }
+
+  return observer.apply(this, arguments);
+};
+
+/**
+  When observers fire, they are called with the arguments &#x60;obj&#x60;, &#x60;keyName&#x60;.
+
+  Note, &#x60;@each.property&#x60; observer is called per each add or replace of an element
+  and it&#x27;s not called with a specific enumeration item.
+
+  A &#x60;beforeObserver&#x60; fires before a property changes.
+
+  A &#x60;beforeObserver&#x60; is an alternative form of &#x60;.observesBefore()&#x60;.
+
+  &#x60;&#x60;&#x60;javascript
+  App.PersonView = Ember.View.extend({
+
+    friends: [{ name: &#x27;Tom&#x27; }, { name: &#x27;Stefan&#x27; }, { name: &#x27;Kris&#x27; }],
+
+    valueWillChange: Ember.beforeObserver(&#x27;content.value&#x27;, function(obj, keyName) {
+      this.changingFrom = obj.get(keyName);
+    }),
+
+    valueDidChange: Ember.observer(&#x27;content.value&#x27;, function(obj, keyName) {
+        // only run if updating a value already in the DOM
+        if (this.get(&#x27;state&#x27;) === &#x27;inDOM&#x27;) {
+          var color = obj.get(keyName) &gt; this.changingFrom ? &#x27;green&#x27; : &#x27;red&#x27;;
+          // logic
+        }
+    }),
+
+    friendsDidChange: Ember.observer(&#x27;friends.@each.name&#x27;, function(obj, keyName) {
+      // some logic
+      // obj.get(keyName) returns friends array
+    })
+  });
+  &#x60;&#x60;&#x60;
+
+  Also available as &#x60;Function.prototype.observesBefore&#x60; if prototype extensions are
+  enabled.
+
+  @method beforeObserver
+  @for Ember
+  @param {String} propertyNames*
+  @param {Function} func
+  @return func
+*/
+function beforeObserver() {
+  var func  = a_slice.call(arguments, -1)[0];
+  var paths;
+
+  var addWatchedProperty = function(path) { paths.push(path); };
+
+  var _paths = a_slice.call(arguments, 0, -1);
+
+  if (typeof func !== &quot;function&quot;) {
+    // revert to old, soft-deprecated argument ordering
+
+    func  = arguments[0];
+    _paths = a_slice.call(arguments, 1);
+  }
+
+  paths = [];
+
+  for (var i=0; i&lt;_paths.length; ++i) {
+    expandProperties(_paths[i], addWatchedProperty);
+  }
+
+  if (typeof func !== &quot;function&quot;) {
+    throw new Ember.Error(&quot;Ember.beforeObserver called without a function&quot;);
+  }
+
+  func.__ember_observesBefore__ = paths;
+  return func;
+};
+
+export {IS_BINDING, mixin, Mixin, required, aliasMethod, observer, immediateObserver, beforeObserver}
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-testing/lib/test.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-testing/lib/test.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import Ember from &quot;ember-metal/core&quot;;
+import emberRun from &quot;ember-metal/run_loop&quot;;
+import {create} from &quot;ember-metal/platform&quot;;
+import compare from &quot;ember-runtime/compare&quot;;
+import RSVP from &quot;ember-runtime/ext/rsvp&quot;;
+import setupForTesting from &quot;ember-testing/setup_for_testing&quot;;
+import EmberApplication from &quot;ember-application/system/application&quot;;
+
+/**
+  @module ember
+  @submodule ember-testing
+ */
+var slice = [].slice,
+    helpers = {},
+    injectHelpersCallbacks = [];
+
+/**
+  This is a container for an assortment of testing related functionality:
+
+  * Choose your default test adapter (for your framework of choice).
+  * Register/Unregister additional test helpers.
+  * Setup callbacks to be fired when the test helpers are injected into
+    your application.
+
+  @class Test
+  @namespace Ember
+*/
+var Test = {
+
+  /**
+    &#x60;registerHelper&#x60; is used to register a test helper that will be injected
+    when &#x60;App.injectTestHelpers&#x60; is called.
+
+    The helper method will always be called with the current Application as
+    the first parameter.
+
+    For example:
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.Test.registerHelper(&#x27;boot&#x27;, function(app) {
+      Ember.run(app, app.advanceReadiness);
+    });
+    &#x60;&#x60;&#x60;
+
+    This helper can later be called without arguments because it will be
+    called with &#x60;app&#x60; as the first parameter.
+
+    &#x60;&#x60;&#x60;javascript
+    App = Ember.Application.create();
+    App.injectTestHelpers();
+    boot();
+    &#x60;&#x60;&#x60;
+
+    @public
+    @method registerHelper
+    @param {String} name The name of the helper method to add.
+    @param {Function} helperMethod
+    @param options {Object}
+  */
+  registerHelper: function(name, helperMethod) {
+    helpers[name] = {
+      method: helperMethod,
+      meta: { wait: false }
+    };
+  },
+
+  /**
+    &#x60;registerAsyncHelper&#x60; is used to register an async test helper that will be injected
+    when &#x60;App.injectTestHelpers&#x60; is called.
+
+    The helper method will always be called with the current Application as
+    the first parameter.
+
+    For example:
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.Test.registerAsyncHelper(&#x27;boot&#x27;, function(app) {
+      Ember.run(app, app.advanceReadiness);
+    });
+    &#x60;&#x60;&#x60;
+
+    The advantage of an async helper is that it will not run
+    until the last async helper has completed.  All async helpers
+    after it will wait for it complete before running.
+
+
+    For example:
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.Test.registerAsyncHelper(&#x27;deletePost&#x27;, function(app, postId) {
+      click(&#x27;.delete-&#x27; + postId);
+    });
+
+    // ... in your test
+    visit(&#x27;/post/2&#x27;);
+    deletePost(2);
+    visit(&#x27;/post/3&#x27;);
+    deletePost(3);
+    &#x60;&#x60;&#x60;
+
+    @public
+    @method registerAsyncHelper
+    @param {String} name The name of the helper method to add.
+    @param {Function} helperMethod
+    @since 1.2.0
+  */
+  registerAsyncHelper: function(name, helperMethod) {
+    helpers[name] = {
+      method: helperMethod,
+      meta: { wait: true }
+    };
+  },
+
+  /**
+    Remove a previously added helper method.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.Test.unregisterHelper(&#x27;wait&#x27;);
+    &#x60;&#x60;&#x60;
+
+    @public
+    @method unregisterHelper
+    @param {String} name The helper to remove.
+  */
+  unregisterHelper: function(name) {
+    delete helpers[name];
+    delete Test.Promise.prototype[name];
+  },
+
+  /**
+    Used to register callbacks to be fired whenever &#x60;App.injectTestHelpers&#x60;
+    is called.
+
+    The callback will receive the current application as an argument.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.Test.onInjectHelpers(function() {
+      Ember.$(document).ajaxSend(function() {
+        Test.pendingAjaxRequests++;
+      });
+
+      Ember.$(document).ajaxComplete(function() {
+        Test.pendingAjaxRequests--;
+      });
+    });
+    &#x60;&#x60;&#x60;
+
+    @public
+    @method onInjectHelpers
+    @param {Function} callback The function to be called.
+  */
+  onInjectHelpers: function(callback) {
+    injectHelpersCallbacks.push(callback);
+  },
+
+  /**
+    This returns a thenable tailored for testing.  It catches failed
+    &#x60;onSuccess&#x60; callbacks and invokes the &#x60;Ember.Test.adapter.exception&#x60;
+    callback in the last chained then.
+
+    This method should be returned by async helpers such as &#x60;wait&#x60;.
+
+    @public
+    @method promise
+    @param {Function} resolver The function used to resolve the promise.
+  */
+  promise: function(resolver) {
+    return new Test.Promise(resolver);
+  },
+
+  /**
+   Used to allow ember-testing to communicate with a specific testing
+   framework.
+
+   You can manually set it before calling &#x60;App.setupForTesting()&#x60;.
+
+   Example:
+
+   &#x60;&#x60;&#x60;javascript
+   Ember.Test.adapter = MyCustomAdapter.create()
+   &#x60;&#x60;&#x60;
+
+   If you do not set it, ember-testing will default to &#x60;Ember.Test.QUnitAdapter&#x60;.
+
+   @public
+   @property adapter
+   @type {Class} The adapter to be used.
+   @default Ember.Test.QUnitAdapter
+  */
+  adapter: null,
+
+  /**
+    Replacement for &#x60;Ember.RSVP.resolve&#x60;
+    The only difference is this uses
+    and instance of &#x60;Ember.Test.Promise&#x60;
+
+    @public
+    @method resolve
+    @param {Mixed} The value to resolve
+    @since 1.2.0
+  */
+  resolve: function(val) {
+    return Test.promise(function(resolve) {
+      return resolve(val);
+    });
+  },
+
+  /**
+     This allows ember-testing to play nicely with other asynchronous
+     events, such as an application that is waiting for a CSS3
+     transition or an IndexDB transaction.
+
+     For example:
+
+     &#x60;&#x60;&#x60;javascript
+     Ember.Test.registerWaiter(function() {
+       return myPendingTransactions() == 0;
+     });
+     &#x60;&#x60;&#x60;
+     The &#x60;context&#x60; argument allows you to optionally specify the &#x60;this&#x60;
+     with which your callback will be invoked.
+
+     For example:
+
+     &#x60;&#x60;&#x60;javascript
+     Ember.Test.registerWaiter(MyDB, MyDB.hasPendingTransactions);
+     &#x60;&#x60;&#x60;
+
+     @public
+     @method registerWaiter
+     @param {Object} context (optional)
+     @param {Function} callback
+     @since 1.2.0
+  */
+  registerWaiter: function(context, callback) {
+    if (arguments.length === 1) {
+      callback = context;
+      context = null;
+    }
+    if (!this.waiters) {
+      this.waiters = Ember.A();
+    }
+    this.waiters.push([context, callback]);
+  },
+  /**
+     &#x60;unregisterWaiter&#x60; is used to unregister a callback that was
+     registered with &#x60;registerWaiter&#x60;.
+
+     @public
+     @method unregisterWaiter
+     @param {Object} context (optional)
+     @param {Function} callback
+     @since 1.2.0
+  */
+  unregisterWaiter: function(context, callback) {
+    var pair;
+    if (!this.waiters) { return; }
+    if (arguments.length === 1) {
+      callback = context;
+      context = null;
+    }
+    pair = [context, callback];
+    this.waiters = Ember.A(this.waiters.filter(function(elt) {
+      return compare(elt, pair)!==0;
+    }));
+  }
+};
+
+function helper(app, name) {
+  var fn = helpers[name].method,
+      meta = helpers[name].meta;
+
+  return function() {
+    var args = slice.call(arguments),
+        lastPromise = Test.lastPromise;
+
+    args.unshift(app);
+
+    // some helpers are not async and
+    // need to return a value immediately.
+    // example: &#x60;find&#x60;
+    if (!meta.wait) {
+      return fn.apply(app, args);
+    }
+
+    if (!lastPromise) {
+      // It&#x27;s the first async helper in current context
+      lastPromise = fn.apply(app, args);
+    } else {
+      // wait for last helper&#x27;s promise to resolve
+      // and then execute
+      run(function() {
+        lastPromise = Test.resolve(lastPromise).then(function() {
+          return fn.apply(app, args);
+        });
+      });
+    }
+
+    return lastPromise;
+  };
+}
+
+function run(fn) {
+  if (!emberRun.currentRunLoop) {
+    emberRun(fn);
+  } else {
+    fn();
+  }
+}
+
+EmberApplication.reopen({
+  /**
+   This property contains the testing helpers for the current application. These
+   are created once you call &#x60;injectTestHelpers&#x60; on your &#x60;Ember.Application&#x60;
+   instance. The included helpers are also available on the &#x60;window&#x60; object by
+   default, but can be used from this object on the individual application also.
+
+    @property testHelpers
+    @type {Object}
+    @default {}
+  */
+  testHelpers: {},
+
+  /**
+   This property will contain the original methods that were registered
+   on the &#x60;helperContainer&#x60; before &#x60;injectTestHelpers&#x60; is called.
+
+   When &#x60;removeTestHelpers&#x60; is called, these methods are restored to the
+   &#x60;helperContainer&#x60;.
+
+    @property originalMethods
+    @type {Object}
+    @default {}
+    @private
+    @since 1.3.0
+  */
+  originalMethods: {},
+
+
+  /**
+  This property indicates whether or not this application is currently in
+  testing mode. This is set when &#x60;setupForTesting&#x60; is called on the current
+  application.
+
+  @property testing
+  @type {Boolean}
+  @default false
+  @since 1.3.0
+  */
+  testing: false,
+
+  /**
+   This hook defers the readiness of the application, so that you can start
+   the app when your tests are ready to run. It also sets the router&#x27;s
+   location to &#x27;none&#x27;, so that the window&#x27;s location will not be modified
+   (preventing both accidental leaking of state between tests and interference
+   with your testing framework).
+
+   Example:
+
+  &#x60;&#x60;&#x60;
+  App.setupForTesting();
+  &#x60;&#x60;&#x60;
+
+    @method setupForTesting
+  */
+  setupForTesting: function() {
+    setupForTesting();
+
+    this.testing = true;
+
+    this.Router.reopen({
+      location: &#x27;none&#x27;
+    });
+  },
+
+  /**
+    This will be used as the container to inject the test helpers into. By
+    default the helpers are injected into &#x60;window&#x60;.
+
+    @property helperContainer
+    @type {Object} The object to be used for test helpers.
+    @default window
+    @since 1.2.0
+  */
+  helperContainer: window,
+
+  /**
+    This injects the test helpers into the &#x60;helperContainer&#x60; object. If an object is provided
+    it will be used as the helperContainer. If &#x60;helperContainer&#x60; is not set it will default
+    to &#x60;window&#x60;. If a function of the same name has already been defined it will be cached
+    (so that it can be reset if the helper is removed with &#x60;unregisterHelper&#x60; or
+    &#x60;removeTestHelpers&#x60;).
+
+   Any callbacks registered with &#x60;onInjectHelpers&#x60; will be called once the
+   helpers have been injected.
+
+  Example:
+  &#x60;&#x60;&#x60;
+  App.injectTestHelpers();
+  &#x60;&#x60;&#x60;
+
+    @method injectTestHelpers
+  */
+  injectTestHelpers: function(helperContainer) {
+    if (helperContainer) { this.helperContainer = helperContainer; }
+
+    this.testHelpers = {};
+    for (var name in helpers) {
+      this.originalMethods[name] = this.helperContainer[name];
+      this.testHelpers[name] = this.helperContainer[name] = helper(this, name);
+      protoWrap(Test.Promise.prototype, name, helper(this, name), helpers[name].meta.wait);
+    }
+
+    for(var i = 0, l = injectHelpersCallbacks.length; i &lt; l; i++) {
+      injectHelpersCallbacks[i](this);
+    }
+  },
+
+  /**
+    This removes all helpers that have been registered, and resets and functions
+    that were overridden by the helpers.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    App.removeTestHelpers();
+    &#x60;&#x60;&#x60;
+
+    @public
+    @method removeTestHelpers
+  */
+  removeTestHelpers: function() {
+    for (var name in helpers) {
+      this.helperContainer[name] = this.originalMethods[name];
+      delete this.testHelpers[name];
+      delete this.originalMethods[name];
+    }
+  }
+});
+
+// This method is no longer needed
+// But still here for backwards compatibility
+// of helper chaining
+function protoWrap(proto, name, callback, isAsync) {
+  proto[name] = function() {
+    var args = arguments;
+    if (isAsync) {
+      return callback.apply(this, args);
+    } else {
+      return this.then(function() {
+        return callback.apply(this, args);
+      });
+    }
+  };
+}
+
+Test.Promise = function() {
+  RSVP.Promise.apply(this, arguments);
+  Test.lastPromise = this;
+};
+
+Test.Promise.prototype = create(RSVP.Promise.prototype);
+Test.Promise.prototype.constructor = Test.Promise;
+
+// Patch &#x60;then&#x60; to isolate async methods
+// specifically &#x60;Ember.Test.lastPromise&#x60;
+var originalThen = RSVP.Promise.prototype.then;
+Test.Promise.prototype.then = function(onSuccess, onFailure) {
+  return originalThen.call(this, function(val) {
+    return isolate(onSuccess, val);
+  }, onFailure);
+};
+
+// This method isolates nested async methods
+// so that they don&#x27;t conflict with other last promises.
+//
+// 1. Set &#x60;Ember.Test.lastPromise&#x60; to null
+// 2. Invoke method
+// 3. Return the last promise created during method
+// 4. Restore &#x60;Ember.Test.lastPromise&#x60; to original value
+function isolate(fn, val) {
+  var value, lastPromise;
+
+  // Reset lastPromise for nested helpers
+  Test.lastPromise = null;
+
+  value = fn(val);
+
+  lastPromise = Test.lastPromise;
+
+  // If the method returned a promise
+  // return that promise. If not,
+  // return the last async helper&#x27;s promise
+  if ((value &amp;&amp; (value instanceof Test.Promise)) || !lastPromise) {
+    return value;
+  } else {
+    run(function() {
+      lastPromise = Test.resolve(lastPromise).then(function() {
+        return value;
+      });
+    });
+    return lastPromise;
+  }
+}
+
+export default Test;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

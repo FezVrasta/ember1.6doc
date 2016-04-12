@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-runtime/lib/mixins/enumerable.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-runtime/lib/mixins/enumerable.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-runtime
+*/
+
+// ..........................................................
+// HELPERS
+//
+
+import Ember from &quot;ember-metal/core&quot;;
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {apply} from &quot;ember-metal/utils&quot;;
+import {Mixin, required, aliasMethod} from &quot;ember-metal/mixin&quot;;
+import EnumerableUtils from &quot;ember-metal/enumerable_utils&quot;;
+import {computed} from &quot;ember-metal/computed&quot;;
+import {propertyWillChange, propertyDidChange} from &quot;ember-metal/property_events&quot;;
+import {addListener, removeListener, sendEvent, hasListeners} from &quot;ember-metal/events&quot;;
+import compare from &quot;ember-runtime/compare&quot;;
+
+var a_slice = Array.prototype.slice;
+var a_indexOf = EnumerableUtils.indexOf;
+
+var contexts = [];
+
+function popCtx() {
+  return contexts.length===0 ? {} : contexts.pop();
+}
+
+function pushCtx(ctx) {
+  contexts.push(ctx);
+  return null;
+}
+
+function iter(key, value) {
+  var valueProvided = arguments.length === 2;
+
+  function i(item) {
+    var cur = get(item, key);
+    return valueProvided ? value===cur : !!cur;
+  }
+  return i ;
+}
+
+/**
+  This mixin defines the common interface implemented by enumerable objects
+  in Ember. Most of these methods follow the standard Array iteration
+  API defined up to JavaScript 1.8 (excluding language-specific features that
+  cannot be emulated in older versions of JavaScript).
+
+  This mixin is applied automatically to the Array class on page load, so you
+  can use any of these methods on simple arrays. If Array already implements
+  one of these methods, the mixin will not override them.
+
+  ## Writing Your Own Enumerable
+
+  To make your own custom class enumerable, you need two items:
+
+  1. You must have a length property. This property should change whenever
+     the number of items in your enumerable object changes. If you use this
+     with an &#x60;Ember.Object&#x60; subclass, you should be sure to change the length
+     property using &#x60;set().&#x60;
+
+  2. You must implement &#x60;nextObject().&#x60; See documentation.
+
+  Once you have these two methods implemented, apply the &#x60;Ember.Enumerable&#x60; mixin
+  to your class and you will be able to enumerate the contents of your object
+  like any other collection.
+
+  ## Using Ember Enumeration with Other Libraries
+
+  Many other libraries provide some kind of iterator or enumeration like
+  facility. This is often where the most common API conflicts occur.
+  Ember&#x27;s API is designed to be as friendly as possible with other
+  libraries by implementing only methods that mostly correspond to the
+  JavaScript 1.8 API.
+
+  @class Enumerable
+  @namespace Ember
+  @since Ember 0.9
+*/
+var Enumerable = Mixin.create({
+
+  /**
+    Implement this method to make your class enumerable.
+
+    This method will be call repeatedly during enumeration. The index value
+    will always begin with 0 and increment monotonically. You don&#x27;t have to
+    rely on the index value to determine what object to return, but you should
+    always check the value and start from the beginning when you see the
+    requested index is 0.
+
+    The &#x60;previousObject&#x60; is the object that was returned from the last call
+    to &#x60;nextObject&#x60; for the current iteration. This is a useful way to
+    manage iteration if you are tracing a linked list, for example.
+
+    Finally the context parameter will always contain a hash you can use as
+    a &quot;scratchpad&quot; to maintain any other state you need in order to iterate
+    properly. The context object is reused and is not reset between
+    iterations so make sure you setup the context with a fresh state whenever
+    the index parameter is 0.
+
+    Generally iterators will continue to call &#x60;nextObject&#x60; until the index
+    reaches the your current length-1. If you run out of data before this
+    time for some reason, you should simply return undefined.
+
+    The default implementation of this method simply looks up the index.
+    This works great on any Array-like objects.
+
+    @method nextObject
+    @param {Number} index the current index of the iteration
+    @param {Object} previousObject the value returned by the last call to
+      &#x60;nextObject&#x60;.
+    @param {Object} context a context object you can use to maintain state.
+    @return {Object} the next object in the iteration or undefined
+  */
+  nextObject: required(Function),
+
+  /**
+    Helper method returns the first object from a collection. This is usually
+    used by bindings and other parts of the framework to extract a single
+    object if the enumerable contains only one item.
+
+    If you override this method, you should implement it so that it will
+    always return the same value each time it is called. If your enumerable
+    contains only one object, this method should always return that object.
+    If your enumerable is empty, this method should return &#x60;undefined&#x60;.
+
+    &#x60;&#x60;&#x60;javascript
+    var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+    arr.get(&#x27;firstObject&#x27;);  // &quot;a&quot;
+
+    var arr = [];
+    arr.get(&#x27;firstObject&#x27;);  // undefined
+    &#x60;&#x60;&#x60;
+
+    @property firstObject
+    @return {Object} the object or undefined
+  */
+  firstObject: computed(function() {
+    if (get(this, &#x27;length&#x27;)===0) return undefined ;
+
+    // handle generic enumerables
+    var context = popCtx(), ret;
+    ret = this.nextObject(0, null, context);
+    pushCtx(context);
+    return ret ;
+  }).property(&#x27;[]&#x27;),
+
+  /**
+    Helper method returns the last object from a collection. If your enumerable
+    contains only one object, this method should always return that object.
+    If your enumerable is empty, this method should return &#x60;undefined&#x60;.
+
+    &#x60;&#x60;&#x60;javascript
+    var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+    arr.get(&#x27;lastObject&#x27;);  // &quot;c&quot;
+
+    var arr = [];
+    arr.get(&#x27;lastObject&#x27;);  // undefined
+    &#x60;&#x60;&#x60;
+
+    @property lastObject
+    @return {Object} the last object or undefined
+  */
+  lastObject: computed(function() {
+    var len = get(this, &#x27;length&#x27;);
+    if (len===0) return undefined ;
+    var context = popCtx(), idx=0, cur, last = null;
+    do {
+      last = cur;
+      cur = this.nextObject(idx++, last, context);
+    } while (cur !== undefined);
+    pushCtx(context);
+    return last;
+  }).property(&#x27;[]&#x27;),
+
+  /**
+    Returns &#x60;true&#x60; if the passed object can be found in the receiver. The
+    default version will iterate through the enumerable until the object
+    is found. You may want to override this with a more efficient version.
+
+    &#x60;&#x60;&#x60;javascript
+    var arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;];
+    arr.contains(&quot;a&quot;); // true
+    arr.contains(&quot;z&quot;); // false
+    &#x60;&#x60;&#x60;
+
+    @method contains
+    @param {Object} obj The object to search for.
+    @return {Boolean} &#x60;true&#x60; if object is found in enumerable.
+  */
+  contains: function(obj) {
+    return this.find(function(item) { return item===obj; }) !== undefined;
+  },
+
+  /**
+    Iterates through the enumerable, calling the passed function on each
+    item. This method corresponds to the &#x60;forEach()&#x60; method defined in
+    JavaScript 1.6.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    @method forEach
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Object} receiver
+  */
+  forEach: function(callback, target) {
+    if (typeof callback !== &quot;function&quot;) throw new TypeError() ;
+    var len = get(this, &#x27;length&#x27;), last = null, context = popCtx();
+
+    if (target === undefined) target = null;
+
+    for(var idx=0;idx&lt;len;idx++) {
+      var next = this.nextObject(idx, last, context) ;
+      callback.call(target, next, idx, this);
+      last = next ;
+    }
+    last = null ;
+    context = pushCtx(context);
+    return this ;
+  },
+
+  /**
+    Alias for &#x60;mapBy&#x60;
+
+    @method getEach
+    @param {String} key name of the property
+    @return {Array} The mapped array.
+  */
+  getEach: function(key) {
+    return this.mapBy(key);
+  },
+
+  /**
+    Sets the value on the named property for each member. This is more
+    efficient than using other methods defined on this helper. If the object
+    implements Ember.Observable, the value will be changed to &#x60;set(),&#x60; otherwise
+    it will be set directly. &#x60;null&#x60; objects are skipped.
+
+    @method setEach
+    @param {String} key The key to set
+    @param {Object} value The object to set
+    @return {Object} receiver
+  */
+  setEach: function(key, value) {
+    return this.forEach(function(item) {
+      set(item, key, value);
+    });
+  },
+
+  /**
+    Maps all of the items in the enumeration to another value, returning
+    a new array. This method corresponds to &#x60;map()&#x60; defined in JavaScript 1.6.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    It should return the mapped value.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    @method map
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Array} The mapped array.
+  */
+  map: function(callback, target) {
+    var ret = Ember.A();
+    this.forEach(function(x, idx, i) {
+      ret[idx] = callback.call(target, x, idx,i);
+    });
+    return ret ;
+  },
+
+  /**
+    Similar to map, this specialized function returns the value of the named
+    property on all items in the enumeration.
+
+    @method mapBy
+    @param {String} key name of the property
+    @return {Array} The mapped array.
+  */
+  mapBy: function(key) {
+    return this.map(function(next) {
+      return get(next, key);
+    });
+  },
+
+  /**
+    Similar to map, this specialized function returns the value of the named
+    property on all items in the enumeration.
+
+    @method mapProperty
+    @param {String} key name of the property
+    @return {Array} The mapped array.
+    @deprecated Use &#x60;mapBy&#x60; instead
+  */
+
+  mapProperty: aliasMethod(&#x27;mapBy&#x27;),
+
+  /**
+    Returns an array with all of the items in the enumeration that the passed
+    function returns true for. This method corresponds to &#x60;filter()&#x60; defined in
+    JavaScript 1.6.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    It should return the &#x60;true&#x60; to include the item in the results, &#x60;false&#x60;
+    otherwise.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    @method filter
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Array} A filtered array.
+  */
+  filter: function(callback, target) {
+    var ret = Ember.A();
+    this.forEach(function(x, idx, i) {
+      if (callback.call(target, x, idx, i)) ret.push(x);
+    });
+    return ret ;
+  },
+
+  /**
+    Returns an array with all of the items in the enumeration where the passed
+    function returns false for. This method is the inverse of filter().
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - *item* is the current item in the iteration.
+    - *index* is the current index in the iteration
+    - *enumerable* is the enumerable object itself.
+
+    It should return the a falsey value to include the item in the results.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &quot;this&quot; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    @method reject
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Array} A rejected array.
+   */
+  reject: function(callback, target) {
+    return this.filter(function() {
+      return !(apply(target, callback, arguments));
+    });
+  },
+
+  /**
+    Returns an array with just the items with the matched property. You
+    can pass an optional second argument with the target value. Otherwise
+    this will match any property that evaluates to &#x60;true&#x60;.
+
+    @method filterBy
+    @param {String} key the property to test
+    @param {*} [value] optional value to test against.
+    @return {Array} filtered array
+  */
+  filterBy: function(key, value) {
+    return this.filter(apply(this, iter, arguments));
+  },
+
+  /**
+    Returns an array with just the items with the matched property. You
+    can pass an optional second argument with the target value. Otherwise
+    this will match any property that evaluates to &#x60;true&#x60;.
+
+    @method filterProperty
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Array} filtered array
+    @deprecated Use &#x60;filterBy&#x60; instead
+  */
+  filterProperty: aliasMethod(&#x27;filterBy&#x27;),
+
+  /**
+    Returns an array with the items that do not have truthy values for
+    key.  You can pass an optional second argument with the target value.  Otherwise
+    this will match any property that evaluates to false.
+
+    @method rejectBy
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Array} rejected array
+  */
+  rejectBy: function(key, value) {
+    var exactValue = function(item) { return get(item, key) === value; },
+        hasValue = function(item) { return !!get(item, key); },
+        use = (arguments.length === 2 ? exactValue : hasValue);
+
+    return this.reject(use);
+  },
+
+  /**
+    Returns an array with the items that do not have truthy values for
+    key.  You can pass an optional second argument with the target value.  Otherwise
+    this will match any property that evaluates to false.
+
+    @method rejectProperty
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Array} rejected array
+    @deprecated Use &#x60;rejectBy&#x60; instead
+  */
+  rejectProperty: aliasMethod(&#x27;rejectBy&#x27;),
+
+  /**
+    Returns the first item in the array for which the callback returns true.
+    This method works similar to the &#x60;filter()&#x60; method defined in JavaScript 1.6
+    except that it will stop working on the array once a match is found.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    It should return the &#x60;true&#x60; to include the item in the results, &#x60;false&#x60;
+    otherwise.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    @method find
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Object} Found item or &#x60;undefined&#x60;.
+  */
+  find: function(callback, target) {
+    var len = get(this, &#x27;length&#x27;) ;
+    if (target === undefined) target = null;
+
+    var last = null, next, found = false, ret ;
+    var context = popCtx();
+    for(var idx=0;idx&lt;len &amp;&amp; !found;idx++) {
+      next = this.nextObject(idx, last, context) ;
+      if (found = callback.call(target, next, idx, this)) ret = next ;
+      last = next ;
+    }
+    next = last = null ;
+    context = pushCtx(context);
+    return ret ;
+  },
+
+  /**
+    Returns the first item with a property matching the passed value. You
+    can pass an optional second argument with the target value. Otherwise
+    this will match any property that evaluates to &#x60;true&#x60;.
+
+    This method works much like the more generic &#x60;find()&#x60; method.
+
+    @method findBy
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Object} found item or &#x60;undefined&#x60;
+  */
+  findBy: function(key, value) {
+    return this.find(apply(this, iter, arguments));
+  },
+
+  /**
+    Returns the first item with a property matching the passed value. You
+    can pass an optional second argument with the target value. Otherwise
+    this will match any property that evaluates to &#x60;true&#x60;.
+
+    This method works much like the more generic &#x60;find()&#x60; method.
+
+    @method findProperty
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Object} found item or &#x60;undefined&#x60;
+    @deprecated Use &#x60;findBy&#x60; instead
+  */
+  findProperty: aliasMethod(&#x27;findBy&#x27;),
+
+  /**
+    Returns &#x60;true&#x60; if the passed function returns true for every item in the
+    enumeration. This corresponds with the &#x60;every()&#x60; method in JavaScript 1.6.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    It should return the &#x60;true&#x60; or &#x60;false&#x60;.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    Example Usage:
+
+    &#x60;&#x60;&#x60;javascript
+    if (people.every(isEngineer)) { Paychecks.addBigBonus(); }
+    &#x60;&#x60;&#x60;
+
+    @method every
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Boolean}
+  */
+  every: function(callback, target) {
+    return !this.find(function(x, idx, i) {
+      return !callback.call(target, x, idx, i);
+    });
+  },
+
+  /**
+    @method everyBy
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @deprecated Use &#x60;isEvery&#x60; instead
+    @return {Boolean}
+  */
+  everyBy: aliasMethod(&#x27;isEvery&#x27;),
+
+  /**
+    @method everyProperty
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @deprecated Use &#x60;isEvery&#x60; instead
+    @return {Boolean}
+  */
+  everyProperty: aliasMethod(&#x27;isEvery&#x27;),
+
+  /**
+    Returns &#x60;true&#x60; if the passed property resolves to &#x60;true&#x60; for all items in
+    the enumerable. This method is often simpler/faster than using a callback.
+
+    @method isEvery
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Boolean}
+    @since 1.3.0
+  */
+  isEvery: function(key, value) {
+    return this.every(apply(this, iter, arguments));
+  },
+
+  /**
+    Returns &#x60;true&#x60; if the passed function returns true for any item in the
+    enumeration. This corresponds with the &#x60;some()&#x60; method in JavaScript 1.6.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    It should return the &#x60;true&#x60; to include the item in the results, &#x60;false&#x60;
+    otherwise.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    Usage Example:
+
+    &#x60;&#x60;&#x60;javascript
+    if (people.any(isManager)) { Paychecks.addBiggerBonus(); }
+    &#x60;&#x60;&#x60;
+
+    @method any
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Boolean} &#x60;true&#x60; if the passed function returns &#x60;true&#x60; for any item
+  */
+  any: function(callback, target) {
+    var len     = get(this, &#x27;length&#x27;),
+        context = popCtx(),
+        found   = false,
+        last    = null,
+        next, idx;
+
+    if (target === undefined) { target = null; }
+
+    for (idx = 0; idx &lt; len &amp;&amp; !found; idx++) {
+      next  = this.nextObject(idx, last, context);
+      found = callback.call(target, next, idx, this);
+      last  = next;
+    }
+
+    next = last = null;
+    context = pushCtx(context);
+    return found;
+  },
+
+  /**
+    Returns &#x60;true&#x60; if the passed function returns true for any item in the
+    enumeration. This corresponds with the &#x60;some()&#x60; method in JavaScript 1.6.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    It should return the &#x60;true&#x60; to include the item in the results, &#x60;false&#x60;
+    otherwise.
+
+    Note that in addition to a callback, you can also pass an optional target
+    object that will be set as &#x60;this&#x60; on the context. This is a good way
+    to give your iterator function access to the current object.
+
+    Usage Example:
+
+    &#x60;&#x60;&#x60;javascript
+    if (people.some(isManager)) { Paychecks.addBiggerBonus(); }
+    &#x60;&#x60;&#x60;
+
+    @method some
+    @param {Function} callback The callback to execute
+    @param {Object} [target] The target object to use
+    @return {Boolean} &#x60;true&#x60; if the passed function returns &#x60;true&#x60; for any item
+    @deprecated Use &#x60;any&#x60; instead
+  */
+  some: aliasMethod(&#x27;any&#x27;),
+
+  /**
+    Returns &#x60;true&#x60; if the passed property resolves to &#x60;true&#x60; for any item in
+    the enumerable. This method is often simpler/faster than using a callback.
+
+    @method isAny
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Boolean} &#x60;true&#x60; if the passed function returns &#x60;true&#x60; for any item
+    @since 1.3.0
+  */
+  isAny: function(key, value) {
+    return this.any(apply(this, iter, arguments));
+  },
+
+  /**
+    @method anyBy
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Boolean} &#x60;true&#x60; if the passed function returns &#x60;true&#x60; for any item
+    @deprecated Use &#x60;isAny&#x60; instead
+  */
+  anyBy: aliasMethod(&#x27;isAny&#x27;),
+
+  /**
+    @method someProperty
+    @param {String} key the property to test
+    @param {String} [value] optional value to test against.
+    @return {Boolean} &#x60;true&#x60; if the passed function returns &#x60;true&#x60; for any item
+    @deprecated Use &#x60;isAny&#x60; instead
+  */
+  someProperty: aliasMethod(&#x27;isAny&#x27;),
+
+  /**
+    This will combine the values of the enumerator into a single value. It
+    is a useful way to collect a summary value from an enumeration. This
+    corresponds to the &#x60;reduce()&#x60; method defined in JavaScript 1.8.
+
+    The callback method you provide should have the following signature (all
+    parameters are optional):
+
+    &#x60;&#x60;&#x60;javascript
+    function(previousValue, item, index, enumerable);
+    &#x60;&#x60;&#x60;
+
+    - &#x60;previousValue&#x60; is the value returned by the last call to the iterator.
+    - &#x60;item&#x60; is the current item in the iteration.
+    - &#x60;index&#x60; is the current index in the iteration.
+    - &#x60;enumerable&#x60; is the enumerable object itself.
+
+    Return the new cumulative value.
+
+    In addition to the callback you can also pass an &#x60;initialValue&#x60;. An error
+    will be raised if you do not pass an initial value and the enumerator is
+    empty.
+
+    Note that unlike the other methods, this method does not allow you to
+    pass a target object to set as this for the callback. It&#x27;s part of the
+    spec. Sorry.
+
+    @method reduce
+    @param {Function} callback The callback to execute
+    @param {Object} initialValue Initial value for the reduce
+    @param {String} reducerProperty internal use only.
+    @return {Object} The reduced value.
+  */
+  reduce: function(callback, initialValue, reducerProperty) {
+    if (typeof callback !== &quot;function&quot;) { throw new TypeError(); }
+
+    var ret = initialValue;
+
+    this.forEach(function(item, i) {
+      ret = callback(ret, item, i, this, reducerProperty);
+    }, this);
+
+    return ret;
+  },
+
+  /**
+    Invokes the named method on every object in the receiver that
+    implements it. This method corresponds to the implementation in
+    Prototype 1.6.
+
+    @method invoke
+    @param {String} methodName the name of the method
+    @param {Object...} args optional arguments to pass as well.
+    @return {Array} return values from calling invoke.
+  */
+  invoke: function(methodName) {
+    var args, ret = Ember.A();
+    if (arguments.length&gt;1) args = a_slice.call(arguments, 1);
+
+    this.forEach(function(x, idx) {
+      var method = x &amp;&amp; x[methodName];
+      if (&#x27;function&#x27; === typeof method) {
+        ret[idx] = args ? apply(x, method, args) : x[methodName]();
+      }
+    }, this);
+
+    return ret;
+  },
+
+  /**
+    Simply converts the enumerable into a genuine array. The order is not
+    guaranteed. Corresponds to the method implemented by Prototype.
+
+    @method toArray
+    @return {Array} the enumerable as an array.
+  */
+  toArray: function() {
+    var ret = Ember.A();
+    this.forEach(function(o, idx) { ret[idx] = o; });
+    return ret;
+  },
+
+  /**
+    Returns a copy of the array with all null and undefined elements removed.
+
+    &#x60;&#x60;&#x60;javascript
+    var arr = [&quot;a&quot;, null, &quot;c&quot;, undefined];
+    arr.compact();  // [&quot;a&quot;, &quot;c&quot;]
+    &#x60;&#x60;&#x60;
+
+    @method compact
+    @return {Array} the array without null and undefined elements.
+  */
+  compact: function() {
+    return this.filter(function(value) { return value != null; });
+  },
+
+  /**
+    Returns a new enumerable that excludes the passed value. The default
+    implementation returns an array regardless of the receiver type unless
+    the receiver does not contain the value.
+
+    &#x60;&#x60;&#x60;javascript
+    var arr = [&quot;a&quot;, &quot;b&quot;, &quot;a&quot;, &quot;c&quot;];
+    arr.without(&quot;a&quot;);  // [&quot;b&quot;, &quot;c&quot;]
+    &#x60;&#x60;&#x60;
+
+    @method without
+    @param {Object} value
+    @return {Ember.Enumerable}
+  */
+  without: function(value) {
+    if (!this.contains(value)) return this; // nothing to do
+    var ret = Ember.A();
+    this.forEach(function(k) {
+      if (k !== value) ret[ret.length] = k;
+    }) ;
+    return ret ;
+  },
+
+  /**
+    Returns a new enumerable that contains only unique values. The default
+    implementation returns an array regardless of the receiver type.
+
+    &#x60;&#x60;&#x60;javascript
+    var arr = [&quot;a&quot;, &quot;a&quot;, &quot;b&quot;, &quot;b&quot;];
+    arr.uniq();  // [&quot;a&quot;, &quot;b&quot;]
+    &#x60;&#x60;&#x60;
+
+    @method uniq
+    @return {Ember.Enumerable}
+  */
+  uniq: function() {
+    var ret = Ember.A();
+    this.forEach(function(k) {
+      if (a_indexOf(ret, k)&lt;0) ret.push(k);
+    });
+    return ret;
+  },
+
+  /**
+    This property will trigger anytime the enumerable&#x27;s content changes.
+    You can observe this property to be notified of changes to the enumerables
+    content.
+
+    For plain enumerables, this property is read only. &#x60;Array&#x60; overrides
+    this method.
+
+    @property []
+    @type Array
+    @return this
+  */
+  &#x27;[]&#x27;: computed(function(key, value) {
+    return this;
+  }),
+
+  // ..........................................................
+  // ENUMERABLE OBSERVERS
+  //
+
+  /**
+    Registers an enumerable observer. Must implement &#x60;Ember.EnumerableObserver&#x60;
+    mixin.
+
+    @method addEnumerableObserver
+    @param {Object} target
+    @param {Hash} [opts]
+    @return this
+  */
+  addEnumerableObserver: function(target, opts) {
+    var willChange = (opts &amp;&amp; opts.willChange) || &#x27;enumerableWillChange&#x27;,
+        didChange  = (opts &amp;&amp; opts.didChange) || &#x27;enumerableDidChange&#x27;;
+
+    var hasObservers = get(this, &#x27;hasEnumerableObservers&#x27;);
+    if (!hasObservers) propertyWillChange(this, &#x27;hasEnumerableObservers&#x27;);
+    addListener(this, &#x27;@enumerable:before&#x27;, target, willChange);
+    addListener(this, &#x27;@enumerable:change&#x27;, target, didChange);
+    if (!hasObservers) propertyDidChange(this, &#x27;hasEnumerableObservers&#x27;);
+    return this;
+  },
+
+  /**
+    Removes a registered enumerable observer.
+
+    @method removeEnumerableObserver
+    @param {Object} target
+    @param {Hash} [opts]
+    @return this
+  */
+  removeEnumerableObserver: function(target, opts) {
+    var willChange = (opts &amp;&amp; opts.willChange) || &#x27;enumerableWillChange&#x27;,
+        didChange  = (opts &amp;&amp; opts.didChange) || &#x27;enumerableDidChange&#x27;;
+
+    var hasObservers = get(this, &#x27;hasEnumerableObservers&#x27;);
+    if (hasObservers) propertyWillChange(this, &#x27;hasEnumerableObservers&#x27;);
+    removeListener(this, &#x27;@enumerable:before&#x27;, target, willChange);
+    removeListener(this, &#x27;@enumerable:change&#x27;, target, didChange);
+    if (hasObservers) propertyDidChange(this, &#x27;hasEnumerableObservers&#x27;);
+    return this;
+  },
+
+  /**
+    Becomes true whenever the array currently has observers watching changes
+    on the array.
+
+    @property hasEnumerableObservers
+    @type Boolean
+  */
+  hasEnumerableObservers: computed(function() {
+    return hasListeners(this, &#x27;@enumerable:change&#x27;) || hasListeners(this, &#x27;@enumerable:before&#x27;);
+  }),
+
+
+  /**
+    Invoke this method just before the contents of your enumerable will
+    change. You can either omit the parameters completely or pass the objects
+    to be removed or added if available or just a count.
+
+    @method enumerableContentWillChange
+    @param {Ember.Enumerable|Number} removing An enumerable of the objects to
+      be removed or the number of items to be removed.
+    @param {Ember.Enumerable|Number} adding An enumerable of the objects to be
+      added or the number of items to be added.
+    @chainable
+  */
+  enumerableContentWillChange: function(removing, adding) {
+
+    var removeCnt, addCnt, hasDelta;
+
+    if (&#x27;number&#x27; === typeof removing) removeCnt = removing;
+    else if (removing) removeCnt = get(removing, &#x27;length&#x27;);
+    else removeCnt = removing = -1;
+
+    if (&#x27;number&#x27; === typeof adding) addCnt = adding;
+    else if (adding) addCnt = get(adding,&#x27;length&#x27;);
+    else addCnt = adding = -1;
+
+    hasDelta = addCnt&lt;0 || removeCnt&lt;0 || addCnt-removeCnt!==0;
+
+    if (removing === -1) removing = null;
+    if (adding   === -1) adding   = null;
+
+    propertyWillChange(this, &#x27;[]&#x27;);
+    if (hasDelta) propertyWillChange(this, &#x27;length&#x27;);
+    sendEvent(this, &#x27;@enumerable:before&#x27;, [this, removing, adding]);
+
+    return this;
+  },
+
+  /**
+    Invoke this method when the contents of your enumerable has changed.
+    This will notify any observers watching for content changes. If your are
+    implementing an ordered enumerable (such as an array), also pass the
+    start and end values where the content changed so that it can be used to
+    notify range observers.
+
+    @method enumerableContentDidChange
+    @param {Ember.Enumerable|Number} removing An enumerable of the objects to
+      be removed or the number of items to be removed.
+    @param {Ember.Enumerable|Number} adding  An enumerable of the objects to
+      be added or the number of items to be added.
+    @chainable
+  */
+  enumerableContentDidChange: function(removing, adding) {
+    var removeCnt, addCnt, hasDelta;
+
+    if (&#x27;number&#x27; === typeof removing) removeCnt = removing;
+    else if (removing) removeCnt = get(removing, &#x27;length&#x27;);
+    else removeCnt = removing = -1;
+
+    if (&#x27;number&#x27; === typeof adding) addCnt = adding;
+    else if (adding) addCnt = get(adding, &#x27;length&#x27;);
+    else addCnt = adding = -1;
+
+    hasDelta = addCnt&lt;0 || removeCnt&lt;0 || addCnt-removeCnt!==0;
+
+    if (removing === -1) removing = null;
+    if (adding   === -1) adding   = null;
+
+    sendEvent(this, &#x27;@enumerable:change&#x27;, [this, removing, adding]);
+    if (hasDelta) propertyDidChange(this, &#x27;length&#x27;);
+    propertyDidChange(this, &#x27;[]&#x27;);
+
+    return this ;
+  },
+
+  /**
+    Converts the enumerable into an array and sorts by the keys
+    specified in the argument.
+
+    You may provide multiple arguments to sort by multiple properties.
+
+    @method sortBy
+    @param {String} property name(s) to sort on
+    @return {Array} The sorted array.
+    @since 1.2.0
+    */
+  sortBy: function() {
+    var sortKeys = arguments;
+    return this.toArray().sort(function(a, b){
+      for(var i = 0; i &lt; sortKeys.length; i++) {
+        var key = sortKeys[i],
+        propA = get(a, key),
+        propB = get(b, key);
+        // return 1 or -1 else continue to the next sortKey
+        var compareValue = compare(propA, propB);
+        if (compareValue) { return compareValue; }
+      }
+      return 0;
+    });
+  }
+});
+
+export default Enumerable;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

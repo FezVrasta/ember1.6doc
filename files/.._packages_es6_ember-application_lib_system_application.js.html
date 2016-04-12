@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-application/lib/system/application.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-application/lib/system/application.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-application
+*/
+
+import Ember from &quot;ember-metal&quot;; // Ember.FEATURES, Ember.deprecate, Ember.assert, Ember.libraries, LOG_VERSION, Namespace, BOOTED
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {runLoadHooks} from &quot;ember-runtime/system/lazy_load&quot;;
+import DAG from &quot;ember-application/system/dag&quot;
+import Namespace from &quot;ember-runtime/system/namespace&quot;;
+import DeferredMixin from &quot;ember-runtime/mixins/deferred&quot;;
+import {DefaultResolver} from &quot;ember-application/system/resolver&quot;;
+import {create} from &quot;ember-metal/platform&quot;;
+import run from &quot;ember-metal/run_loop&quot;;
+import {canInvoke} from &quot;ember-metal/utils&quot;;
+import Container from &#x27;container/container&#x27;;
+import {Controller} from &quot;ember-runtime/controllers/controller&quot;;
+import EnumerableUtils from &quot;ember-metal/enumerable_utils&quot;;
+import ObjectController from &quot;ember-runtime/controllers/object_controller&quot;;
+import ArrayController from &quot;ember-runtime/controllers/array_controller&quot;;
+import EventDispatcher from &quot;ember-views/system/event_dispatcher&quot;;
+import ContainerDebugAdapter from &quot;ember-extension-support/container_debug_adapter&quot;;
+import jQuery from &quot;ember-views/system/jquery&quot;;
+import Route from &quot;ember-routing/system/route&quot;;
+import Router from &quot;ember-routing/system/router&quot;;
+import HashLocation from &quot;ember-routing/location/hash_location&quot;;
+import HistoryLocation from &quot;ember-routing/location/history_location&quot;;
+import AutoLocation from &quot;ember-routing/location/auto_location&quot;;
+import NoneLocation from &quot;ember-routing/location/none_location&quot;;
+
+import EmberHandlebars from &quot;ember-handlebars-compiler&quot;;
+
+var K = Ember.K;
+
+function DeprecatedContainer(container) {
+  this._container = container;
+}
+
+DeprecatedContainer.deprecate = function(method) {
+  return function() {
+    var container = this._container;
+
+    Ember.deprecate(&#x27;Using the defaultContainer is no longer supported. [defaultContainer#&#x27; + method + &#x27;] see: http://git.io/EKPpnA&#x27;, false);
+    return container[method].apply(container, arguments);
+  };
+};
+
+DeprecatedContainer.prototype = {
+  _container: null,
+  lookup: DeprecatedContainer.deprecate(&#x27;lookup&#x27;),
+  resolve: DeprecatedContainer.deprecate(&#x27;resolve&#x27;),
+  register: DeprecatedContainer.deprecate(&#x27;register&#x27;)
+};
+
+/**
+  An instance of &#x60;Ember.Application&#x60; is the starting point for every Ember
+  application. It helps to instantiate, initialize and coordinate the many
+  objects that make up your app.
+
+  Each Ember app has one and only one &#x60;Ember.Application&#x60; object. In fact, the
+  very first thing you should do in your application is create the instance:
+
+  &#x60;&#x60;&#x60;javascript
+  window.App = Ember.Application.create();
+  &#x60;&#x60;&#x60;
+
+  Typically, the application object is the only global variable. All other
+  classes in your app should be properties on the &#x60;Ember.Application&#x60; instance,
+  which highlights its first role: a global namespace.
+
+  For example, if you define a view class, it might look like this:
+
+  &#x60;&#x60;&#x60;javascript
+  App.MyView = Ember.View.extend();
+  &#x60;&#x60;&#x60;
+
+  By default, calling &#x60;Ember.Application.create()&#x60; will automatically initialize
+  your application by calling the &#x60;Ember.Application.initialize()&#x60; method. If
+  you need to delay initialization, you can call your app&#x27;s &#x60;deferReadiness()&#x60;
+  method. When you are ready for your app to be initialized, call its
+  &#x60;advanceReadiness()&#x60; method.
+
+  You can define a &#x60;ready&#x60; method on the &#x60;Ember.Application&#x60; instance, which
+  will be run by Ember when the application is initialized.
+
+  Because &#x60;Ember.Application&#x60; inherits from &#x60;Ember.Namespace&#x60;, any classes
+  you create will have useful string representations when calling &#x60;toString()&#x60;.
+  See the &#x60;Ember.Namespace&#x60; documentation for more information.
+
+  While you can think of your &#x60;Ember.Application&#x60; as a container that holds the
+  other classes in your application, there are several other responsibilities
+  going on under-the-hood that you may want to understand.
+
+  ### Event Delegation
+
+  Ember uses a technique called _event delegation_. This allows the framework
+  to set up a global, shared event listener instead of requiring each view to
+  do it manually. For example, instead of each view registering its own
+  &#x60;mousedown&#x60; listener on its associated element, Ember sets up a &#x60;mousedown&#x60;
+  listener on the &#x60;body&#x60;.
+
+  If a &#x60;mousedown&#x60; event occurs, Ember will look at the target of the event and
+  start walking up the DOM node tree, finding corresponding views and invoking
+  their &#x60;mouseDown&#x60; method as it goes.
+
+  &#x60;Ember.Application&#x60; has a number of default events that it listens for, as
+  well as a mapping from lowercase events to camel-cased view method names. For
+  example, the &#x60;keypress&#x60; event causes the &#x60;keyPress&#x60; method on the view to be
+  called, the &#x60;dblclick&#x60; event causes &#x60;doubleClick&#x60; to be called, and so on.
+
+  If there is a bubbling browser event that Ember does not listen for by
+  default, you can specify custom events and their corresponding view method
+  names by setting the application&#x27;s &#x60;customEvents&#x60; property:
+
+  &#x60;&#x60;&#x60;javascript
+  App = Ember.Application.create({
+    customEvents: {
+      // add support for the paste event
+      paste: &quot;paste&quot;
+    }
+  });
+  &#x60;&#x60;&#x60;
+
+  By default, the application sets up these event listeners on the document
+  body. However, in cases where you are embedding an Ember application inside
+  an existing page, you may want it to set up the listeners on an element
+  inside the body.
+
+  For example, if only events inside a DOM element with the ID of &#x60;ember-app&#x60;
+  should be delegated, set your application&#x27;s &#x60;rootElement&#x60; property:
+
+  &#x60;&#x60;&#x60;javascript
+  window.App = Ember.Application.create({
+    rootElement: &#x27;#ember-app&#x27;
+  });
+  &#x60;&#x60;&#x60;
+
+  The &#x60;rootElement&#x60; can be either a DOM element or a jQuery-compatible selector
+  string. Note that *views appended to the DOM outside the root element will
+  not receive events.* If you specify a custom root element, make sure you only
+  append views inside it!
+
+  To learn more about the advantages of event delegation and the Ember view
+  layer, and a list of the event listeners that are setup by default, visit the
+  [Ember View Layer guide](http://emberjs.com/guides/understanding-ember/the-view-layer/#toc_event-delegation).
+
+  ### Initializers
+
+  Libraries on top of Ember can add initializers, like so:
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.Application.initializer({
+    name: &#x27;api-adapter&#x27;,
+
+    initialize: function(container, application) {
+      application.register(&#x27;api-adapter:main&#x27;, ApiAdapter);
+    }
+  });
+  &#x60;&#x60;&#x60;
+
+  Initializers provide an opportunity to access the container, which
+  organizes the different components of an Ember application. Additionally
+  they provide a chance to access the instantiated application. Beyond
+  being used for libraries, initializers are also a great way to organize
+  dependency injection or setup in your own application.
+
+  ### Routing
+
+  In addition to creating your application&#x27;s router, &#x60;Ember.Application&#x60; is
+  also responsible for telling the router when to start routing. Transitions
+  between routes can be logged with the &#x60;LOG_TRANSITIONS&#x60; flag, and more
+  detailed intra-transition logging can be logged with
+  the &#x60;LOG_TRANSITIONS_INTERNAL&#x60; flag:
+
+  &#x60;&#x60;&#x60;javascript
+  window.App = Ember.Application.create({
+    LOG_TRANSITIONS: true, // basic logging of successful transitions
+    LOG_TRANSITIONS_INTERNAL: true // detailed logging of all routing steps
+  });
+  &#x60;&#x60;&#x60;
+
+  By default, the router will begin trying to translate the current URL into
+  application state once the browser emits the &#x60;DOMContentReady&#x60; event. If you
+  need to defer routing, you can call the application&#x27;s &#x60;deferReadiness()&#x60;
+  method. Once routing can begin, call the &#x60;advanceReadiness()&#x60; method.
+
+  If there is any setup required before routing begins, you can implement a
+  &#x60;ready()&#x60; method on your app that will be invoked immediately before routing
+  begins.
+  &#x60;&#x60;&#x60;
+
+  @class Application
+  @namespace Ember
+  @extends Ember.Namespace
+*/
+
+var Application = Namespace.extend(DeferredMixin, {
+
+  /**
+    The root DOM element of the Application. This can be specified as an
+    element or a
+    [jQuery-compatible selector string](http://api.jquery.com/category/selectors/).
+
+    This is the element that will be passed to the Application&#x27;s,
+    &#x60;eventDispatcher&#x60;, which sets up the listeners for event delegation. Every
+    view in your application should be a child of the element you specify here.
+
+    @property rootElement
+    @type DOMElement
+    @default &#x27;body&#x27;
+  */
+  rootElement: &#x27;body&#x27;,
+
+  /**
+    The &#x60;Ember.EventDispatcher&#x60; responsible for delegating events to this
+    application&#x27;s views.
+
+    The event dispatcher is created by the application at initialization time
+    and sets up event listeners on the DOM element described by the
+    application&#x27;s &#x60;rootElement&#x60; property.
+
+    See the documentation for &#x60;Ember.EventDispatcher&#x60; for more information.
+
+    @property eventDispatcher
+    @type Ember.EventDispatcher
+    @default null
+  */
+  eventDispatcher: null,
+
+  /**
+    The DOM events for which the event dispatcher should listen.
+
+    By default, the application&#x27;s &#x60;Ember.EventDispatcher&#x60; listens
+    for a set of standard DOM events, such as &#x60;mousedown&#x60; and
+    &#x60;keyup&#x60;, and delegates them to your application&#x27;s &#x60;Ember.View&#x60;
+    instances.
+
+    If you would like additional bubbling events to be delegated to your
+    views, set your &#x60;Ember.Application&#x60;&#x27;s &#x60;customEvents&#x60; property
+    to a hash containing the DOM event name as the key and the
+    corresponding view method name as the value. For example:
+
+    &#x60;&#x60;&#x60;javascript
+    App = Ember.Application.create({
+      customEvents: {
+        // add support for the paste event
+        paste: &quot;paste&quot;
+      }
+    });
+    &#x60;&#x60;&#x60;
+
+    @property customEvents
+    @type Object
+    @default null
+  */
+  customEvents: null,
+
+  // Start off the number of deferrals at 1. This will be
+  // decremented by the Application&#x27;s own &#x60;initialize&#x60; method.
+  _readinessDeferrals: 1,
+
+  init: function() {
+    if (!this.$) { this.$ = jQuery; }
+    this.__container__ = this.buildContainer();
+
+    this.Router = this.defaultRouter();
+
+    this._super();
+
+    this.scheduleInitialize();
+
+    Ember.libraries.registerCoreLibrary(&#x27;Handlebars&#x27;, EmberHandlebars.VERSION);
+    Ember.libraries.registerCoreLibrary(&#x27;jQuery&#x27;, jQuery().jquery);
+
+    if ( Ember.LOG_VERSION ) {
+      Ember.LOG_VERSION = false; // we only need to see this once per Application#init
+
+      var nameLengths = EnumerableUtils.map(Ember.libraries, function(item) {
+        return get(item, &quot;name.length&quot;);
+      });
+
+      var maxNameLength = Math.max.apply(this, nameLengths);
+
+      Ember.debug(&#x27;-------------------------------&#x27;);
+      Ember.libraries.each(function(name, version) {
+        var spaces = new Array(maxNameLength - name.length + 1).join(&quot; &quot;);
+        Ember.debug([name, spaces, &#x27; : &#x27;, version].join(&quot;&quot;));
+      });
+      Ember.debug(&#x27;-------------------------------&#x27;);
+    }
+  },
+
+  /**
+    Build the container for the current application.
+
+    Also register a default application view in case the application
+    itself does not.
+
+    @private
+    @method buildContainer
+    @return {Ember.Container} the configured container
+  */
+  buildContainer: function() {
+    var container = this.__container__ = Application.buildContainer(this);
+
+    return container;
+  },
+
+  /**
+    If the application has not opted out of routing and has not explicitly
+    defined a router, supply a default router for the application author
+    to configure.
+
+    This allows application developers to do:
+
+    &#x60;&#x60;&#x60;javascript
+    var App = Ember.Application.create();
+
+    App.Router.map(function() {
+      this.resource(&#x27;posts&#x27;);
+    });
+    &#x60;&#x60;&#x60;
+
+    @private
+    @method defaultRouter
+    @return {Ember.Router} the default router
+  */
+
+  defaultRouter: function() {
+    if (this.Router === false) { return; }
+    var container = this.__container__;
+
+    if (this.Router) {
+      container.unregister(&#x27;router:main&#x27;);
+      container.register(&#x27;router:main&#x27;, this.Router);
+    }
+
+    return container.lookupFactory(&#x27;router:main&#x27;);
+  },
+
+  /**
+    Automatically initialize the application once the DOM has
+    become ready.
+
+    The initialization itself is scheduled on the actions queue
+    which ensures that application loading finishes before
+    booting.
+
+    If you are asynchronously loading code, you should call
+    &#x60;deferReadiness()&#x60; to defer booting, and then call
+    &#x60;advanceReadiness()&#x60; once all of your code has finished
+    loading.
+
+    @private
+    @method scheduleInitialize
+  */
+  scheduleInitialize: function() {
+    var self = this;
+
+    if (!this.$ || this.$.isReady) {
+      run.schedule(&#x27;actions&#x27;, self, &#x27;_initialize&#x27;);
+    } else {
+      this.$().ready(function runInitialize() {
+        run(self, &#x27;_initialize&#x27;);
+      });
+    }
+  },
+
+  /**
+    Use this to defer readiness until some condition is true.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    App = Ember.Application.create();
+    App.deferReadiness();
+
+    jQuery.getJSON(&quot;/auth-token&quot;, function(token) {
+      App.token = token;
+      App.advanceReadiness();
+    });
+    &#x60;&#x60;&#x60;
+
+    This allows you to perform asynchronous setup logic and defer
+    booting your application until the setup has finished.
+
+    However, if the setup requires a loading UI, it might be better
+    to use the router for this purpose.
+
+    @method deferReadiness
+  */
+  deferReadiness: function() {
+    Ember.assert(&quot;You must call deferReadiness on an instance of Ember.Application&quot;, this instanceof Application);
+    Ember.assert(&quot;You cannot defer readiness since the &#x60;ready()&#x60; hook has already been called.&quot;, this._readinessDeferrals &gt; 0);
+    this._readinessDeferrals++;
+  },
+
+  /**
+    Call &#x60;advanceReadiness&#x60; after any asynchronous setup logic has completed.
+    Each call to &#x60;deferReadiness&#x60; must be matched by a call to &#x60;advanceReadiness&#x60;
+    or the application will never become ready and routing will not begin.
+
+    @method advanceReadiness
+    @see {Ember.Application#deferReadiness}
+  */
+  advanceReadiness: function() {
+    Ember.assert(&quot;You must call advanceReadiness on an instance of Ember.Application&quot;, this instanceof Application);
+    this._readinessDeferrals--;
+
+    if (this._readinessDeferrals === 0) {
+      run.once(this, this.didBecomeReady);
+    }
+  },
+
+  /**
+    Registers a factory that can be used for dependency injection (with
+    &#x60;App.inject&#x60;) or for service lookup. Each factory is registered with
+    a full name including two parts: &#x60;type:name&#x60;.
+
+    A simple example:
+
+    &#x60;&#x60;&#x60;javascript
+    var App = Ember.Application.create();
+    App.Orange  = Ember.Object.extend();
+    App.register(&#x27;fruit:favorite&#x27;, App.Orange);
+    &#x60;&#x60;&#x60;
+
+    Ember will resolve factories from the &#x60;App&#x60; namespace automatically.
+    For example &#x60;App.CarsController&#x60; will be discovered and returned if
+    an application requests &#x60;controller:cars&#x60;.
+
+    An example of registering a controller with a non-standard name:
+
+    &#x60;&#x60;&#x60;javascript
+    var App = Ember.Application.create(),
+        Session  = Ember.Controller.extend();
+
+    App.register(&#x27;controller:session&#x27;, Session);
+
+    // The Session controller can now be treated like a normal controller,
+    // despite its non-standard name.
+    App.ApplicationController = Ember.Controller.extend({
+      needs: [&#x27;session&#x27;]
+    });
+    &#x60;&#x60;&#x60;
+
+    Registered factories are **instantiated** by having &#x60;create&#x60;
+    called on them. Additionally they are **singletons**, each time
+    they are looked up they return the same instance.
+
+    Some examples modifying that default behavior:
+
+    &#x60;&#x60;&#x60;javascript
+    var App = Ember.Application.create();
+
+    App.Person  = Ember.Object.extend();
+    App.Orange  = Ember.Object.extend();
+    App.Email   = Ember.Object.extend();
+    App.session = Ember.Object.create();
+
+    App.register(&#x27;model:user&#x27;, App.Person, {singleton: false });
+    App.register(&#x27;fruit:favorite&#x27;, App.Orange);
+    App.register(&#x27;communication:main&#x27;, App.Email, {singleton: false});
+    App.register(&#x27;session&#x27;, App.session, {instantiate: false});
+    &#x60;&#x60;&#x60;
+
+    @method register
+    @param  fullName {String} type:name (e.g., &#x27;model:user&#x27;)
+    @param  factory {Function} (e.g., App.Person)
+    @param  options {Object} (optional) disable instantiation or singleton usage
+  **/
+  register: function() {
+    var container = this.__container__;
+    container.register.apply(container, arguments);
+  },
+
+  /**
+    Define a dependency injection onto a specific factory or all factories
+    of a type.
+
+    When Ember instantiates a controller, view, or other framework component
+    it can attach a dependency to that component. This is often used to
+    provide services to a set of framework components.
+
+    An example of providing a session object to all controllers:
+
+    &#x60;&#x60;&#x60;javascript
+    var App = Ember.Application.create(),
+        Session = Ember.Object.extend({ isAuthenticated: false });
+
+    // A factory must be registered before it can be injected
+    App.register(&#x27;session:main&#x27;, Session);
+
+    // Inject &#x27;session:main&#x27; onto all factories of the type &#x27;controller&#x27;
+    // with the name &#x27;session&#x27;
+    App.inject(&#x27;controller&#x27;, &#x27;session&#x27;, &#x27;session:main&#x27;);
+
+    App.IndexController = Ember.Controller.extend({
+      isLoggedIn: Ember.computed.alias(&#x27;session.isAuthenticated&#x27;)
+    });
+    &#x60;&#x60;&#x60;
+
+    Injections can also be performed on specific factories.
+
+    &#x60;&#x60;&#x60;javascript
+    App.inject(&lt;full_name or type&gt;, &lt;property name&gt;, &lt;full_name&gt;)
+    App.inject(&#x27;route&#x27;, &#x27;source&#x27;, &#x27;source:main&#x27;)
+    App.inject(&#x27;route:application&#x27;, &#x27;email&#x27;, &#x27;model:email&#x27;)
+    &#x60;&#x60;&#x60;
+
+    It is important to note that injections can only be performed on
+    classes that are instantiated by Ember itself. Instantiating a class
+    directly (via &#x60;create&#x60; or &#x60;new&#x60;) bypasses the dependency injection
+    system.
+
+    Ember-Data instantiates its models in a unique manner, and consequently
+    injections onto models (or all models) will not work as expected. Injections
+    on models can be enabled by setting &#x60;Ember.MODEL_FACTORY_INJECTIONS&#x60;
+    to &#x60;true&#x60;.
+
+    @method inject
+    @param  factoryNameOrType {String}
+    @param  property {String}
+    @param  injectionName {String}
+  **/
+  inject: function() {
+    var container = this.__container__;
+    container.injection.apply(container, arguments);
+  },
+
+  /**
+    Calling initialize manually is not supported.
+
+    Please see Ember.Application#advanceReadiness and
+    Ember.Application#deferReadiness.
+
+    @private
+    @deprecated
+    @method initialize
+   **/
+  initialize: function() {
+    Ember.deprecate(&#x27;Calling initialize manually is not supported. Please see Ember.Application#advanceReadiness and Ember.Application#deferReadiness&#x27;);
+  },
+
+  /**
+    Initialize the application. This happens automatically.
+
+    Run any initializers and run the application load hook. These hooks may
+    choose to defer readiness. For example, an authentication hook might want
+    to defer readiness until the auth token has been retrieved.
+
+    @private
+    @method _initialize
+  */
+  _initialize: function() {
+    if (this.isDestroyed) { return; }
+
+    // At this point, the App.Router must already be assigned
+    if (this.Router) {
+      var container = this.__container__;
+      container.unregister(&#x27;router:main&#x27;);
+      container.register(&#x27;router:main&#x27;, this.Router);
+    }
+
+    this.runInitializers();
+    runLoadHooks(&#x27;application&#x27;, this);
+
+    // At this point, any initializers or load hooks that would have wanted
+    // to defer readiness have fired. In general, advancing readiness here
+    // will proceed to didBecomeReady.
+    this.advanceReadiness();
+
+    return this;
+  },
+
+  /**
+    Reset the application. This is typically used only in tests. It cleans up
+    the application in the following order:
+
+    1. Deactivate existing routes
+    2. Destroy all objects in the container
+    3. Create a new application container
+    4. Re-route to the existing url
+
+    Typical Example:
+
+    &#x60;&#x60;&#x60;javascript
+
+    var App;
+
+    run(function() {
+      App = Ember.Application.create();
+    });
+
+    module(&quot;acceptance test&quot;, {
+      setup: function() {
+        App.reset();
+      }
+    });
+
+    test(&quot;first test&quot;, function() {
+      // App is freshly reset
+    });
+
+    test(&quot;first test&quot;, function() {
+      // App is again freshly reset
+    });
+    &#x60;&#x60;&#x60;
+
+    Advanced Example:
+
+    Occasionally you may want to prevent the app from initializing during
+    setup. This could enable extra configuration, or enable asserting prior
+    to the app becoming ready.
+
+    &#x60;&#x60;&#x60;javascript
+
+    var App;
+
+    run(function() {
+      App = Ember.Application.create();
+    });
+
+    module(&quot;acceptance test&quot;, {
+      setup: function() {
+        run(function() {
+          App.reset();
+          App.deferReadiness();
+        });
+      }
+    });
+
+    test(&quot;first test&quot;, function() {
+      ok(true, &#x27;something before app is initialized&#x27;);
+
+      run(function() {
+        App.advanceReadiness();
+      });
+      ok(true, &#x27;something after app is initialized&#x27;);
+    });
+    &#x60;&#x60;&#x60;
+
+    @method reset
+  **/
+  reset: function() {
+    this._readinessDeferrals = 1;
+
+    function handleReset() {
+      var router = this.__container__.lookup(&#x27;router:main&#x27;);
+      router.reset();
+
+      run(this.__container__, &#x27;destroy&#x27;);
+
+      this.buildContainer();
+
+      run.schedule(&#x27;actions&#x27;, this, function() {
+        this._initialize();
+      });
+    }
+
+    run.join(this, handleReset);
+  },
+
+  /**
+    @private
+    @method runInitializers
+  */
+  runInitializers: function() {
+    var initializers = get(this.constructor, &#x27;initializers&#x27;),
+        container = this.__container__,
+        graph = new DAG(),
+        namespace = this,
+        name, initializer;
+
+    for (name in initializers) {
+      initializer = initializers[name];
+      graph.addEdges(initializer.name, initializer.initialize, initializer.before, initializer.after);
+    }
+
+    graph.topsort(function (vertex) {
+      var initializer = vertex.value;
+      Ember.assert(&quot;No application initializer named &#x27;&quot;+vertex.name+&quot;&#x27;&quot;, initializer);
+      initializer(container, namespace);
+    });
+  },
+
+  /**
+    @private
+    @method didBecomeReady
+  */
+  didBecomeReady: function() {
+    this.setupEventDispatcher();
+    this.ready(); // user hook
+    this.startRouting();
+
+    if (!Ember.testing) {
+      // Eagerly name all classes that are already loaded
+      Ember.Namespace.processAll();
+      Ember.BOOTED = true;
+    }
+
+    this.resolve(this);
+  },
+
+  /**
+    Setup up the event dispatcher to receive events on the
+    application&#x27;s &#x60;rootElement&#x60; with any registered
+    &#x60;customEvents&#x60;.
+
+    @private
+    @method setupEventDispatcher
+  */
+  setupEventDispatcher: function() {
+    var customEvents = get(this, &#x27;customEvents&#x27;),
+        rootElement = get(this, &#x27;rootElement&#x27;),
+        dispatcher = this.__container__.lookup(&#x27;event_dispatcher:main&#x27;);
+
+    set(this, &#x27;eventDispatcher&#x27;, dispatcher);
+    dispatcher.setup(customEvents, rootElement);
+  },
+
+  /**
+    If the application has a router, use it to route to the current URL, and
+    trigger a new call to &#x60;route&#x60; whenever the URL changes.
+
+    @private
+    @method startRouting
+    @property router {Ember.Router}
+  */
+  startRouting: function() {
+    var router = this.__container__.lookup(&#x27;router:main&#x27;);
+    if (!router) { return; }
+
+    router.startRouting();
+  },
+
+  handleURL: function(url) {
+    var router = this.__container__.lookup(&#x27;router:main&#x27;);
+
+    router.handleURL(url);
+  },
+
+  /**
+    Called when the Application has become ready.
+    The call will be delayed until the DOM has become ready.
+
+    @event ready
+  */
+  ready: K,
+
+  /**
+    @deprecated Use &#x27;Resolver&#x27; instead
+    Set this to provide an alternate class to &#x60;Ember.DefaultResolver&#x60;
+
+
+    @property resolver
+  */
+  resolver: null,
+
+  /**
+    Set this to provide an alternate class to &#x60;Ember.DefaultResolver&#x60;
+
+    @property resolver
+  */
+  Resolver: null,
+
+  willDestroy: function() {
+    Ember.BOOTED = false;
+    // Ensure deactivation of routes before objects are destroyed
+    this.__container__.lookup(&#x27;router:main&#x27;).reset();
+
+    this.__container__.destroy();
+  },
+
+  initializer: function(options) {
+    this.constructor.initializer(options);
+  }
+});
+
+Application.reopenClass({
+  initializers: {},
+  initializer: function(initializer) {
+    // If this is the first initializer being added to a subclass, we are going to reopen the class
+    // to make sure we have a new &#x60;initializers&#x60; object, which extends from the parent class&#x27; using
+    // prototypal inheritance. Without this, attempting to add initializers to the subclass would
+    // pollute the parent class as well as other subclasses.
+    if (this.superclass.initializers !== undefined &amp;&amp; this.superclass.initializers === this.initializers) {
+      this.reopenClass({
+        initializers: create(this.initializers)
+      });
+    }
+
+    Ember.assert(&quot;The initializer &#x27;&quot; + initializer.name + &quot;&#x27; has already been registered&quot;, !this.initializers[initializer.name]);
+    Ember.assert(&quot;An initializer cannot be registered with both a before and an after&quot;, !(initializer.before &amp;&amp; initializer.after));
+    Ember.assert(&quot;An initializer cannot be registered without an initialize function&quot;, canInvoke(initializer, &#x27;initialize&#x27;));
+
+    this.initializers[initializer.name] = initializer;
+  },
+
+  /**
+    This creates a container with the default Ember naming conventions.
+
+    It also configures the container:
+
+    * registered views are created every time they are looked up (they are
+      not singletons)
+    * registered templates are not factories; the registered value is
+      returned directly.
+    * the router receives the application as its &#x60;namespace&#x60; property
+    * all controllers receive the router as their &#x60;target&#x60; and &#x60;controllers&#x60;
+      properties
+    * all controllers receive the application as their &#x60;namespace&#x60; property
+    * the application view receives the application controller as its
+      &#x60;controller&#x60; property
+    * the application view receives the application template as its
+      &#x60;defaultTemplate&#x60; property
+
+    @private
+    @method buildContainer
+    @static
+    @param {Ember.Application} namespace the application to build the
+      container for.
+    @return {Ember.Container} the built container
+  */
+  buildContainer: function(namespace) {
+    var container = new Container();
+
+    Container.defaultContainer = new DeprecatedContainer(container);
+
+    container.set = set;
+    container.resolver  = resolverFor(namespace);
+    container.normalize = container.resolver.normalize;
+    container.describe  = container.resolver.describe;
+    container.makeToString = container.resolver.makeToString;
+
+    container.optionsForType(&#x27;component&#x27;, { singleton: false });
+    container.optionsForType(&#x27;view&#x27;, { singleton: false });
+    container.optionsForType(&#x27;template&#x27;, { instantiate: false });
+    container.optionsForType(&#x27;helper&#x27;, { instantiate: false });
+
+    container.register(&#x27;application:main&#x27;, namespace, { instantiate: false });
+
+    container.register(&#x27;controller:basic&#x27;, Controller, { instantiate: false });
+    container.register(&#x27;controller:object&#x27;, ObjectController, { instantiate: false });
+    container.register(&#x27;controller:array&#x27;, ArrayController, { instantiate: false });
+    container.register(&#x27;route:basic&#x27;, Route, { instantiate: false });
+    container.register(&#x27;event_dispatcher:main&#x27;, EventDispatcher);
+
+    container.register(&#x27;router:main&#x27;,  Router);
+    container.injection(&#x27;router:main&#x27;, &#x27;namespace&#x27;, &#x27;application:main&#x27;);
+
+    container.register(&#x27;location:auto&#x27;, AutoLocation);
+    container.register(&#x27;location:hash&#x27;, HashLocation);
+    container.register(&#x27;location:history&#x27;, HistoryLocation);
+    container.register(&#x27;location:none&#x27;, NoneLocation);
+
+    container.injection(&#x27;controller&#x27;, &#x27;target&#x27;, &#x27;router:main&#x27;);
+    container.injection(&#x27;controller&#x27;, &#x27;namespace&#x27;, &#x27;application:main&#x27;);
+
+    container.injection(&#x27;route&#x27;, &#x27;router&#x27;, &#x27;router:main&#x27;);
+    container.injection(&#x27;location&#x27;, &#x27;rootURL&#x27;, &#x27;-location-setting:root-url&#x27;);
+
+    // DEBUGGING
+    container.register(&#x27;resolver-for-debugging:main&#x27;, container.resolver.__resolver__, { instantiate: false });
+    container.injection(&#x27;container-debug-adapter:main&#x27;, &#x27;resolver&#x27;, &#x27;resolver-for-debugging:main&#x27;);
+    container.injection(&#x27;data-adapter:main&#x27;, &#x27;containerDebugAdapter&#x27;, &#x27;container-debug-adapter:main&#x27;);
+    // Custom resolver authors may want to register their own ContainerDebugAdapter with this key
+
+    // ES6TODO: resolve this via import once ember-application package is ES6&#x27;ed
+    requireModule(&#x27;ember-extension-support&#x27;);
+    container.register(&#x27;container-debug-adapter:main&#x27;, ContainerDebugAdapter);
+
+    return container;
+  }
+});
+
+/**
+  This function defines the default lookup rules for container lookups:
+
+  * templates are looked up on &#x60;Ember.TEMPLATES&#x60;
+  * other names are looked up on the application after classifying the name.
+    For example, &#x60;controller:post&#x60; looks up &#x60;App.PostController&#x60; by default.
+  * if the default lookup fails, look for registered classes on the container
+
+  This allows the application to register default injections in the container
+  that could be overridden by the normal naming convention.
+
+  @private
+  @method resolverFor
+  @param {Ember.Namespace} namespace the namespace to look for classes
+  @return {*} the resolved value for a given lookup
+*/
+function resolverFor(namespace) {
+  if (namespace.get(&#x27;resolver&#x27;)) {
+    Ember.deprecate(&#x27;Application.resolver is deprecated in favor of Application.Resolver&#x27;, false);
+  }
+
+  var ResolverClass = namespace.get(&#x27;resolver&#x27;) || namespace.get(&#x27;Resolver&#x27;) || DefaultResolver;
+  var resolver = ResolverClass.create({
+    namespace: namespace
+  });
+
+  function resolve(fullName) {
+    return resolver.resolve(fullName);
+  }
+
+  resolve.describe = function(fullName) {
+    return resolver.lookupDescription(fullName);
+  };
+
+  resolve.makeToString = function(factory, fullName) {
+    return resolver.makeToString(factory, fullName);
+  };
+
+  resolve.normalize = function(fullName) {
+    if (resolver.normalize) {
+      return resolver.normalize(fullName);
+    } else {
+      Ember.deprecate(&#x27;The Resolver should now provide a \&#x27;normalize\&#x27; function&#x27;, false);
+      return fullName;
+    }
+  };
+
+  resolve.__resolver__ = resolver;
+
+  return resolve;
+}
+
+export default Application;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

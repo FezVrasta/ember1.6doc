@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/container/lib/container.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/container/lib/container.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import InheritingDict from &#x27;container/inheriting_dict&#x27;;
+
+// A lightweight container that helps to assemble and decouple components.
+// Public api for the container is still in flux.
+// The public api, specified on the application namespace should be considered the stable api.
+function Container(parent) {
+  this.parent = parent;
+  this.children = [];
+
+  this.resolver = parent &amp;&amp; parent.resolver || function() {};
+
+  this.registry = new InheritingDict(parent &amp;&amp; parent.registry);
+  this.cache = new InheritingDict(parent &amp;&amp; parent.cache);
+  this.factoryCache = new InheritingDict(parent &amp;&amp; parent.factoryCache);
+  this.resolveCache = new InheritingDict(parent &amp;&amp; parent.resolveCache);
+  this.typeInjections = new InheritingDict(parent &amp;&amp; parent.typeInjections);
+  this.injections = {};
+
+  this.factoryTypeInjections = new InheritingDict(parent &amp;&amp; parent.factoryTypeInjections);
+  this.factoryInjections = {};
+
+  this._options = new InheritingDict(parent &amp;&amp; parent._options);
+  this._typeOptions = new InheritingDict(parent &amp;&amp; parent._typeOptions);
+}
+
+Container.prototype = {
+
+  /**
+    @property parent
+    @type Container
+    @default null
+  */
+  parent: null,
+
+  /**
+    @property children
+    @type Array
+    @default []
+  */
+  children: null,
+
+  /**
+    @property resolver
+    @type function
+  */
+  resolver: null,
+
+  /**
+    @property registry
+    @type InheritingDict
+  */
+  registry: null,
+
+  /**
+    @property cache
+    @type InheritingDict
+  */
+  cache: null,
+
+  /**
+    @property typeInjections
+    @type InheritingDict
+  */
+  typeInjections: null,
+
+  /**
+    @property injections
+    @type Object
+    @default {}
+  */
+  injections: null,
+
+  /**
+    @private
+
+    @property _options
+    @type InheritingDict
+    @default null
+  */
+  _options: null,
+
+  /**
+    @private
+
+    @property _typeOptions
+    @type InheritingDict
+  */
+  _typeOptions: null,
+
+  /**
+    Returns a new child of the current container. These children are configured
+    to correctly inherit from the current container.
+
+    @method child
+    @return {Container}
+  */
+  child: function() {
+    var container = new Container(this);
+    this.children.push(container);
+    return container;
+  },
+
+  /**
+    Sets a key-value pair on the current container. If a parent container,
+    has the same key, once set on a child, the parent and child will diverge
+    as expected.
+
+    @method set
+    @param {Object} object
+    @param {String} key
+    @param {any} value
+  */
+  set: function(object, key, value) {
+    object[key] = value;
+  },
+
+  /**
+    Registers a factory for later injection.
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+
+    container.register(&#x27;model:user&#x27;, Person, {singleton: false });
+    container.register(&#x27;fruit:favorite&#x27;, Orange);
+    container.register(&#x27;communication:main&#x27;, Email, {singleton: false});
+    &#x60;&#x60;&#x60;
+
+    @method register
+    @param {String} fullName
+    @param {Function} factory
+    @param {Object} options
+  */
+  register: function(fullName, factory, options) {
+    validateFullName(fullName);
+
+    if (factory === undefined) {
+      throw new TypeError(&#x27;Attempting to register an unknown factory: &#x60;&#x27; + fullName + &#x27;&#x60;&#x27;);
+    }
+
+    var normalizedName = this.normalize(fullName);
+
+    if (this.cache.has(normalizedName)) {
+      throw new Error(&#x27;Cannot re-register: &#x60;&#x27; + fullName +&#x27;&#x60;, as it has already been looked up.&#x27;);
+    }
+
+    this.registry.set(normalizedName, factory);
+    this._options.set(normalizedName, options || {});
+  },
+
+  /**
+    Unregister a fullName
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+    container.register(&#x27;model:user&#x27;, User);
+
+    container.lookup(&#x27;model:user&#x27;) instanceof User //=&gt; true
+
+    container.unregister(&#x27;model:user&#x27;)
+    container.lookup(&#x27;model:user&#x27;) === undefined //=&gt; true
+    &#x60;&#x60;&#x60;
+
+    @method unregister
+    @param {String} fullName
+   */
+  unregister: function(fullName) {
+    validateFullName(fullName);
+
+    var normalizedName = this.normalize(fullName);
+
+    this.registry.remove(normalizedName);
+    this.cache.remove(normalizedName);
+    this.factoryCache.remove(normalizedName);
+    this.resolveCache.remove(normalizedName);
+    this._options.remove(normalizedName);
+  },
+
+  /**
+    Given a fullName return the corresponding factory.
+
+    By default &#x60;resolve&#x60; will retrieve the factory from
+    its container&#x27;s registry.
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+    container.register(&#x27;api:twitter&#x27;, Twitter);
+
+    container.resolve(&#x27;api:twitter&#x27;) // =&gt; Twitter
+    &#x60;&#x60;&#x60;
+
+    Optionally the container can be provided with a custom resolver.
+    If provided, &#x60;resolve&#x60; will first provide the custom resolver
+    the oppertunity to resolve the fullName, otherwise it will fallback
+    to the registry.
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+    container.resolver = function(fullName) {
+      // lookup via the module system of choice
+    };
+
+    // the twitter factory is added to the module system
+    container.resolve(&#x27;api:twitter&#x27;) // =&gt; Twitter
+    &#x60;&#x60;&#x60;
+
+    @method resolve
+    @param {String} fullName
+    @return {Function} fullName&#x27;s factory
+  */
+  resolve: function(fullName) {
+    validateFullName(fullName);
+
+    var normalizedName = this.normalize(fullName);
+    var cached = this.resolveCache.get(normalizedName);
+
+    if (cached) { return cached; }
+
+    var resolved = this.resolver(normalizedName) || this.registry.get(normalizedName);
+
+    this.resolveCache.set(normalizedName, resolved);
+
+    return resolved;
+  },
+
+  /**
+    A hook that can be used to describe how the resolver will
+    attempt to find the factory.
+
+    For example, the default Ember &#x60;.describe&#x60; returns the full
+    class name (including namespace) where Ember&#x27;s resolver expects
+    to find the &#x60;fullName&#x60;.
+
+    @method describe
+    @param {String} fullName
+    @return {string} described fullName
+  */
+  describe: function(fullName) {
+    return fullName;
+  },
+
+  /**
+    A hook to enable custom fullName normalization behaviour
+
+    @method normalize
+    @param {String} fullName
+    @return {string} normalized fullName
+  */
+  normalize: function(fullName) {
+    return fullName;
+  },
+
+  /**
+    @method makeToString
+
+    @param {any} factory
+    @param {string} fullName
+    @return {function} toString function
+  */
+  makeToString: function(factory, fullName) {
+    return factory.toString();
+  },
+
+  /**
+    Given a fullName return a corresponding instance.
+
+    The default behaviour is for lookup to return a singleton instance.
+    The singleton is scoped to the container, allowing multiple containers
+    to all have their own locally scoped singletons.
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+    container.register(&#x27;api:twitter&#x27;, Twitter);
+
+    var twitter = container.lookup(&#x27;api:twitter&#x27;);
+
+    twitter instanceof Twitter; // =&gt; true
+
+    // by default the container will return singletons
+    var twitter2 = container.lookup(&#x27;api:twitter&#x27;);
+    twitter instanceof Twitter; // =&gt; true
+
+    twitter === twitter2; //=&gt; true
+    &#x60;&#x60;&#x60;
+
+    If singletons are not wanted an optional flag can be provided at lookup.
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+    container.register(&#x27;api:twitter&#x27;, Twitter);
+
+    var twitter = container.lookup(&#x27;api:twitter&#x27;, { singleton: false });
+    var twitter2 = container.lookup(&#x27;api:twitter&#x27;, { singleton: false });
+
+    twitter === twitter2; //=&gt; false
+    &#x60;&#x60;&#x60;
+
+    @method lookup
+    @param {String} fullName
+    @param {Object} options
+    @return {any}
+  */
+  lookup: function(fullName, options) {
+    validateFullName(fullName);
+    return lookup(this, this.normalize(fullName), options);
+  },
+
+  /**
+    Given a fullName return the corresponding factory.
+
+    @method lookupFactory
+    @param {String} fullName
+    @return {any}
+  */
+  lookupFactory: function(fullName) {
+    validateFullName(fullName);
+    return factoryFor(this, this.normalize(fullName));
+  },
+
+  /**
+    Given a fullName check if the container is aware of its factory
+    or singleton instance.
+
+    @method has
+    @param {String} fullName
+    @return {Boolean}
+  */
+  has: function(fullName) {
+    validateFullName(fullName);
+    return has(this, this.normalize(fullName));
+  },
+
+  /**
+    Allow registering options for all factories of a type.
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+
+    // if all of type &#x60;connection&#x60; must not be singletons
+    container.optionsForType(&#x27;connection&#x27;, { singleton: false });
+
+    container.register(&#x27;connection:twitter&#x27;, TwitterConnection);
+    container.register(&#x27;connection:facebook&#x27;, FacebookConnection);
+
+    var twitter = container.lookup(&#x27;connection:twitter&#x27;);
+    var twitter2 = container.lookup(&#x27;connection:twitter&#x27;);
+
+    twitter === twitter2; // =&gt; false
+
+    var facebook = container.lookup(&#x27;connection:facebook&#x27;);
+    var facebook2 = container.lookup(&#x27;connection:facebook&#x27;);
+
+    facebook === facebook2; // =&gt; false
+    &#x60;&#x60;&#x60;
+
+    @method optionsForType
+    @param {String} type
+    @param {Object} options
+  */
+  optionsForType: function(type, options) {
+    if (this.parent) { illegalChildOperation(&#x27;optionsForType&#x27;); }
+
+    this._typeOptions.set(type, options);
+  },
+
+  /**
+    @method options
+    @param {String} type
+    @param {Object} options
+  */
+  options: function(type, options) {
+    this.optionsForType(type, options);
+  },
+
+  /**
+    Used only via &#x60;injection&#x60;.
+
+    Provides a specialized form of injection, specifically enabling
+    all objects of one type to be injected with a reference to another
+    object.
+
+    For example, provided each object of type &#x60;controller&#x60; needed a &#x60;router&#x60;.
+    one would do the following:
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+
+    container.register(&#x27;router:main&#x27;, Router);
+    container.register(&#x27;controller:user&#x27;, UserController);
+    container.register(&#x27;controller:post&#x27;, PostController);
+
+    container.typeInjection(&#x27;controller&#x27;, &#x27;router&#x27;, &#x27;router:main&#x27;);
+
+    var user = container.lookup(&#x27;controller:user&#x27;);
+    var post = container.lookup(&#x27;controller:post&#x27;);
+
+    user.router instanceof Router; //=&gt; true
+    post.router instanceof Router; //=&gt; true
+
+    // both controllers share the same router
+    user.router === post.router; //=&gt; true
+    &#x60;&#x60;&#x60;
+
+    @private
+    @method typeInjection
+    @param {String} type
+    @param {String} property
+    @param {String} fullName
+  */
+  typeInjection: function(type, property, fullName) {
+    validateFullName(fullName);
+    if (this.parent) { illegalChildOperation(&#x27;typeInjection&#x27;); }
+
+    var fullNameType = fullName.split(&#x27;:&#x27;)[0];
+    if(fullNameType === type) {
+      throw new Error(&#x27;Cannot inject a &#x60;&#x27; + fullName + &#x27;&#x60; on other &#x27; + type + &#x27;(s). Register the &#x60;&#x27; + fullName + &#x27;&#x60; as a different type and perform the typeInjection.&#x27;);
+    }
+    addTypeInjection(this.typeInjections, type, property, fullName);
+  },
+
+  /**
+    Defines injection rules.
+
+    These rules are used to inject dependencies onto objects when they
+    are instantiated.
+
+    Two forms of injections are possible:
+
+    * Injecting one fullName on another fullName
+    * Injecting one fullName on a type
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+
+    container.register(&#x27;source:main&#x27;, Source);
+    container.register(&#x27;model:user&#x27;, User);
+    container.register(&#x27;model:post&#x27;, Post);
+
+    // injecting one fullName on another fullName
+    // eg. each user model gets a post model
+    container.injection(&#x27;model:user&#x27;, &#x27;post&#x27;, &#x27;model:post&#x27;);
+
+    // injecting one fullName on another type
+    container.injection(&#x27;model&#x27;, &#x27;source&#x27;, &#x27;source:main&#x27;);
+
+    var user = container.lookup(&#x27;model:user&#x27;);
+    var post = container.lookup(&#x27;model:post&#x27;);
+
+    user.source instanceof Source; //=&gt; true
+    post.source instanceof Source; //=&gt; true
+
+    user.post instanceof Post; //=&gt; true
+
+    // and both models share the same source
+    user.source === post.source; //=&gt; true
+    &#x60;&#x60;&#x60;
+
+    @method injection
+    @param {String} factoryName
+    @param {String} property
+    @param {String} injectionName
+  */
+  injection: function(fullName, property, injectionName) {
+    if (this.parent) { illegalChildOperation(&#x27;injection&#x27;); }
+
+    validateFullName(injectionName);
+    var normalizedInjectionName = this.normalize(injectionName);
+
+    if (fullName.indexOf(&#x27;:&#x27;) === -1) {
+      return this.typeInjection(fullName, property, normalizedInjectionName);
+    }
+
+    validateFullName(fullName);
+    var normalizedName = this.normalize(fullName);
+
+    addInjection(this.injections, normalizedName, property, normalizedInjectionName);
+  },
+
+
+  /**
+    Used only via &#x60;factoryInjection&#x60;.
+
+    Provides a specialized form of injection, specifically enabling
+    all factory of one type to be injected with a reference to another
+    object.
+
+    For example, provided each factory of type &#x60;model&#x60; needed a &#x60;store&#x60;.
+    one would do the following:
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+
+    container.register(&#x27;store:main&#x27;, SomeStore);
+
+    container.factoryTypeInjection(&#x27;model&#x27;, &#x27;store&#x27;, &#x27;store:main&#x27;);
+
+    var store = container.lookup(&#x27;store:main&#x27;);
+    var UserFactory = container.lookupFactory(&#x27;model:user&#x27;);
+
+    UserFactory.store instanceof SomeStore; //=&gt; true
+    &#x60;&#x60;&#x60;
+
+    @private
+    @method factoryTypeInjection
+    @param {String} type
+    @param {String} property
+    @param {String} fullName
+  */
+  factoryTypeInjection: function(type, property, fullName) {
+    if (this.parent) { illegalChildOperation(&#x27;factoryTypeInjection&#x27;); }
+
+    addTypeInjection(this.factoryTypeInjections, type, property, this.normalize(fullName));
+  },
+
+  /**
+    Defines factory injection rules.
+
+    Similar to regular injection rules, but are run against factories, via
+    &#x60;Container#lookupFactory&#x60;.
+
+    These rules are used to inject objects onto factories when they
+    are looked up.
+
+    Two forms of injections are possible:
+
+  * Injecting one fullName on another fullName
+  * Injecting one fullName on a type
+
+    Example:
+
+    &#x60;&#x60;&#x60;javascript
+    var container = new Container();
+
+    container.register(&#x27;store:main&#x27;, Store);
+    container.register(&#x27;store:secondary&#x27;, OtherStore);
+    container.register(&#x27;model:user&#x27;, User);
+    container.register(&#x27;model:post&#x27;, Post);
+
+    // injecting one fullName on another type
+    container.factoryInjection(&#x27;model&#x27;, &#x27;store&#x27;, &#x27;store:main&#x27;);
+
+    // injecting one fullName on another fullName
+    container.factoryInjection(&#x27;model:post&#x27;, &#x27;secondaryStore&#x27;, &#x27;store:secondary&#x27;);
+
+    var UserFactory = container.lookupFactory(&#x27;model:user&#x27;);
+    var PostFactory = container.lookupFactory(&#x27;model:post&#x27;);
+    var store = container.lookup(&#x27;store:main&#x27;);
+
+    UserFactory.store instanceof Store; //=&gt; true
+    UserFactory.secondaryStore instanceof OtherStore; //=&gt; false
+
+    PostFactory.store instanceof Store; //=&gt; true
+    PostFactory.secondaryStore instanceof OtherStore; //=&gt; true
+
+    // and both models share the same source instance
+    UserFactory.store === PostFactory.store; //=&gt; true
+    &#x60;&#x60;&#x60;
+
+    @method factoryInjection
+    @param {String} factoryName
+    @param {String} property
+    @param {String} injectionName
+  */
+  factoryInjection: function(fullName, property, injectionName) {
+    if (this.parent) { illegalChildOperation(&#x27;injection&#x27;); }
+
+    var normalizedName = this.normalize(fullName);
+    var normalizedInjectionName = this.normalize(injectionName);
+
+    validateFullName(injectionName);
+
+    if (fullName.indexOf(&#x27;:&#x27;) === -1) {
+      return this.factoryTypeInjection(normalizedName, property, normalizedInjectionName);
+    }
+
+    validateFullName(fullName);
+
+    addInjection(this.factoryInjections, normalizedName, property, normalizedInjectionName);
+  },
+
+  /**
+    A depth first traversal, destroying the container, its descendant containers and all
+    their managed objects.
+
+    @method destroy
+  */
+  destroy: function() {
+    for (var i=0, l=this.children.length; i&lt;l; i++) {
+      this.children[i].destroy();
+    }
+
+    this.children = [];
+
+    eachDestroyable(this, function(item) {
+      item.destroy();
+    });
+
+    this.parent = undefined;
+    this.isDestroyed = true;
+  },
+
+  /**
+    @method reset
+  */
+  reset: function() {
+    for (var i=0, l=this.children.length; i&lt;l; i++) {
+      resetCache(this.children[i]);
+    }
+    resetCache(this);
+  }
+};
+
+function has(container, fullName){
+  if (container.cache.has(fullName)) {
+    return true;
+  }
+
+  return !!container.resolve(fullName);
+}
+
+function lookup(container, fullName, options) {
+  options = options || {};
+
+  if (container.cache.has(fullName) &amp;&amp; options.singleton !== false) {
+    return container.cache.get(fullName);
+  }
+
+  var value = instantiate(container, fullName);
+
+  if (value === undefined) { return; }
+
+  if (isSingleton(container, fullName) &amp;&amp; options.singleton !== false) {
+    container.cache.set(fullName, value);
+  }
+
+  return value;
+}
+
+function illegalChildOperation(operation) {
+  throw new Error(operation + &quot; is not currently supported on child containers&quot;);
+}
+
+function isSingleton(container, fullName) {
+  var singleton = option(container, fullName, &#x27;singleton&#x27;);
+
+  return singleton !== false;
+}
+
+function buildInjections(container, injections) {
+  var hash = {};
+
+  if (!injections) { return hash; }
+
+  var injection, injectable;
+
+  for (var i=0, l=injections.length; i&lt;l; i++) {
+    injection = injections[i];
+    injectable = lookup(container, injection.fullName);
+
+    if (injectable !== undefined) {
+      hash[injection.property] = injectable;
+    } else {
+      throw new Error(&#x27;Attempting to inject an unknown injection: &#x60;&#x27; + injection.fullName + &#x27;&#x60;&#x27;);
+    }
+  }
+
+  return hash;
+}
+
+function option(container, fullName, optionName) {
+  var options = container._options.get(fullName);
+
+  if (options &amp;&amp; options[optionName] !== undefined) {
+    return options[optionName];
+  }
+
+  var type = fullName.split(&quot;:&quot;)[0];
+  options = container._typeOptions.get(type);
+
+  if (options) {
+    return options[optionName];
+  }
+}
+
+function factoryFor(container, fullName) {
+  var name = fullName;
+  var factory = container.resolve(name);
+  var injectedFactory;
+  var cache = container.factoryCache;
+  var type = fullName.split(&quot;:&quot;)[0];
+
+  if (factory === undefined) { return; }
+
+  if (cache.has(fullName)) {
+    return cache.get(fullName);
+  }
+
+  if (!factory || typeof factory.extend !== &#x27;function&#x27; || (!Ember.MODEL_FACTORY_INJECTIONS &amp;&amp; type === &#x27;model&#x27;)) {
+    // TODO: think about a &#x27;safe&#x27; merge style extension
+    // for now just fallback to create time injection
+    return factory;
+  } else {
+
+    var injections        = injectionsFor(container, fullName);
+    var factoryInjections = factoryInjectionsFor(container, fullName);
+
+    factoryInjections._toString = container.makeToString(factory, fullName);
+
+    injectedFactory = factory.extend(injections);
+    injectedFactory.reopenClass(factoryInjections);
+
+    cache.set(fullName, injectedFactory);
+
+    return injectedFactory;
+  }
+}
+
+function injectionsFor(container, fullName) {
+  var splitName = fullName.split(&quot;:&quot;),
+    type = splitName[0],
+    injections = [];
+
+  injections = injections.concat(container.typeInjections.get(type) || []);
+  injections = injections.concat(container.injections[fullName] || []);
+
+  injections = buildInjections(container, injections);
+  injections._debugContainerKey = fullName;
+  injections.container = container;
+
+  return injections;
+}
+
+function factoryInjectionsFor(container, fullName) {
+  var splitName = fullName.split(&quot;:&quot;),
+    type = splitName[0],
+    factoryInjections = [];
+
+  factoryInjections = factoryInjections.concat(container.factoryTypeInjections.get(type) || []);
+  factoryInjections = factoryInjections.concat(container.factoryInjections[fullName] || []);
+
+  factoryInjections = buildInjections(container, factoryInjections);
+  factoryInjections._debugContainerKey = fullName;
+
+  return factoryInjections;
+}
+
+function instantiate(container, fullName) {
+  var factory = factoryFor(container, fullName);
+
+  if (option(container, fullName, &#x27;instantiate&#x27;) === false) {
+    return factory;
+  }
+
+  if (factory) {
+    if (typeof factory.extend === &#x27;function&#x27;) {
+      // assume the factory was extendable and is already injected
+      return factory.create();
+    } else {
+      // assume the factory was extendable
+      // to create time injections
+      // TODO: support new&#x27;ing for instantiation and merge injections for pure JS Functions
+      return factory.create(injectionsFor(container, fullName));
+    }
+  }
+}
+
+function eachDestroyable(container, callback) {
+  container.cache.eachLocal(function(key, value) {
+    if (option(container, key, &#x27;instantiate&#x27;) === false) { return; }
+    callback(value);
+  });
+}
+
+function resetCache(container) {
+  container.cache.eachLocal(function(key, value) {
+    if (option(container, key, &#x27;instantiate&#x27;) === false) { return; }
+    value.destroy();
+  });
+  container.cache.dict = {};
+}
+
+function addTypeInjection(rules, type, property, fullName) {
+  var injections = rules.get(type);
+
+  if (!injections) {
+    injections = [];
+    rules.set(type, injections);
+  }
+
+  injections.push({
+    property: property,
+    fullName: fullName
+  });
+}
+
+var VALID_FULL_NAME_REGEXP = /^[^:]+.+:[^:]+$/;
+function validateFullName(fullName) {
+  if (!VALID_FULL_NAME_REGEXP.test(fullName)) {
+    throw new TypeError(&#x27;Invalid Fullname, expected: &#x60;type:name&#x60; got: &#x27; + fullName);
+  }
+}
+
+function addInjection(rules, factoryName, property, injectionName) {
+  var injections = rules[factoryName] = rules[factoryName] || [];
+  injections.push({ property: property, fullName: injectionName });
+}
+
+export default Container;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

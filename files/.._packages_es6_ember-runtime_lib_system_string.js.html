@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-runtime/lib/system/string.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-runtime/lib/system/string.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-runtime
+*/
+import Ember from &quot;ember-metal/core&quot;; // Ember.STRINGS, Ember.FEATURES
+import {inspect as EmberInspect} from &quot;ember-metal/utils&quot;;
+
+
+var STRING_DASHERIZE_REGEXP = (/[ _]/g);
+var STRING_DASHERIZE_CACHE = {};
+var STRING_DECAMELIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+var STRING_CAMELIZE_REGEXP = (/(\-|_|\.|\s)+(.)?/g);
+var STRING_UNDERSCORE_REGEXP_1 = (/([a-z\d])([A-Z]+)/g);
+var STRING_UNDERSCORE_REGEXP_2 = (/\-|\s+/g);
+
+function fmt(str, formats) {
+  // first, replace any ORDERED replacements.
+  var idx  = 0; // the current index for non-numerical replacements
+  return str.replace(/%@([0-9]+)?/g, function(s, argIndex) {
+    argIndex = (argIndex) ? parseInt(argIndex, 10) - 1 : idx++;
+    s = formats[argIndex];
+    return (s === null) ? &#x27;(null)&#x27; : (s === undefined) ? &#x27;&#x27; : EmberInspect(s);
+  }) ;
+}
+
+function loc(str, formats) {
+  str = Ember.STRINGS[str] || str;
+  return fmt(str, formats);
+}
+
+function w(str) {
+  return str.split(/\s+/);
+}
+
+function decamelize(str) {
+  return str.replace(STRING_DECAMELIZE_REGEXP, &#x27;$1_$2&#x27;).toLowerCase();
+}
+
+function dasherize(str) {
+  var cache = STRING_DASHERIZE_CACHE,
+      hit   = cache.hasOwnProperty(str),
+      ret;
+
+  if (hit) {
+    return cache[str];
+  } else {
+    ret = decamelize(str).replace(STRING_DASHERIZE_REGEXP,&#x27;-&#x27;);
+    cache[str] = ret;
+  }
+
+  return ret;
+}
+
+function camelize(str) {
+  return str.replace(STRING_CAMELIZE_REGEXP, function(match, separator, chr) {
+    return chr ? chr.toUpperCase() : &#x27;&#x27;;
+  }).replace(/^([A-Z])/, function(match, separator, chr) {
+    return match.toLowerCase();
+  });
+}
+
+function classify(str) {
+  var parts = str.split(&quot;.&quot;),
+      out = [];
+
+  for (var i=0, l=parts.length; i&lt;l; i++) {
+    var camelized = camelize(parts[i]);
+    out.push(camelized.charAt(0).toUpperCase() + camelized.substr(1));
+  }
+
+  return out.join(&quot;.&quot;);
+}
+
+function underscore(str) {
+  return str.replace(STRING_UNDERSCORE_REGEXP_1, &#x27;$1_$2&#x27;).
+    replace(STRING_UNDERSCORE_REGEXP_2, &#x27;_&#x27;).toLowerCase();
+}
+
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.substr(1);
+}
+
+/**
+  Defines the hash of localized strings for the current language. Used by
+  the &#x60;Ember.String.loc()&#x60; helper. To localize, add string values to this
+  hash.
+
+  @property STRINGS
+  @for Ember
+  @type Hash
+*/
+Ember.STRINGS = {};
+
+/**
+  Defines string helper methods including string formatting and localization.
+  Unless &#x60;Ember.EXTEND_PROTOTYPES.String&#x60; is &#x60;false&#x60; these methods will also be
+  added to the &#x60;String.prototype&#x60; as well.
+
+  @class String
+  @namespace Ember
+  @static
+*/
+var EmberStringUtils = {
+
+  /**
+    Apply formatting options to the string. This will look for occurrences
+    of &quot;%@&quot; in your string and substitute them with the arguments you pass into
+    this method. If you want to control the specific order of replacement,
+    you can add a number after the key as well to indicate which argument
+    you want to insert.
+
+    Ordered insertions are most useful when building loc strings where values
+    you need to insert may appear in different orders.
+
+    &#x60;&#x60;&#x60;javascript
+    &quot;Hello %@ %@&quot;.fmt(&#x27;John&#x27;, &#x27;Doe&#x27;);     // &quot;Hello John Doe&quot;
+    &quot;Hello %@2, %@1&quot;.fmt(&#x27;John&#x27;, &#x27;Doe&#x27;);  // &quot;Hello Doe, John&quot;
+    &#x60;&#x60;&#x60;
+
+    @method fmt
+    @param {String} str The string to format
+    @param {Array} formats An array of parameters to interpolate into string.
+    @return {String} formatted string
+  */
+  fmt: fmt,
+
+  /**
+    Formats the passed string, but first looks up the string in the localized
+    strings hash. This is a convenient way to localize text. See
+    &#x60;Ember.String.fmt()&#x60; for more information on formatting.
+
+    Note that it is traditional but not required to prefix localized string
+    keys with an underscore or other character so you can easily identify
+    localized strings.
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.STRINGS = {
+      &#x27;_Hello World&#x27;: &#x27;Bonjour le monde&#x27;,
+      &#x27;_Hello %@ %@&#x27;: &#x27;Bonjour %@ %@&#x27;
+    };
+
+    Ember.String.loc(&quot;_Hello World&quot;);  // &#x27;Bonjour le monde&#x27;;
+    Ember.String.loc(&quot;_Hello %@ %@&quot;, [&quot;John&quot;, &quot;Smith&quot;]);  // &quot;Bonjour John Smith&quot;;
+    &#x60;&#x60;&#x60;
+
+    @method loc
+    @param {String} str The string to format
+    @param {Array} formats Optional array of parameters to interpolate into string.
+    @return {String} formatted string
+  */
+  loc: loc,
+
+  /**
+    Splits a string into separate units separated by spaces, eliminating any
+    empty strings in the process. This is a convenience method for split that
+    is mostly useful when applied to the &#x60;String.prototype&#x60;.
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.String.w(&quot;alpha beta gamma&quot;).forEach(function(key) {
+      console.log(key);
+    });
+
+    // &gt; alpha
+    // &gt; beta
+    // &gt; gamma
+    &#x60;&#x60;&#x60;
+
+    @method w
+    @param {String} str The string to split
+    @return {Array} array containing the split strings
+  */
+  w: w,
+
+  /**
+    Converts a camelized string into all lower case separated by underscores.
+
+    &#x60;&#x60;&#x60;javascript
+    &#x27;innerHTML&#x27;.decamelize();           // &#x27;inner_html&#x27;
+    &#x27;action_name&#x27;.decamelize();        // &#x27;action_name&#x27;
+    &#x27;css-class-name&#x27;.decamelize();     // &#x27;css-class-name&#x27;
+    &#x27;my favorite items&#x27;.decamelize();  // &#x27;my favorite items&#x27;
+    &#x60;&#x60;&#x60;
+
+    @method decamelize
+    @param {String} str The string to decamelize.
+    @return {String} the decamelized string.
+  */
+  decamelize: decamelize,
+
+  /**
+    Replaces underscores, spaces, or camelCase with dashes.
+
+    &#x60;&#x60;&#x60;javascript
+    &#x27;innerHTML&#x27;.dasherize();          // &#x27;inner-html&#x27;
+    &#x27;action_name&#x27;.dasherize();        // &#x27;action-name&#x27;
+    &#x27;css-class-name&#x27;.dasherize();     // &#x27;css-class-name&#x27;
+    &#x27;my favorite items&#x27;.dasherize();  // &#x27;my-favorite-items&#x27;
+    &#x60;&#x60;&#x60;
+
+    @method dasherize
+    @param {String} str The string to dasherize.
+    @return {String} the dasherized string.
+  */
+  dasherize: dasherize,
+
+  /**
+    Returns the lowerCamelCase form of a string.
+
+    &#x60;&#x60;&#x60;javascript
+    &#x27;innerHTML&#x27;.camelize();          // &#x27;innerHTML&#x27;
+    &#x27;action_name&#x27;.camelize();        // &#x27;actionName&#x27;
+    &#x27;css-class-name&#x27;.camelize();     // &#x27;cssClassName&#x27;
+    &#x27;my favorite items&#x27;.camelize();  // &#x27;myFavoriteItems&#x27;
+    &#x27;My Favorite Items&#x27;.camelize();  // &#x27;myFavoriteItems&#x27;
+    &#x60;&#x60;&#x60;
+
+    @method camelize
+    @param {String} str The string to camelize.
+    @return {String} the camelized string.
+  */
+  camelize: camelize,
+
+  /**
+    Returns the UpperCamelCase form of a string.
+
+    &#x60;&#x60;&#x60;javascript
+    &#x27;innerHTML&#x27;.classify();          // &#x27;InnerHTML&#x27;
+    &#x27;action_name&#x27;.classify();        // &#x27;ActionName&#x27;
+    &#x27;css-class-name&#x27;.classify();     // &#x27;CssClassName&#x27;
+    &#x27;my favorite items&#x27;.classify();  // &#x27;MyFavoriteItems&#x27;
+    &#x60;&#x60;&#x60;
+
+    @method classify
+    @param {String} str the string to classify
+    @return {String} the classified string
+  */
+  classify: classify,
+
+  /**
+    More general than decamelize. Returns the lower\_case\_and\_underscored
+    form of a string.
+
+    &#x60;&#x60;&#x60;javascript
+    &#x27;innerHTML&#x27;.underscore();          // &#x27;inner_html&#x27;
+    &#x27;action_name&#x27;.underscore();        // &#x27;action_name&#x27;
+    &#x27;css-class-name&#x27;.underscore();     // &#x27;css_class_name&#x27;
+    &#x27;my favorite items&#x27;.underscore();  // &#x27;my_favorite_items&#x27;
+    &#x60;&#x60;&#x60;
+
+    @method underscore
+    @param {String} str The string to underscore.
+    @return {String} the underscored string.
+  */
+  underscore: underscore,
+
+  /**
+    Returns the Capitalized form of a string
+
+    &#x60;&#x60;&#x60;javascript
+    &#x27;innerHTML&#x27;.capitalize()         // &#x27;InnerHTML&#x27;
+    &#x27;action_name&#x27;.capitalize()       // &#x27;Action_name&#x27;
+    &#x27;css-class-name&#x27;.capitalize()    // &#x27;Css-class-name&#x27;
+    &#x27;my favorite items&#x27;.capitalize() // &#x27;My favorite items&#x27;
+    &#x60;&#x60;&#x60;
+
+    @method capitalize
+    @param {String} str The string to capitalize.
+    @return {String} The capitalized string.
+  */
+  capitalize: capitalize
+};
+
+export default EmberStringUtils;
+export {fmt, loc, w, decamelize, dasherize, camelize, classify, underscore, capitalize}
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

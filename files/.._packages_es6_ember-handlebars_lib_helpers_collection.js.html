@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-handlebars/lib/helpers/collection.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-handlebars/lib/helpers/collection.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-handlebars
+*/
+
+import Ember from &quot;ember-metal/core&quot;; // Ember.assert, Ember.deprecate
+import {inspect} from &quot;ember-metal/utils&quot;;
+
+// var emberAssert = Ember.assert;
+    // emberDeprecate = Ember.deprecate;
+
+import EmberHandlebars from &quot;ember-handlebars-compiler&quot;;
+var helpers = EmberHandlebars.helpers;
+
+import {fmt} from &quot;ember-runtime/system/string&quot;;
+import {get} from &quot;ember-metal/property_get&quot;;
+import {handlebarsGet} from &quot;ember-handlebars/ext&quot;;
+import {ViewHelper} from &quot;ember-handlebars/helpers/view&quot;;
+import {computed} from &quot;ember-metal/computed&quot;;
+import CollectionView from &quot;ember-views/views/collection_view&quot;;
+
+var alias = computed.alias;
+/**
+  &#x60;{{collection}}&#x60; is a &#x60;Ember.Handlebars&#x60; helper for adding instances of
+  &#x60;Ember.CollectionView&#x60; to a template. See [Ember.CollectionView](/api/classes/Ember.CollectionView.html)
+   for additional information on how a &#x60;CollectionView&#x60; functions.
+
+  &#x60;{{collection}}&#x60;&#x27;s primary use is as a block helper with a &#x60;contentBinding&#x60;
+  option pointing towards an &#x60;Ember.Array&#x60;-compatible object. An &#x60;Ember.View&#x60;
+  instance will be created for each item in its &#x60;content&#x60; property. Each view
+  will have its own &#x60;content&#x60; property set to the appropriate item in the
+  collection.
+
+  The provided block will be applied as the template for each item&#x27;s view.
+
+  Given an empty &#x60;&lt;body&gt;&#x60; the following template:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#collection contentBinding=&quot;App.items&quot;}}
+    Hi {{view.content.name}}
+  {{/collection}}
+  &#x60;&#x60;&#x60;
+
+  And the following application code
+
+  &#x60;&#x60;&#x60;javascript
+  App = Ember.Application.create()
+  App.items = [
+    Ember.Object.create({name: &#x27;Dave&#x27;}),
+    Ember.Object.create({name: &#x27;Mary&#x27;}),
+    Ember.Object.create({name: &#x27;Sara&#x27;})
+  ]
+  &#x60;&#x60;&#x60;
+
+  Will result in the HTML structure below
+
+  &#x60;&#x60;&#x60;html
+  &lt;div class=&quot;ember-view&quot;&gt;
+    &lt;div class=&quot;ember-view&quot;&gt;Hi Dave&lt;/div&gt;
+    &lt;div class=&quot;ember-view&quot;&gt;Hi Mary&lt;/div&gt;
+    &lt;div class=&quot;ember-view&quot;&gt;Hi Sara&lt;/div&gt;
+  &lt;/div&gt;
+  &#x60;&#x60;&#x60;
+
+  ### Blockless use in a collection
+
+  If you provide an &#x60;itemViewClass&#x60; option that has its own &#x60;template&#x60; you can
+  omit the block.
+
+  The following template:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{collection contentBinding=&quot;App.items&quot; itemViewClass=&quot;App.AnItemView&quot;}}
+  &#x60;&#x60;&#x60;
+
+  And application code
+
+  &#x60;&#x60;&#x60;javascript
+  App = Ember.Application.create();
+  App.items = [
+    Ember.Object.create({name: &#x27;Dave&#x27;}),
+    Ember.Object.create({name: &#x27;Mary&#x27;}),
+    Ember.Object.create({name: &#x27;Sara&#x27;})
+  ];
+
+  App.AnItemView = Ember.View.extend({
+    template: Ember.Handlebars.compile(&quot;Greetings {{view.content.name}}&quot;)
+  });
+  &#x60;&#x60;&#x60;
+
+  Will result in the HTML structure below
+
+  &#x60;&#x60;&#x60;html
+  &lt;div class=&quot;ember-view&quot;&gt;
+    &lt;div class=&quot;ember-view&quot;&gt;Greetings Dave&lt;/div&gt;
+    &lt;div class=&quot;ember-view&quot;&gt;Greetings Mary&lt;/div&gt;
+    &lt;div class=&quot;ember-view&quot;&gt;Greetings Sara&lt;/div&gt;
+  &lt;/div&gt;
+  &#x60;&#x60;&#x60;
+
+  ### Specifying a CollectionView subclass
+
+  By default the &#x60;{{collection}}&#x60; helper will create an instance of
+  &#x60;Ember.CollectionView&#x60;. You can supply a &#x60;Ember.CollectionView&#x60; subclass to
+  the helper by passing it as the first argument:
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#collection App.MyCustomCollectionClass contentBinding=&quot;App.items&quot;}}
+    Hi {{view.content.name}}
+  {{/collection}}
+  &#x60;&#x60;&#x60;
+
+  ### Forwarded &#x60;item.*&#x60;-named Options
+
+  As with the &#x60;{{view}}&#x60;, helper options passed to the &#x60;{{collection}}&#x60; will be
+  set on the resulting &#x60;Ember.CollectionView&#x60; as properties. Additionally,
+  options prefixed with &#x60;item&#x60; will be applied to the views rendered for each
+  item (note the camelcasing):
+
+  &#x60;&#x60;&#x60;handlebars
+  {{#collection contentBinding=&quot;App.items&quot;
+                itemTagName=&quot;p&quot;
+                itemClassNames=&quot;greeting&quot;}}
+    Howdy {{view.content.name}}
+  {{/collection}}
+  &#x60;&#x60;&#x60;
+
+  Will result in the following HTML structure:
+
+  &#x60;&#x60;&#x60;html
+  &lt;div class=&quot;ember-view&quot;&gt;
+    &lt;p class=&quot;ember-view greeting&quot;&gt;Howdy Dave&lt;/p&gt;
+    &lt;p class=&quot;ember-view greeting&quot;&gt;Howdy Mary&lt;/p&gt;
+    &lt;p class=&quot;ember-view greeting&quot;&gt;Howdy Sara&lt;/p&gt;
+  &lt;/div&gt;
+  &#x60;&#x60;&#x60;
+
+  @method collection
+  @for Ember.Handlebars.helpers
+  @param {String} path
+  @param {Hash} options
+  @return {String} HTML string
+  @deprecated Use &#x60;{{each}}&#x60; helper instead.
+*/
+function collectionHelper(path, options) {
+  Ember.deprecate(&quot;Using the {{collection}} helper without specifying a class has been deprecated as the {{each}} helper now supports the same functionality.&quot;, path !== &#x27;collection&#x27;);
+
+  // If no path is provided, treat path param as options.
+  if (path &amp;&amp; path.data &amp;&amp; path.data.isRenderData) {
+    options = path;
+    path = undefined;
+    Ember.assert(&quot;You cannot pass more than one argument to the collection helper&quot;, arguments.length === 1);
+  } else {
+    Ember.assert(&quot;You cannot pass more than one argument to the collection helper&quot;, arguments.length === 2);
+  }
+
+  var fn = options.fn;
+  var data = options.data;
+  var inverse = options.inverse;
+  var view = options.data.view;
+
+
+  var controller, container;
+  // If passed a path string, convert that into an object.
+  // Otherwise, just default to the standard class.
+  var collectionClass;
+  if (path) {
+    controller = data.keywords.controller;
+    container = controller &amp;&amp; controller.container;
+    collectionClass = handlebarsGet(this, path, options) || container.lookupFactory(&#x27;view:&#x27; + path);
+    Ember.assert(fmt(&quot;%@ #collection: Could not find collection class %@&quot;, [data.view, path]), !!collectionClass);
+  }
+  else {
+    collectionClass = CollectionView;
+  }
+
+  var hash = options.hash, itemHash = {}, match;
+
+  // Extract item view class if provided else default to the standard class
+  var collectionPrototype = collectionClass.proto(), itemViewClass;
+
+  if (hash.itemView) {
+    controller = data.keywords.controller;
+    Ember.assert(&#x27;You specified an itemView, but the current context has no &#x27; +
+                 &#x27;container to look the itemView up in. This probably means &#x27; +
+                 &#x27;that you created a view manually, instead of through the &#x27; +
+                 &#x27;container. Instead, use container.lookup(&quot;view:viewName&quot;), &#x27; +
+                 &#x27;which will properly instantiate your view.&#x27;,
+                 controller &amp;&amp; controller.container);
+    container = controller.container;
+    itemViewClass = container.lookupFactory(&#x27;view:&#x27; + hash.itemView);
+    Ember.assert(&#x27;You specified the itemView &#x27; + hash.itemView + &quot;, but it was &quot; +
+                 &quot;not found at &quot; + container.describe(&quot;view:&quot; + hash.itemView) +
+                 &quot; (and it was not registered in the container)&quot;, !!itemViewClass);
+  } else if (hash.itemViewClass) {
+    itemViewClass = handlebarsGet(collectionPrototype, hash.itemViewClass, options);
+  } else {
+    itemViewClass = collectionPrototype.itemViewClass;
+  }
+
+  Ember.assert(fmt(&quot;%@ #collection: Could not find itemViewClass %@&quot;, [data.view, itemViewClass]), !!itemViewClass);
+
+  delete hash.itemViewClass;
+  delete hash.itemView;
+
+  // Go through options passed to the {{collection}} helper and extract options
+  // that configure item views instead of the collection itself.
+  for (var prop in hash) {
+    if (hash.hasOwnProperty(prop)) {
+      match = prop.match(/^item(.)(.*)$/);
+
+      if (match &amp;&amp; prop !== &#x27;itemController&#x27;) {
+        // Convert itemShouldFoo -&gt; shouldFoo
+        itemHash[match[1].toLowerCase() + match[2]] = hash[prop];
+        // Delete from hash as this will end up getting passed to the
+        // {{view}} helper method.
+        delete hash[prop];
+      }
+    }
+  }
+
+  if (fn) {
+    itemHash.template = fn;
+    delete options.fn;
+  }
+
+  var emptyViewClass;
+  if (inverse &amp;&amp; inverse !== EmberHandlebars.VM.noop) {
+    emptyViewClass = get(collectionPrototype, &#x27;emptyViewClass&#x27;);
+    emptyViewClass = emptyViewClass.extend({
+          template: inverse,
+          tagName: itemHash.tagName
+    });
+  } else if (hash.emptyViewClass) {
+    emptyViewClass = handlebarsGet(this, hash.emptyViewClass, options);
+  }
+  if (emptyViewClass) { hash.emptyView = emptyViewClass; }
+
+  if (hash.keyword) {
+    itemHash._context = this;
+  } else {
+    itemHash._context = alias(&#x27;content&#x27;);
+  }
+
+  var viewOptions = ViewHelper.propertiesFromHTMLOptions({ data: data, hash: itemHash }, this);
+  hash.itemViewClass = itemViewClass.extend(viewOptions);
+
+  options.helperName = options.helperName || &#x27;collection&#x27;;
+
+  return helpers.view.call(this, collectionClass, options);
+}
+
+export default collectionHelper;
+
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

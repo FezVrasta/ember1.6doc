@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-routing/lib/location/auto_location.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-routing/lib/location/auto_location.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import Ember from &quot;ember-metal/core&quot;; // FEATURES
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+
+import EmberLocation from &quot;ember-routing/location/api&quot;;
+import HistoryLocation from &quot;ember-routing/location/history_location&quot;;
+import HashLocation from &quot;ember-routing/location/hash_location&quot;;
+import NoneLocation from &quot;ember-routing/location/none_location&quot;;
+
+/**
+@module ember
+@submodule ember-routing
+*/
+
+/**
+  Ember.AutoLocation will select the best location option based off browser
+  support with the priority order: history, hash, none.
+
+  Clean pushState paths accessed by hashchange-only browsers will be redirected
+  to the hash-equivalent and vice versa so future transitions are consistent.
+
+  Keep in mind that since some of your users will use &#x60;HistoryLocation&#x60;, your
+  server must serve the Ember app at all the routes you define.
+
+  @class AutoLocation
+  @namespace Ember
+  @static
+*/
+var AutoLocation = {
+
+  /**
+    @private
+
+    This property is used by router:main to know whether to cancel the routing
+    setup process, which is needed while we redirect the browser.
+
+    @since 1.5.1
+    @property cancelRouterSetup
+    @default false
+  */
+  cancelRouterSetup: false,
+
+  /**
+    @private
+
+    Will be pre-pended to path upon state change.
+
+    @since 1.5.1
+    @property rootURL
+    @default &#x27;/&#x27;
+  */
+  rootURL: &#x27;/&#x27;,
+
+  /**
+    @private
+
+    Attached for mocking in tests
+
+    @since 1.5.1
+    @property _window
+    @default window
+  */
+  _window: window,
+
+  /**
+    @private
+
+    Attached for mocking in tests
+
+    @property location
+    @default window.location
+  */
+  _location: window.location,
+
+  /**
+    @private
+
+    Attached for mocking in tests
+
+    @since 1.5.1
+    @property _history
+    @default window.history
+  */
+  _history: window.history,
+
+  /**
+    @private
+
+    Attached for mocking in tests
+
+    @since 1.5.1
+    @property _HistoryLocation
+    @default Ember.HistoryLocation
+  */
+  _HistoryLocation: HistoryLocation,
+
+  /**
+    @private
+
+    Attached for mocking in tests
+
+    @since 1.5.1
+    @property _HashLocation
+    @default Ember.HashLocation
+  */
+  _HashLocation: HashLocation,
+
+  /**
+    @private
+
+    Attached for mocking in tests
+
+    @since 1.5.1
+    @property _NoneLocation
+    @default Ember.NoneLocation
+  */
+  _NoneLocation: NoneLocation,
+
+  /**
+    @private
+
+    Returns location.origin or builds it if device doesn&#x27;t support it.
+
+    @method _getOrigin
+  */
+  _getOrigin: function () {
+    var location = this._location,
+        origin = location.origin;
+
+    // Older browsers, especially IE, don&#x27;t have origin
+    if (!origin) {
+      origin = location.protocol + &#x27;//&#x27; + location.hostname;
+
+      if (location.port) {
+        origin += &#x27;:&#x27; + location.port;
+      }
+    }
+
+    return origin;
+  },
+
+  /**
+    @private
+
+    We assume that if the history object has a pushState method, the host should
+    support HistoryLocation.
+
+    @method _getSupportsHistory
+  */
+  _getSupportsHistory: function () {
+    // Boosted from Modernizr: https://github.com/Modernizr/Modernizr/blob/master/feature-detects/history.js
+    // The stock browser on Android 2.2 &amp; 2.3 returns positive on history support
+    // Unfortunately support is really buggy and there is no clean way to detect
+    // these bugs, so we fall back to a user agent sniff :(
+    var userAgent = this._window.navigator.userAgent;
+
+    // We only want Android 2, stock browser, and not Chrome which identifies
+    // itself as &#x27;Mobile Safari&#x27; as well
+    if (userAgent.indexOf(&#x27;Android 2&#x27;) !== -1 &amp;&amp;
+        userAgent.indexOf(&#x27;Mobile Safari&#x27;) !== -1 &amp;&amp;
+        userAgent.indexOf(&#x27;Chrome&#x27;) === -1) {
+      return false;
+    }
+
+    return !!(this._history &amp;&amp; &#x27;pushState&#x27; in this._history);
+  },
+
+  /**
+    @private
+
+    IE8 running in IE7 compatibility mode gives false positive, so we must also
+    check documentMode.
+
+    @method _getSupportsHashChange
+  */
+  _getSupportsHashChange: function () {
+    var window = this._window,
+        documentMode = window.document.documentMode;
+
+    return (&#x27;onhashchange&#x27; in window &amp;&amp; (documentMode === undefined || documentMode &gt; 7 ));
+  },
+
+  /**
+    @private
+
+    Redirects the browser using location.replace, prepending the locatin.origin
+    to prevent phishing attempts
+
+    @method _replacePath
+  */
+  _replacePath: function (path) {
+    this._location.replace(this._getOrigin() + path);
+  },
+
+  /**
+    @since 1.5.1
+    @private
+    @method _getRootURL
+  */
+  _getRootURL: function () {
+    return this.rootURL;
+  },
+
+  /**
+    @private
+
+    Returns the current &#x60;location.pathname&#x60;, normalized for IE inconsistencies.
+
+    @method _getPath
+  */
+  _getPath: function () {
+    var pathname = this._location.pathname;
+    // Various versions of IE/Opera don&#x27;t always return a leading slash
+    if (pathname.charAt(0) !== &#x27;/&#x27;) {
+      pathname = &#x27;/&#x27; + pathname;
+    }
+
+    return pathname;
+  },
+
+  /**
+    @private
+
+    Returns normalized location.hash as an alias to Ember.Location._getHash
+
+    @since 1.5.1
+    @method _getHash
+  */
+  _getHash: EmberLocation._getHash,
+
+  /**
+    @private
+
+    Returns location.search
+
+    @since 1.5.1
+    @method _getQuery
+  */
+  _getQuery: function () {
+    return this._location.search;
+  },
+
+  /**
+    @private
+
+    Returns the full pathname including query and hash
+
+    @method _getFullPath
+  */
+  _getFullPath: function () {
+    return this._getPath() + this._getQuery() + this._getHash();
+  },
+
+  /**
+    @private
+
+    Returns the current path as it should appear for HistoryLocation supported
+    browsers. This may very well differ from the real current path (e.g. if it
+    starts off as a hashed URL)
+
+    @method _getHistoryPath
+  */
+  _getHistoryPath: function () {
+    var rootURL = this._getRootURL(),
+        path = this._getPath(),
+        hash = this._getHash(),
+        query = this._getQuery(),
+        rootURLIndex = path.indexOf(rootURL),
+        routeHash, hashParts;
+
+    Ember.assert(&#x27;Path &#x27; + path + &#x27; does not start with the provided rootURL &#x27; + rootURL, rootURLIndex === 0);
+
+    // By convention, Ember.js routes using HashLocation are required to start
+    // with &#x60;#/&#x60;. Anything else should NOT be considered a route and should
+    // be passed straight through, without transformation.
+    if (hash.substr(0, 2) === &#x27;#/&#x27;) {
+      // There could be extra hash segments after the route
+      hashParts = hash.substr(1).split(&#x27;#&#x27;);
+      // The first one is always the route url
+      routeHash = hashParts.shift();
+
+      // If the path already has a trailing slash, remove the one
+      // from the hashed route so we don&#x27;t double up.
+      if (path.slice(-1) === &#x27;/&#x27;) {
+          routeHash = routeHash.substr(1);
+      }
+
+      // This is the &quot;expected&quot; final order
+      path += routeHash;
+      path += query;
+
+      if (hashParts.length) {
+        path += &#x27;#&#x27; + hashParts.join(&#x27;#&#x27;);
+      }
+    } else {
+      path += query;
+      path += hash;
+    }
+
+    return path;
+  },
+
+  /**
+    @private
+
+    Returns the current path as it should appear for HashLocation supported
+    browsers. This may very well differ from the real current path.
+
+    @method _getHashPath
+  */
+  _getHashPath: function () {
+    var rootURL = this._getRootURL(),
+        path = rootURL,
+        historyPath = this._getHistoryPath(),
+        routePath = historyPath.substr(rootURL.length);
+
+    if (routePath !== &#x27;&#x27;) {
+      if (routePath.charAt(0) !== &#x27;/&#x27;) {
+        routePath = &#x27;/&#x27; + routePath;
+      }
+
+      path += &#x27;#&#x27; + routePath;
+    }
+
+    return path;
+  },
+
+  /**
+    Selects the best location option based off browser support and returns an
+    instance of that Location class.
+
+    @see Ember.AutoLocation
+    @method create
+  */
+  create: function (options) {
+    if (options &amp;&amp; options.rootURL) {
+      Ember.assert(&#x27;rootURL must end with a trailing forward slash e.g. &quot;/app/&quot;&#x27;, options.rootURL.charAt(options.rootURL.length-1) === &#x27;/&#x27;);
+      this.rootURL = options.rootURL;
+    }
+
+    var historyPath, hashPath,
+        cancelRouterSetup = false,
+        implementationClass = this._NoneLocation,
+        currentPath = this._getFullPath();
+
+    if (this._getSupportsHistory()) {
+      historyPath = this._getHistoryPath();
+
+      // Since we support history paths, let&#x27;s be sure we&#x27;re using them else
+      // switch the location over to it.
+      if (currentPath === historyPath) {
+        implementationClass = this._HistoryLocation;
+      } else {
+        cancelRouterSetup = true;
+        this._replacePath(historyPath);
+      }
+
+    } else if (this._getSupportsHashChange()) {
+      hashPath = this._getHashPath();
+
+      // Be sure we&#x27;re using a hashed path, otherwise let&#x27;s switch over it to so
+      // we start off clean and consistent. We&#x27;ll count an index path with no
+      // hash as &quot;good enough&quot; as well.
+      if (currentPath === hashPath || (currentPath === &#x27;/&#x27; &amp;&amp; hashPath === &#x27;/#/&#x27;)) {
+        implementationClass = this._HashLocation;
+      } else {
+        // Our URL isn&#x27;t in the expected hash-supported format, so we want to
+        // cancel the router setup and replace the URL to start off clean
+        cancelRouterSetup = true;
+        this._replacePath(hashPath);
+      }
+    }
+
+    var implementation = implementationClass.create.apply(implementationClass, arguments);
+
+    if (cancelRouterSetup) {
+      set(implementation, &#x27;cancelRouterSetup&#x27;, true);
+    }
+
+    return implementation;
+  }
+};
+
+export default AutoLocation;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

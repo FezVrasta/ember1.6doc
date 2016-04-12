@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-runtime/lib/computed/reduce_computed_macros.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-runtime/lib/computed/reduce_computed_macros.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-runtime
+*/
+
+import Ember from &quot;ember-metal/core&quot;; // Ember.assert
+import merge from &quot;ember-metal/merge&quot;;
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {isArray, guidFor} from &quot;ember-metal/utils&quot;;
+import EmberError from &quot;ember-metal/error&quot;;
+import EnumerableUtils from &quot;ember-metal/enumerable_utils&quot;;
+import run from &#x27;ember-metal/run_loop&#x27;;
+import {addObserver} from &quot;ember-metal/observer&quot;;
+import {arrayComputed} from &quot;ember-runtime/computed/array_computed&quot;;
+import {reduceComputed} from &quot;ember-runtime/computed/reduce_computed&quot;;
+import ObjectProxy from &quot;ember-runtime/system/object_proxy&quot;;
+import SubArray from &quot;ember-runtime/system/subarray&quot;;
+import keys from &quot;ember-runtime/keys&quot;;
+import compare from &quot;ember-runtime/compare&quot;;
+
+var a_slice = [].slice,
+    forEach = EnumerableUtils.forEach,
+    SearchProxy;
+
+/**
+ A computed property that returns the sum of the value
+ in the dependent array.
+
+ @method computed.sum
+ @for Ember
+ @param {String} dependentKey
+ @return {Ember.ComputedProperty} computes the sum of all values in the dependentKey&#x27;s array
+ @since 1.4.0
+*/
+
+function sum(dependentKey){
+  return reduceComputed(dependentKey, {
+    initialValue: 0,
+
+    addedItem: function(accumulatedValue, item, changeMeta, instanceMeta){
+      return accumulatedValue + item;
+    },
+
+    removedItem: function(accumulatedValue, item, changeMeta, instanceMeta){
+      return accumulatedValue - item;
+    }
+  });
+};
+
+/**
+  A computed property that calculates the maximum value in the
+  dependent array. This will return &#x60;-Infinity&#x60; when the dependent
+  array is empty.
+
+  &#x60;&#x60;&#x60;javascript
+  App.Person = Ember.Object.extend({
+    childAges: Ember.computed.mapBy(&#x27;children&#x27;, &#x27;age&#x27;),
+    maxChildAge: Ember.computed.max(&#x27;childAges&#x27;)
+  });
+
+  var lordByron = App.Person.create({children: []});
+  lordByron.get(&#x27;maxChildAge&#x27;); // -Infinity
+  lordByron.get(&#x27;children&#x27;).pushObject({
+    name: &#x27;Augusta Ada Byron&#x27;, age: 7
+  });
+  lordByron.get(&#x27;maxChildAge&#x27;); // 7
+  lordByron.get(&#x27;children&#x27;).pushObjects([{
+    name: &#x27;Allegra Byron&#x27;,
+    age: 5
+  }, {
+    name: &#x27;Elizabeth Medora Leigh&#x27;,
+    age: 8
+  }]);
+  lordByron.get(&#x27;maxChildAge&#x27;); // 8
+  &#x60;&#x60;&#x60;
+
+  @method computed.max
+  @for Ember
+  @param {String} dependentKey
+  @return {Ember.ComputedProperty} computes the largest value in the dependentKey&#x27;s array
+*/
+function max (dependentKey) {
+  return reduceComputed(dependentKey, {
+    initialValue: -Infinity,
+
+    addedItem: function (accumulatedValue, item, changeMeta, instanceMeta) {
+      return Math.max(accumulatedValue, item);
+    },
+
+    removedItem: function (accumulatedValue, item, changeMeta, instanceMeta) {
+      if (item &lt; accumulatedValue) {
+        return accumulatedValue;
+      }
+    }
+  });
+};
+
+/**
+  A computed property that calculates the minimum value in the
+  dependent array. This will return &#x60;Infinity&#x60; when the dependent
+  array is empty.
+
+  &#x60;&#x60;&#x60;javascript
+  App.Person = Ember.Object.extend({
+    childAges: Ember.computed.mapBy(&#x27;children&#x27;, &#x27;age&#x27;),
+    minChildAge: Ember.computed.min(&#x27;childAges&#x27;)
+  });
+
+  var lordByron = App.Person.create({children: []});
+  lordByron.get(&#x27;minChildAge&#x27;); // Infinity
+  lordByron.get(&#x27;children&#x27;).pushObject({
+    name: &#x27;Augusta Ada Byron&#x27;, age: 7
+  });
+  lordByron.get(&#x27;minChildAge&#x27;); // 7
+  lordByron.get(&#x27;children&#x27;).pushObjects([{
+    name: &#x27;Allegra Byron&#x27;,
+    age: 5
+  }, {
+    name: &#x27;Elizabeth Medora Leigh&#x27;,
+    age: 8
+  }]);
+  lordByron.get(&#x27;minChildAge&#x27;); // 5
+  &#x60;&#x60;&#x60;
+
+  @method computed.min
+  @for Ember
+  @param {String} dependentKey
+  @return {Ember.ComputedProperty} computes the smallest value in the dependentKey&#x27;s array
+*/
+function min(dependentKey) {
+  return reduceComputed(dependentKey, {
+    initialValue: Infinity,
+
+    addedItem: function (accumulatedValue, item, changeMeta, instanceMeta) {
+      return Math.min(accumulatedValue, item);
+    },
+
+    removedItem: function (accumulatedValue, item, changeMeta, instanceMeta) {
+      if (item &gt; accumulatedValue) {
+        return accumulatedValue;
+      }
+    }
+  });
+};
+
+/**
+  Returns an array mapped via the callback
+
+  The callback method you provide should have the following signature.
+  &#x60;item&#x60; is the current item in the iteration.
+
+  &#x60;&#x60;&#x60;javascript
+  function(item);
+  &#x60;&#x60;&#x60;
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  App.Hamster = Ember.Object.extend({
+    excitingChores: Ember.computed.map(&#x27;chores&#x27;, function(chore) {
+      return chore.toUpperCase() + &#x27;!&#x27;;
+    })
+  });
+
+  var hamster = App.Hamster.create({
+    chores: [&#x27;clean&#x27;, &#x27;write more unit tests&#x27;]
+  });
+  hamster.get(&#x27;excitingChores&#x27;); // [&#x27;CLEAN!&#x27;, &#x27;WRITE MORE UNIT TESTS!&#x27;]
+  &#x60;&#x60;&#x60;
+
+  @method computed.map
+  @for Ember
+  @param {String} dependentKey
+  @param {Function} callback
+  @return {Ember.ComputedProperty} an array mapped via the callback
+*/
+function map(dependentKey, callback) {
+  var options = {
+    addedItem: function(array, item, changeMeta, instanceMeta) {
+      var mapped = callback.call(this, item);
+      array.insertAt(changeMeta.index, mapped);
+      return array;
+    },
+    removedItem: function(array, item, changeMeta, instanceMeta) {
+      array.removeAt(changeMeta.index, 1);
+      return array;
+    }
+  };
+
+  return arrayComputed(dependentKey, options);
+};
+
+/**
+  Returns an array mapped to the specified key.
+
+  &#x60;&#x60;&#x60;javascript
+  App.Person = Ember.Object.extend({
+    childAges: Ember.computed.mapBy(&#x27;children&#x27;, &#x27;age&#x27;)
+  });
+
+  var lordByron = App.Person.create({children: []});
+  lordByron.get(&#x27;childAges&#x27;); // []
+  lordByron.get(&#x27;children&#x27;).pushObject({name: &#x27;Augusta Ada Byron&#x27;, age: 7});
+  lordByron.get(&#x27;childAges&#x27;); // [7]
+  lordByron.get(&#x27;children&#x27;).pushObjects([{
+    name: &#x27;Allegra Byron&#x27;,
+    age: 5
+  }, {
+    name: &#x27;Elizabeth Medora Leigh&#x27;,
+    age: 8
+  }]);
+  lordByron.get(&#x27;childAges&#x27;); // [7, 5, 8]
+  &#x60;&#x60;&#x60;
+
+  @method computed.mapBy
+  @for Ember
+  @param {String} dependentKey
+  @param {String} propertyKey
+  @return {Ember.ComputedProperty} an array mapped to the specified key
+*/
+function mapBy (dependentKey, propertyKey) {
+  var callback = function(item) { return get(item, propertyKey); };
+  return map(dependentKey + &#x27;.@each.&#x27; + propertyKey, callback);
+};
+
+/**
+  @method computed.mapProperty
+  @for Ember
+  @deprecated Use &#x60;Ember.computed.mapBy&#x60; instead
+  @param dependentKey
+  @param propertyKey
+*/
+var mapProperty = mapBy;
+
+/**
+  Filters the array by the callback.
+
+  The callback method you provide should have the following signature.
+  &#x60;item&#x60; is the current item in the iteration.
+
+  &#x60;&#x60;&#x60;javascript
+  function(item);
+  &#x60;&#x60;&#x60;
+
+  &#x60;&#x60;&#x60;javascript
+  App.Hamster = Ember.Object.extend({
+    remainingChores: Ember.computed.filter(&#x27;chores&#x27;, function(chore) {
+      return !chore.done;
+    })
+  });
+
+  var hamster = App.Hamster.create({chores: [
+    {name: &#x27;cook&#x27;, done: true},
+    {name: &#x27;clean&#x27;, done: true},
+    {name: &#x27;write more unit tests&#x27;, done: false}
+  ]});
+  hamster.get(&#x27;remainingChores&#x27;); // [{name: &#x27;write more unit tests&#x27;, done: false}]
+  &#x60;&#x60;&#x60;
+
+  @method computed.filter
+  @for Ember
+  @param {String} dependentKey
+  @param {Function} callback
+  @return {Ember.ComputedProperty} the filtered array
+*/
+function filter(dependentKey, callback) {
+  var options = {
+    initialize: function (array, changeMeta, instanceMeta) {
+      instanceMeta.filteredArrayIndexes = new SubArray();
+    },
+
+    addedItem: function(array, item, changeMeta, instanceMeta) {
+      var match = !!callback.call(this, item),
+          filterIndex = instanceMeta.filteredArrayIndexes.addItem(changeMeta.index, match);
+
+      if (match) {
+        array.insertAt(filterIndex, item);
+      }
+
+      return array;
+    },
+
+    removedItem: function(array, item, changeMeta, instanceMeta) {
+      var filterIndex = instanceMeta.filteredArrayIndexes.removeItem(changeMeta.index);
+
+      if (filterIndex &gt; -1) {
+        array.removeAt(filterIndex);
+      }
+
+      return array;
+    }
+  };
+
+  return arrayComputed(dependentKey, options);
+};
+
+/**
+  Filters the array by the property and value
+
+  &#x60;&#x60;&#x60;javascript
+  App.Hamster = Ember.Object.extend({
+    remainingChores: Ember.computed.filterBy(&#x27;chores&#x27;, &#x27;done&#x27;, false)
+  });
+
+  var hamster = App.Hamster.create({chores: [
+    {name: &#x27;cook&#x27;, done: true},
+    {name: &#x27;clean&#x27;, done: true},
+    {name: &#x27;write more unit tests&#x27;, done: false}
+  ]});
+  hamster.get(&#x27;remainingChores&#x27;); // [{name: &#x27;write more unit tests&#x27;, done: false}]
+  &#x60;&#x60;&#x60;
+
+  @method computed.filterBy
+  @for Ember
+  @param {String} dependentKey
+  @param {String} propertyKey
+  @param {*} value
+  @return {Ember.ComputedProperty} the filtered array
+*/
+function filterBy (dependentKey, propertyKey, value) {
+  var callback;
+
+  if (arguments.length === 2) {
+    callback = function(item) {
+      return get(item, propertyKey);
+    };
+  } else {
+    callback = function(item) {
+      return get(item, propertyKey) === value;
+    };
+  }
+
+  return filter(dependentKey + &#x27;.@each.&#x27; + propertyKey, callback);
+};
+
+/**
+  @method computed.filterProperty
+  @for Ember
+  @param dependentKey
+  @param propertyKey
+  @param value
+  @deprecated Use &#x60;Ember.computed.filterBy&#x60; instead
+*/
+var filterProperty = filterBy;
+
+/**
+  A computed property which returns a new array with all the unique
+  elements from one or more dependent arrays.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  App.Hamster = Ember.Object.extend({
+    uniqueFruits: Ember.computed.uniq(&#x27;fruits&#x27;)
+  });
+
+  var hamster = App.Hamster.create({fruits: [
+    &#x27;banana&#x27;,
+    &#x27;grape&#x27;,
+    &#x27;kale&#x27;,
+    &#x27;banana&#x27;
+  ]});
+  hamster.get(&#x27;uniqueFruits&#x27;); // [&#x27;banana&#x27;, &#x27;grape&#x27;, &#x27;kale&#x27;]
+  &#x60;&#x60;&#x60;
+
+  @method computed.uniq
+  @for Ember
+  @param {String} propertyKey*
+  @return {Ember.ComputedProperty} computes a new array with all the
+  unique elements from the dependent array
+*/
+function uniq() {
+  var args = a_slice.call(arguments);
+  args.push({
+    initialize: function(array, changeMeta, instanceMeta) {
+      instanceMeta.itemCounts = {};
+    },
+
+    addedItem: function(array, item, changeMeta, instanceMeta) {
+      var guid = guidFor(item);
+
+      if (!instanceMeta.itemCounts[guid]) {
+        instanceMeta.itemCounts[guid] = 1;
+      } else {
+        ++instanceMeta.itemCounts[guid];
+      }
+      array.addObject(item);
+      return array;
+    },
+    removedItem: function(array, item, _, instanceMeta) {
+      var guid = guidFor(item),
+          itemCounts = instanceMeta.itemCounts;
+
+      if (--itemCounts[guid] === 0) {
+        array.removeObject(item);
+      }
+      return array;
+    }
+  });
+  return arrayComputed.apply(null, args);
+};
+
+/**
+  Alias for [Ember.computed.uniq](/api/#method_computed_uniq).
+
+  @method computed.union
+  @for Ember
+  @param {String} propertyKey*
+  @return {Ember.ComputedProperty} computes a new array with all the
+  unique elements from the dependent array
+*/
+var union = uniq;
+
+/**
+  A computed property which returns a new array with all the duplicated
+  elements from two or more dependent arrays.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  var obj = Ember.Object.createWithMixins({
+    adaFriends: [&#x27;Charles Babbage&#x27;, &#x27;John Hobhouse&#x27;, &#x27;William King&#x27;, &#x27;Mary Somerville&#x27;],
+    charlesFriends: [&#x27;William King&#x27;, &#x27;Mary Somerville&#x27;, &#x27;Ada Lovelace&#x27;, &#x27;George Peacock&#x27;],
+    friendsInCommon: Ember.computed.intersect(&#x27;adaFriends&#x27;, &#x27;charlesFriends&#x27;)
+  });
+
+  obj.get(&#x27;friendsInCommon&#x27;); // [&#x27;William King&#x27;, &#x27;Mary Somerville&#x27;]
+  &#x60;&#x60;&#x60;
+
+  @method computed.intersect
+  @for Ember
+  @param {String} propertyKey*
+  @return {Ember.ComputedProperty} computes a new array with all the
+  duplicated elements from the dependent arrays
+*/
+function intersect() {
+  var getDependentKeyGuids = function (changeMeta) {
+    return EnumerableUtils.map(changeMeta.property._dependentKeys, function (dependentKey) {
+      return guidFor(dependentKey);
+    });
+  };
+
+  var args = a_slice.call(arguments);
+  args.push({
+    initialize: function (array, changeMeta, instanceMeta) {
+      instanceMeta.itemCounts = {};
+    },
+
+    addedItem: function(array, item, changeMeta, instanceMeta) {
+      var itemGuid = guidFor(item),
+          dependentGuids = getDependentKeyGuids(changeMeta),
+          dependentGuid = guidFor(changeMeta.arrayChanged),
+          numberOfDependentArrays = changeMeta.property._dependentKeys.length,
+          itemCounts = instanceMeta.itemCounts;
+
+      if (!itemCounts[itemGuid]) { itemCounts[itemGuid] = {}; }
+      if (itemCounts[itemGuid][dependentGuid] === undefined) { itemCounts[itemGuid][dependentGuid] = 0; }
+
+      if (++itemCounts[itemGuid][dependentGuid] === 1 &amp;&amp;
+          numberOfDependentArrays === keys(itemCounts[itemGuid]).length) {
+
+        array.addObject(item);
+      }
+      return array;
+    },
+    removedItem: function(array, item, changeMeta, instanceMeta) {
+      var itemGuid = guidFor(item),
+          dependentGuids = getDependentKeyGuids(changeMeta),
+          dependentGuid = guidFor(changeMeta.arrayChanged),
+          numberOfDependentArrays = changeMeta.property._dependentKeys.length,
+          numberOfArraysItemAppearsIn,
+          itemCounts = instanceMeta.itemCounts;
+
+      if (itemCounts[itemGuid][dependentGuid] === undefined) { itemCounts[itemGuid][dependentGuid] = 0; }
+      if (--itemCounts[itemGuid][dependentGuid] === 0) {
+        delete itemCounts[itemGuid][dependentGuid];
+        numberOfArraysItemAppearsIn = keys(itemCounts[itemGuid]).length;
+
+        if (numberOfArraysItemAppearsIn === 0) {
+          delete itemCounts[itemGuid];
+        }
+        array.removeObject(item);
+      }
+      return array;
+    }
+  });
+  return arrayComputed.apply(null, args);
+};
+
+/**
+  A computed property which returns a new array with all the
+  properties from the first dependent array that are not in the second
+  dependent array.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  App.Hamster = Ember.Object.extend({
+    likes: [&#x27;banana&#x27;, &#x27;grape&#x27;, &#x27;kale&#x27;],
+    wants: Ember.computed.setDiff(&#x27;likes&#x27;, &#x27;fruits&#x27;)
+  });
+
+  var hamster = App.Hamster.create({fruits: [
+    &#x27;grape&#x27;,
+    &#x27;kale&#x27;,
+  ]});
+  hamster.get(&#x27;wants&#x27;); // [&#x27;banana&#x27;]
+  &#x60;&#x60;&#x60;
+
+  @method computed.setDiff
+  @for Ember
+  @param {String} setAProperty
+  @param {String} setBProperty
+  @return {Ember.ComputedProperty} computes a new array with all the
+  items from the first dependent array that are not in the second
+  dependent array
+*/
+function setDiff(setAProperty, setBProperty) {
+  if (arguments.length !== 2) {
+    throw new EmberError(&quot;setDiff requires exactly two dependent arrays.&quot;);
+  }
+  return arrayComputed(setAProperty, setBProperty, {
+    addedItem: function (array, item, changeMeta, instanceMeta) {
+      var setA = get(this, setAProperty),
+          setB = get(this, setBProperty);
+
+      if (changeMeta.arrayChanged === setA) {
+        if (!setB.contains(item)) {
+          array.addObject(item);
+        }
+      } else {
+        array.removeObject(item);
+      }
+      return array;
+    },
+
+    removedItem: function (array, item, changeMeta, instanceMeta) {
+      var setA = get(this, setAProperty),
+          setB = get(this, setBProperty);
+
+      if (changeMeta.arrayChanged === setB) {
+        if (setA.contains(item)) {
+          array.addObject(item);
+        }
+      } else {
+        array.removeObject(item);
+      }
+      return array;
+    }
+  });
+};
+
+function binarySearch(array, item, low, high) {
+  var mid, midItem, res, guidMid, guidItem;
+
+  if (arguments.length &lt; 4) { high = get(array, &#x27;length&#x27;); }
+  if (arguments.length &lt; 3) { low = 0; }
+
+  if (low === high) {
+    return low;
+  }
+
+  mid = low + Math.floor((high - low) / 2);
+  midItem = array.objectAt(mid);
+
+  guidMid = _guidFor(midItem);
+  guidItem = _guidFor(item);
+
+  if (guidMid === guidItem) {
+    return mid;
+  }
+
+  res = this.order(midItem, item);
+  if (res === 0) {
+    res = guidMid &lt; guidItem ? -1 : 1;
+  }
+
+
+  if (res &lt; 0) {
+    return this.binarySearch(array, item, mid+1, high);
+  } else if (res &gt; 0) {
+    return this.binarySearch(array, item, low, mid);
+  }
+
+  return mid;
+
+  function _guidFor(item) {
+    if (SearchProxy.detectInstance(item)) {
+      return guidFor(get(item, &#x27;content&#x27;));
+    }
+    return guidFor(item);
+  }
+}
+
+
+var SearchProxy = ObjectProxy.extend();
+
+/**
+  A computed property which returns a new array with all the
+  properties from the first dependent array sorted based on a property
+  or sort function.
+
+  The callback method you provide should have the following signature:
+
+  &#x60;&#x60;&#x60;javascript
+  function(itemA, itemB);
+  &#x60;&#x60;&#x60;
+
+  - &#x60;itemA&#x60; the first item to compare.
+  - &#x60;itemB&#x60; the second item to compare.
+
+  This function should return negative number (e.g. &#x60;-1&#x60;) when &#x60;itemA&#x60; should come before
+  &#x60;itemB&#x60;. It should return positive number (e.g. &#x60;1&#x60;) when &#x60;itemA&#x60; should come after
+  &#x60;itemB&#x60;. If the &#x60;itemA&#x60; and &#x60;itemB&#x60; are equal this function should return &#x60;0&#x60;.
+
+  Therefore, if this function is comparing some numeric values, simple &#x60;itemA - itemB&#x60; or
+  &#x60;itemA.get( &#x27;foo&#x27; ) - itemB.get( &#x27;foo&#x27; )&#x60; can be used instead of series of &#x60;if&#x60;.
+
+  Example
+
+  &#x60;&#x60;&#x60;javascript
+  var ToDoList = Ember.Object.extend({
+    // using standard ascending sort
+    todosSorting: [&#x27;name&#x27;],
+    sortedTodos: Ember.computed.sort(&#x27;todos&#x27;, &#x27;todosSorting&#x27;),
+
+    // using descending sort
+    todosSortingDesc: [&#x27;name:desc&#x27;],
+    sortedTodosDesc: Ember.computed.sort(&#x27;todos&#x27;, &#x27;todosSortingDesc&#x27;),
+
+    // using a custom sort function
+    priorityTodos: Ember.computed.sort(&#x27;todos&#x27;, function(a, b){
+      if (a.priority &gt; b.priority) {
+        return 1;
+      } else if (a.priority &lt; b.priority) {
+        return -1;
+      }
+      return 0;
+    }),
+  });
+  var todoList = ToDoList.create({todos: [
+    {name: &#x27;Unit Test&#x27;, priority: 2},
+    {name: &#x27;Documentation&#x27;, priority: 3},
+    {name: &#x27;Release&#x27;, priority: 1}
+  ]});
+
+  todoList.get(&#x27;sortedTodos&#x27;); // [{name:&#x27;Documentation&#x27;, priority:3}, {name:&#x27;Release&#x27;, priority:1}, {name:&#x27;Unit Test&#x27;, priority:2}]
+  todoList.get(&#x27;sortedTodosDesc&#x27;); // [{name:&#x27;Unit Test&#x27;, priority:2}, {name:&#x27;Release&#x27;, priority:1}, {name:&#x27;Documentation&#x27;, priority:3}]
+  todoList.get(&#x27;priorityTodos&#x27;); // [{name:&#x27;Release&#x27;, priority:1}, {name:&#x27;Unit Test&#x27;, priority:2}, {name:&#x27;Documentation&#x27;, priority:3}]
+  &#x60;&#x60;&#x60;
+
+  @method computed.sort
+  @for Ember
+  @param {String} dependentKey
+  @param {String or Function} sortDefinition a dependent key to an
+  array of sort properties (add &#x60;:desc&#x60; to the arrays sort properties to sort descending) or a function to use when sorting
+  @return {Ember.ComputedProperty} computes a new sorted array based
+  on the sort property array or callback function
+*/
+function sort(itemsKey, sortDefinition) {
+  Ember.assert(&quot;Ember.computed.sort requires two arguments: an array key to sort and either a sort properties key or sort function&quot;, arguments.length === 2);
+
+  var initFn, sortPropertiesKey;
+
+  if (typeof sortDefinition === &#x27;function&#x27;) {
+    initFn = function (array, changeMeta, instanceMeta) {
+      instanceMeta.order = sortDefinition;
+      instanceMeta.binarySearch = binarySearch;
+    };
+  } else {
+    sortPropertiesKey = sortDefinition;
+    initFn = function (array, changeMeta, instanceMeta) {
+      function setupSortProperties() {
+        var sortPropertyDefinitions = get(this, sortPropertiesKey),
+            sortProperty,
+            sortProperties = instanceMeta.sortProperties = [],
+            sortPropertyAscending = instanceMeta.sortPropertyAscending = {},
+            idx,
+            asc;
+
+        Ember.assert(&quot;Cannot sort: &#x27;&quot; + sortPropertiesKey + &quot;&#x27; is not an array.&quot;, isArray(sortPropertyDefinitions));
+
+        changeMeta.property.clearItemPropertyKeys(itemsKey);
+
+        forEach(sortPropertyDefinitions, function (sortPropertyDefinition) {
+          if ((idx = sortPropertyDefinition.indexOf(&#x27;:&#x27;)) !== -1) {
+            sortProperty = sortPropertyDefinition.substring(0, idx);
+            asc = sortPropertyDefinition.substring(idx+1).toLowerCase() !== &#x27;desc&#x27;;
+          } else {
+            sortProperty = sortPropertyDefinition;
+            asc = true;
+          }
+
+          sortProperties.push(sortProperty);
+          sortPropertyAscending[sortProperty] = asc;
+          changeMeta.property.itemPropertyKey(itemsKey, sortProperty);
+        });
+
+        sortPropertyDefinitions.addObserver(&#x27;@each&#x27;, this, updateSortPropertiesOnce);
+      }
+
+      function updateSortPropertiesOnce() {
+        run.once(this, updateSortProperties, changeMeta.propertyName);
+      }
+
+      function updateSortProperties(propertyName) {
+        setupSortProperties.call(this);
+        changeMeta.property.recomputeOnce.call(this, propertyName);
+      }
+
+      addObserver(this, sortPropertiesKey, updateSortPropertiesOnce);
+
+      setupSortProperties.call(this);
+
+
+      instanceMeta.order = function (itemA, itemB) {
+        var isProxy = itemB instanceof SearchProxy,
+            sortProperty, result, asc;
+
+        for (var i = 0; i &lt; this.sortProperties.length; ++i) {
+          sortProperty = this.sortProperties[i];
+          result = compare(get(itemA, sortProperty), isProxy ? itemB[sortProperty] : get(itemB, sortProperty));
+
+          if (result !== 0) {
+            asc = this.sortPropertyAscending[sortProperty];
+            return asc ? result : (-1 * result);
+          }
+        }
+
+        return 0;
+      };
+
+      instanceMeta.binarySearch = binarySearch;
+    };
+  }
+
+  return arrayComputed(itemsKey, {
+    initialize: initFn,
+
+    addedItem: function (array, item, changeMeta, instanceMeta) {
+      var index = instanceMeta.binarySearch(array, item);
+      array.insertAt(index, item);
+      return array;
+    },
+
+    removedItem: function (array, item, changeMeta, instanceMeta) {
+      var proxyProperties, index, searchItem;
+
+      if (changeMeta.previousValues) {
+        proxyProperties = merge({ content: item }, changeMeta.previousValues);
+
+        searchItem = SearchProxy.create(proxyProperties);
+      } else {
+        searchItem = item;
+      }
+
+      index = instanceMeta.binarySearch(array, searchItem);
+      array.removeAt(index);
+      return array;
+    }
+  });
+};
+
+
+export {sum, min, max, map, sort, setDiff, mapBy, mapProperty, filter, filterBy, filterProperty, uniq, union, intersect}
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

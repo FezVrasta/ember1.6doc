@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-views/lib/system/render_buffer.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-views/lib/system/render_buffer.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-views
+*/
+
+import Ember from &#x27;ember-metal/core&#x27;; // jQuery
+
+import {get} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {setInnerHTML} from &quot;ember-views/system/utils&quot;;
+import jQuery from &quot;ember-views/system/jquery&quot;;
+
+function ClassSet() {
+  this.seen = {};
+  this.list = [];
+};
+
+
+ClassSet.prototype = {
+  add: function(string) {
+    if (string in this.seen) { return; }
+    this.seen[string] = true;
+
+    this.list.push(string);
+  },
+
+  toDOM: function() {
+    return this.list.join(&quot; &quot;);
+  }
+};
+
+var BAD_TAG_NAME_TEST_REGEXP = /[^a-zA-Z0-9\-]/;
+var BAD_TAG_NAME_REPLACE_REGEXP = /[^a-zA-Z0-9\-]/g;
+
+function stripTagName(tagName) {
+  if (!tagName) {
+    return tagName;
+  }
+
+  if (!BAD_TAG_NAME_TEST_REGEXP.test(tagName)) {
+    return tagName;
+  }
+
+  return tagName.replace(BAD_TAG_NAME_REPLACE_REGEXP, &#x27;&#x27;);
+}
+
+var BAD_CHARS_REGEXP = /&amp;(?!\w+;)|[&lt;&gt;&quot;&#x27;&#x60;]/g;
+var POSSIBLE_CHARS_REGEXP = /[&amp;&lt;&gt;&quot;&#x27;&#x60;]/;
+
+function escapeAttribute(value) {
+  // Stolen shamelessly from Handlebars
+
+  var escape = {
+    &quot;&lt;&quot;: &quot;&amp;lt;&quot;,
+    &quot;&gt;&quot;: &quot;&amp;gt;&quot;,
+    &#x27;&quot;&#x27;: &quot;&amp;quot;&quot;,
+    &quot;&#x27;&quot;: &quot;&amp;#x27;&quot;,
+    &quot;&#x60;&quot;: &quot;&amp;#x60;&quot;
+  };
+
+  var escapeChar = function(chr) {
+    return escape[chr] || &quot;&amp;amp;&quot;;
+  };
+
+  var string = value.toString();
+
+  if(!POSSIBLE_CHARS_REGEXP.test(string)) { return string; }
+  return string.replace(BAD_CHARS_REGEXP, escapeChar);
+}
+
+// IE 6/7 have bugs around setting names on inputs during creation.
+// From http://msdn.microsoft.com/en-us/library/ie/ms536389(v=vs.85).aspx:
+// &quot;To include the NAME attribute at run time on objects created with the createElement method, use the eTag.&quot;
+var canSetNameOnInputs = (function() {
+  var div = document.createElement(&#x27;div&#x27;),
+      el = document.createElement(&#x27;input&#x27;);
+
+  el.setAttribute(&#x27;name&#x27;, &#x27;foo&#x27;);
+  div.appendChild(el);
+
+  return !!div.innerHTML.match(&#x27;foo&#x27;);
+})();
+
+/**
+  &#x60;Ember.RenderBuffer&#x60; gathers information regarding the a view and generates the
+  final representation. &#x60;Ember.RenderBuffer&#x60; will generate HTML which can be pushed
+  to the DOM.
+
+   &#x60;&#x60;&#x60;javascript
+   var buffer = Ember.RenderBuffer(&#x27;div&#x27;);
+  &#x60;&#x60;&#x60;
+
+  @class RenderBuffer
+  @namespace Ember
+  @constructor
+  @param {String} tagName tag name (such as &#x27;div&#x27; or &#x27;p&#x27;) used for the buffer
+*/
+var RenderBuffer = function(tagName) {
+  return new _RenderBuffer(tagName);
+};
+
+var _RenderBuffer = function(tagName) {
+  this.tagNames = [tagName || null];
+  this.buffer = &quot;&quot;;
+};
+
+_RenderBuffer.prototype = {
+
+  // The root view&#x27;s element
+  _element: null,
+
+  _hasElement: true,
+
+  /**
+    An internal set used to de-dupe class names when &#x60;addClass()&#x60; is
+    used. After each call to &#x60;addClass()&#x60;, the &#x60;classes&#x60; property
+    will be updated.
+
+    @private
+    @property elementClasses
+    @type Array
+    @default null
+  */
+  elementClasses: null,
+
+  /**
+    Array of class names which will be applied in the class attribute.
+
+    You can use &#x60;setClasses()&#x60; to set this property directly. If you
+    use &#x60;addClass()&#x60;, it will be maintained for you.
+
+    @property classes
+    @type Array
+    @default null
+  */
+  classes: null,
+
+  /**
+    The id in of the element, to be applied in the id attribute.
+
+    You should not set this property yourself, rather, you should use
+    the &#x60;id()&#x60; method of &#x60;Ember.RenderBuffer&#x60;.
+
+    @property elementId
+    @type String
+    @default null
+  */
+  elementId: null,
+
+  /**
+    A hash keyed on the name of the attribute and whose value will be
+    applied to that attribute. For example, if you wanted to apply a
+    &#x60;data-view=&quot;Foo.bar&quot;&#x60; property to an element, you would set the
+    elementAttributes hash to &#x60;{&#x27;data-view&#x27;:&#x27;Foo.bar&#x27;}&#x60;.
+
+    You should not maintain this hash yourself, rather, you should use
+    the &#x60;attr()&#x60; method of &#x60;Ember.RenderBuffer&#x60;.
+
+    @property elementAttributes
+    @type Hash
+    @default {}
+  */
+  elementAttributes: null,
+
+  /**
+    A hash keyed on the name of the properties and whose value will be
+    applied to that property. For example, if you wanted to apply a
+    &#x60;checked=true&#x60; property to an element, you would set the
+    elementProperties hash to &#x60;{&#x27;checked&#x27;:true}&#x60;.
+
+    You should not maintain this hash yourself, rather, you should use
+    the &#x60;prop()&#x60; method of &#x60;Ember.RenderBuffer&#x60;.
+
+    @property elementProperties
+    @type Hash
+    @default {}
+  */
+  elementProperties: null,
+
+  /**
+    The tagname of the element an instance of &#x60;Ember.RenderBuffer&#x60; represents.
+
+    Usually, this gets set as the first parameter to &#x60;Ember.RenderBuffer&#x60;. For
+    example, if you wanted to create a &#x60;p&#x60; tag, then you would call
+
+    &#x60;&#x60;&#x60;javascript
+    Ember.RenderBuffer(&#x27;p&#x27;)
+    &#x60;&#x60;&#x60;
+
+    @property elementTag
+    @type String
+    @default null
+  */
+  elementTag: null,
+
+  /**
+    A hash keyed on the name of the style attribute and whose value will
+    be applied to that attribute. For example, if you wanted to apply a
+    &#x60;background-color:black;&#x60; style to an element, you would set the
+    elementStyle hash to &#x60;{&#x27;background-color&#x27;:&#x27;black&#x27;}&#x60;.
+
+    You should not maintain this hash yourself, rather, you should use
+    the &#x60;style()&#x60; method of &#x60;Ember.RenderBuffer&#x60;.
+
+    @property elementStyle
+    @type Hash
+    @default {}
+  */
+  elementStyle: null,
+
+  /**
+    Nested &#x60;RenderBuffers&#x60; will set this to their parent &#x60;RenderBuffer&#x60;
+    instance.
+
+    @property parentBuffer
+    @type Ember._RenderBuffer
+  */
+  parentBuffer: null,
+
+  /**
+    Adds a string of HTML to the &#x60;RenderBuffer&#x60;.
+
+    @method push
+    @param {String} string HTML to push into the buffer
+    @chainable
+  */
+  push: function(string) {
+    this.buffer += string;
+    return this;
+  },
+
+  /**
+    Adds a class to the buffer, which will be rendered to the class attribute.
+
+    @method addClass
+    @param {String} className Class name to add to the buffer
+    @chainable
+  */
+  addClass: function(className) {
+    // lazily create elementClasses
+    this.elementClasses = (this.elementClasses || new ClassSet());
+    this.elementClasses.add(className);
+    this.classes = this.elementClasses.list;
+
+    return this;
+  },
+
+  setClasses: function(classNames) {
+    this.elementClasses = null;
+    var len = classNames.length, i;
+    for (i = 0; i &lt; len; i++) {
+      this.addClass(classNames[i]);
+    }
+  },
+
+  /**
+    Sets the elementID to be used for the element.
+
+    @method id
+    @param {String} id
+    @chainable
+  */
+  id: function(id) {
+    this.elementId = id;
+    return this;
+  },
+
+  // duck type attribute functionality like jQuery so a render buffer
+  // can be used like a jQuery object in attribute binding scenarios.
+
+  /**
+    Adds an attribute which will be rendered to the element.
+
+    @method attr
+    @param {String} name The name of the attribute
+    @param {String} value The value to add to the attribute
+    @chainable
+    @return {Ember.RenderBuffer|String} this or the current attribute value
+  */
+  attr: function(name, value) {
+    var attributes = this.elementAttributes = (this.elementAttributes || {});
+
+    if (arguments.length === 1) {
+      return attributes[name];
+    } else {
+      attributes[name] = value;
+    }
+
+    return this;
+  },
+
+  /**
+    Remove an attribute from the list of attributes to render.
+
+    @method removeAttr
+    @param {String} name The name of the attribute
+    @chainable
+  */
+  removeAttr: function(name) {
+    var attributes = this.elementAttributes;
+    if (attributes) { delete attributes[name]; }
+
+    return this;
+  },
+
+  /**
+    Adds a property which will be rendered to the element.
+
+    @method prop
+    @param {String} name The name of the property
+    @param {String} value The value to add to the property
+    @chainable
+    @return {Ember.RenderBuffer|String} this or the current property value
+  */
+  prop: function(name, value) {
+    var properties = this.elementProperties = (this.elementProperties || {});
+
+    if (arguments.length === 1) {
+      return properties[name];
+    } else {
+      properties[name] = value;
+    }
+
+    return this;
+  },
+
+  /**
+    Remove an property from the list of properties to render.
+
+    @method removeProp
+    @param {String} name The name of the property
+    @chainable
+  */
+  removeProp: function(name) {
+    var properties = this.elementProperties;
+    if (properties) { delete properties[name]; }
+
+    return this;
+  },
+
+  /**
+    Adds a style to the style attribute which will be rendered to the element.
+
+    @method style
+    @param {String} name Name of the style
+    @param {String} value
+    @chainable
+  */
+  style: function(name, value) {
+    this.elementStyle = (this.elementStyle || {});
+
+    this.elementStyle[name] = value;
+    return this;
+  },
+
+  begin: function(tagName) {
+    this.tagNames.push(tagName || null);
+    return this;
+  },
+
+  pushOpeningTag: function() {
+    var tagName = this.currentTagName();
+    if (!tagName) { return; }
+
+    if (this._hasElement &amp;&amp; !this._element &amp;&amp; this.buffer.length === 0) {
+      this._element = this.generateElement();
+      return;
+    }
+
+    var buffer = this.buffer,
+        id = this.elementId,
+        classes = this.classes,
+        attrs = this.elementAttributes,
+        props = this.elementProperties,
+        style = this.elementStyle,
+        attr, prop;
+
+    buffer += &#x27;&lt;&#x27; + stripTagName(tagName);
+
+    if (id) {
+      buffer += &#x27; id=&quot;&#x27; + escapeAttribute(id) + &#x27;&quot;&#x27;;
+      this.elementId = null;
+    }
+    if (classes) {
+      buffer += &#x27; class=&quot;&#x27; + escapeAttribute(classes.join(&#x27; &#x27;)) + &#x27;&quot;&#x27;;
+      this.classes = null;
+      this.elementClasses = null;
+    }
+
+    if (style) {
+      buffer += &#x27; style=&quot;&#x27;;
+
+      for (prop in style) {
+        if (style.hasOwnProperty(prop)) {
+          buffer += prop + &#x27;:&#x27; + escapeAttribute(style[prop]) + &#x27;;&#x27;;
+        }
+      }
+
+      buffer += &#x27;&quot;&#x27;;
+
+      this.elementStyle = null;
+    }
+
+    if (attrs) {
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          buffer += &#x27; &#x27; + attr + &#x27;=&quot;&#x27; + escapeAttribute(attrs[attr]) + &#x27;&quot;&#x27;;
+        }
+      }
+
+      this.elementAttributes = null;
+    }
+
+    if (props) {
+      for (prop in props) {
+        if (props.hasOwnProperty(prop)) {
+          var value = props[prop];
+          if (value || typeof(value) === &#x27;number&#x27;) {
+            if (value === true) {
+              buffer += &#x27; &#x27; + prop + &#x27;=&quot;&#x27; + prop + &#x27;&quot;&#x27;;
+            } else {
+              buffer += &#x27; &#x27; + prop + &#x27;=&quot;&#x27; + escapeAttribute(props[prop]) + &#x27;&quot;&#x27;;
+            }
+          }
+        }
+      }
+
+      this.elementProperties = null;
+    }
+
+    buffer += &#x27;&gt;&#x27;;
+    this.buffer = buffer;
+  },
+
+  pushClosingTag: function() {
+    var tagName = this.tagNames.pop();
+    if (tagName) { this.buffer += &#x27;&lt;/&#x27; + stripTagName(tagName) + &#x27;&gt;&#x27;; }
+  },
+
+  currentTagName: function() {
+    return this.tagNames[this.tagNames.length-1];
+  },
+
+  generateElement: function() {
+    var tagName = this.tagNames.pop(), // pop since we don&#x27;t need to close
+        id = this.elementId,
+        classes = this.classes,
+        attrs = this.elementAttributes,
+        props = this.elementProperties,
+        style = this.elementStyle,
+        styleBuffer = &#x27;&#x27;, attr, prop, tagString;
+
+    if (attrs &amp;&amp; attrs.name &amp;&amp; !canSetNameOnInputs) {
+      // IE allows passing a tag to createElement. See note on &#x60;canSetNameOnInputs&#x60; above as well.
+      tagString = &#x27;&lt;&#x27;+stripTagName(tagName)+&#x27; name=&quot;&#x27;+escapeAttribute(attrs.name)+&#x27;&quot;&gt;&#x27;;
+    } else {
+      tagString = tagName;
+    }
+
+    var element = document.createElement(tagString),
+        $element = jQuery(element);
+
+    if (id) {
+      $element.attr(&#x27;id&#x27;, id);
+      this.elementId = null;
+    }
+    if (classes) {
+      $element.attr(&#x27;class&#x27;, classes.join(&#x27; &#x27;));
+      this.classes = null;
+      this.elementClasses = null;
+    }
+
+    if (style) {
+      for (prop in style) {
+        if (style.hasOwnProperty(prop)) {
+          styleBuffer += (prop + &#x27;:&#x27; + style[prop] + &#x27;;&#x27;);
+        }
+      }
+
+      $element.attr(&#x27;style&#x27;, styleBuffer);
+
+      this.elementStyle = null;
+    }
+
+    if (attrs) {
+      for (attr in attrs) {
+        if (attrs.hasOwnProperty(attr)) {
+          $element.attr(attr, attrs[attr]);
+        }
+      }
+
+      this.elementAttributes = null;
+    }
+
+    if (props) {
+      for (prop in props) {
+        if (props.hasOwnProperty(prop)) {
+          $element.prop(prop, props[prop]);
+        }
+      }
+
+      this.elementProperties = null;
+    }
+
+    return element;
+  },
+
+  /**
+    @method element
+    @return {DOMElement} The element corresponding to the generated HTML
+      of this buffer
+  */
+  element: function() {
+    var html = this.innerString();
+
+    if (html) {
+      this._element = setInnerHTML(this._element, html);
+    }
+
+    return this._element;
+  },
+
+  /**
+    Generates the HTML content for this buffer.
+
+    @method string
+    @return {String} The generated HTML
+  */
+  string: function() {
+    if (this._hasElement &amp;&amp; this._element) {
+      // Firefox versions &lt; 11 do not have support for element.outerHTML.
+      var thisElement = this.element(), outerHTML = thisElement.outerHTML;
+      if (typeof outerHTML === &#x27;undefined&#x27;) {
+        return jQuery(&#x27;&lt;div/&gt;&#x27;).append(thisElement).html();
+      }
+      return outerHTML;
+    } else {
+      return this.innerString();
+    }
+  },
+
+  innerString: function() {
+    return this.buffer;
+  }
+};
+
+export default RenderBuffer;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

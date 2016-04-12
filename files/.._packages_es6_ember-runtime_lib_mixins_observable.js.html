@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-runtime/lib/mixins/observable.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-runtime/lib/mixins/observable.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+@module ember
+@submodule ember-runtime
+*/
+import Ember from &quot;ember-metal/core&quot;; // Ember.assert
+
+import {get, getWithDefault} from &quot;ember-metal/property_get&quot;;
+import {set} from &quot;ember-metal/property_set&quot;;
+import {apply} from &quot;ember-metal/utils&quot;;
+import getProperties from &quot;ember-metal/get_properties&quot;;
+import setProperties from &quot;ember-metal/set_properties&quot;;
+import {Mixin} from &quot;ember-metal/mixin&quot;;
+import {hasListeners} from &quot;ember-metal/events&quot;;
+import {beginPropertyChanges, propertyWillChange, propertyDidChange, endPropertyChanges} from &quot;ember-metal/property_events&quot;;
+import {addObserver, addBeforeObserver, removeObserver, observersFor} from &quot;ember-metal/observer&quot;;
+import {cacheFor} from &quot;ember-metal/computed&quot;;
+import {isNone} from &quot;ember-metal/is_none&quot;;
+
+
+var slice = Array.prototype.slice;
+/**
+  ## Overview
+
+  This mixin provides properties and property observing functionality, core
+  features of the Ember object model.
+
+  Properties and observers allow one object to observe changes to a
+  property on another object. This is one of the fundamental ways that
+  models, controllers and views communicate with each other in an Ember
+  application.
+
+  Any object that has this mixin applied can be used in observer
+  operations. That includes &#x60;Ember.Object&#x60; and most objects you will
+  interact with as you write your Ember application.
+
+  Note that you will not generally apply this mixin to classes yourself,
+  but you will use the features provided by this module frequently, so it
+  is important to understand how to use it.
+
+  ## Using &#x60;get()&#x60; and &#x60;set()&#x60;
+
+  Because of Ember&#x27;s support for bindings and observers, you will always
+  access properties using the get method, and set properties using the
+  set method. This allows the observing objects to be notified and
+  computed properties to be handled properly.
+
+  More documentation about &#x60;get&#x60; and &#x60;set&#x60; are below.
+
+  ## Observing Property Changes
+
+  You typically observe property changes simply by adding the &#x60;observes&#x60;
+  call to the end of your method declarations in classes that you write.
+  For example:
+
+  &#x60;&#x60;&#x60;javascript
+  Ember.Object.extend({
+    valueObserver: function() {
+      // Executes whenever the &quot;value&quot; property changes
+    }.observes(&#x27;value&#x27;)
+  });
+  &#x60;&#x60;&#x60;
+
+  Although this is the most common way to add an observer, this capability
+  is actually built into the &#x60;Ember.Object&#x60; class on top of two methods
+  defined in this mixin: &#x60;addObserver&#x60; and &#x60;removeObserver&#x60;. You can use
+  these two methods to add and remove observers yourself if you need to
+  do so at runtime.
+
+  To add an observer for a property, call:
+
+  &#x60;&#x60;&#x60;javascript
+  object.addObserver(&#x27;propertyKey&#x27;, targetObject, targetAction)
+  &#x60;&#x60;&#x60;
+
+  This will call the &#x60;targetAction&#x60; method on the &#x60;targetObject&#x60; whenever
+  the value of the &#x60;propertyKey&#x60; changes.
+
+  Note that if &#x60;propertyKey&#x60; is a computed property, the observer will be
+  called when any of the property dependencies are changed, even if the
+  resulting value of the computed property is unchanged. This is necessary
+  because computed properties are not computed until &#x60;get&#x60; is called.
+
+  @class Observable
+  @namespace Ember
+*/
+var Observable = Mixin.create({
+
+  /**
+    Retrieves the value of a property from the object.
+
+    This method is usually similar to using &#x60;object[keyName]&#x60; or &#x60;object.keyName&#x60;,
+    however it supports both computed properties and the unknownProperty
+    handler.
+
+    Because &#x60;get&#x60; unifies the syntax for accessing all these kinds
+    of properties, it can make many refactorings easier, such as replacing a
+    simple property with a computed property, or vice versa.
+
+    ### Computed Properties
+
+    Computed properties are methods defined with the &#x60;property&#x60; modifier
+    declared at the end, such as:
+
+    &#x60;&#x60;&#x60;javascript
+    fullName: function() {
+      return this.get(&#x27;firstName&#x27;) + &#x27; &#x27; + this.get(&#x27;lastName&#x27;);
+    }.property(&#x27;firstName&#x27;, &#x27;lastName&#x27;)
+    &#x60;&#x60;&#x60;
+
+    When you call &#x60;get&#x60; on a computed property, the function will be
+    called and the return value will be returned instead of the function
+    itself.
+
+    ### Unknown Properties
+
+    Likewise, if you try to call &#x60;get&#x60; on a property whose value is
+    &#x60;undefined&#x60;, the &#x60;unknownProperty()&#x60; method will be called on the object.
+    If this method returns any value other than &#x60;undefined&#x60;, it will be returned
+    instead. This allows you to implement &quot;virtual&quot; properties that are
+    not defined upfront.
+
+    @method get
+    @param {String} keyName The property to retrieve
+    @return {Object} The property value or undefined.
+  */
+  get: function(keyName) {
+    return get(this, keyName);
+  },
+
+  /**
+    To get multiple properties at once, call &#x60;getProperties&#x60;
+    with a list of strings or an array:
+
+    &#x60;&#x60;&#x60;javascript
+    record.getProperties(&#x27;firstName&#x27;, &#x27;lastName&#x27;, &#x27;zipCode&#x27;);  // { firstName: &#x27;John&#x27;, lastName: &#x27;Doe&#x27;, zipCode: &#x27;10011&#x27; }
+    &#x60;&#x60;&#x60;
+
+    is equivalent to:
+
+    &#x60;&#x60;&#x60;javascript
+    record.getProperties([&#x27;firstName&#x27;, &#x27;lastName&#x27;, &#x27;zipCode&#x27;]);  // { firstName: &#x27;John&#x27;, lastName: &#x27;Doe&#x27;, zipCode: &#x27;10011&#x27; }
+    &#x60;&#x60;&#x60;
+
+    @method getProperties
+    @param {String...|Array} list of keys to get
+    @return {Hash}
+  */
+  getProperties: function() {
+    return apply(null, getProperties, [this].concat(slice.call(arguments)));
+  },
+
+  /**
+    Sets the provided key or path to the value.
+
+    This method is generally very similar to calling &#x60;object[key] = value&#x60; or
+    &#x60;object.key = value&#x60;, except that it provides support for computed
+    properties, the &#x60;setUnknownProperty()&#x60; method and property observers.
+
+    ### Computed Properties
+
+    If you try to set a value on a key that has a computed property handler
+    defined (see the &#x60;get()&#x60; method for an example), then &#x60;set()&#x60; will call
+    that method, passing both the value and key instead of simply changing
+    the value itself. This is useful for those times when you need to
+    implement a property that is composed of one or more member
+    properties.
+
+    ### Unknown Properties
+
+    If you try to set a value on a key that is undefined in the target
+    object, then the &#x60;setUnknownProperty()&#x60; handler will be called instead. This
+    gives you an opportunity to implement complex &quot;virtual&quot; properties that
+    are not predefined on the object. If &#x60;setUnknownProperty()&#x60; returns
+    undefined, then &#x60;set()&#x60; will simply set the value on the object.
+
+    ### Property Observers
+
+    In addition to changing the property, &#x60;set()&#x60; will also register a property
+    change with the object. Unless you have placed this call inside of a
+    &#x60;beginPropertyChanges()&#x60; and &#x60;endPropertyChanges(),&#x60; any &quot;local&quot; observers
+    (i.e. observer methods declared on the same object), will be called
+    immediately. Any &quot;remote&quot; observers (i.e. observer methods declared on
+    another object) will be placed in a queue and called at a later time in a
+    coalesced manner.
+
+    ### Chaining
+
+    In addition to property changes, &#x60;set()&#x60; returns the value of the object
+    itself so you can do chaining like this:
+
+    &#x60;&#x60;&#x60;javascript
+    record.set(&#x27;firstName&#x27;, &#x27;Charles&#x27;).set(&#x27;lastName&#x27;, &#x27;Jolley&#x27;);
+    &#x60;&#x60;&#x60;
+
+    @method set
+    @param {String} keyName The property to set
+    @param {Object} value The value to set or &#x60;null&#x60;.
+    @return {Ember.Observable}
+  */
+  set: function(keyName, value) {
+    set(this, keyName, value);
+    return this;
+  },
+
+
+  /**
+    Sets a list of properties at once. These properties are set inside
+    a single &#x60;beginPropertyChanges&#x60; and &#x60;endPropertyChanges&#x60; batch, so
+    observers will be buffered.
+
+    &#x60;&#x60;&#x60;javascript
+    record.setProperties({ firstName: &#x27;Charles&#x27;, lastName: &#x27;Jolley&#x27; });
+    &#x60;&#x60;&#x60;
+
+    @method setProperties
+    @param {Hash} hash the hash of keys and values to set
+    @return {Ember.Observable}
+  */
+  setProperties: function(hash) {
+    return setProperties(this, hash);
+  },
+
+  /**
+    Begins a grouping of property changes.
+
+    You can use this method to group property changes so that notifications
+    will not be sent until the changes are finished. If you plan to make a
+    large number of changes to an object at one time, you should call this
+    method at the beginning of the changes to begin deferring change
+    notifications. When you are done making changes, call
+    &#x60;endPropertyChanges()&#x60; to deliver the deferred change notifications and end
+    deferring.
+
+    @method beginPropertyChanges
+    @return {Ember.Observable}
+  */
+  beginPropertyChanges: function() {
+    beginPropertyChanges();
+    return this;
+  },
+
+  /**
+    Ends a grouping of property changes.
+
+    You can use this method to group property changes so that notifications
+    will not be sent until the changes are finished. If you plan to make a
+    large number of changes to an object at one time, you should call
+    &#x60;beginPropertyChanges()&#x60; at the beginning of the changes to defer change
+    notifications. When you are done making changes, call this method to
+    deliver the deferred change notifications and end deferring.
+
+    @method endPropertyChanges
+    @return {Ember.Observable}
+  */
+  endPropertyChanges: function() {
+    endPropertyChanges();
+    return this;
+  },
+
+  /**
+    Notify the observer system that a property is about to change.
+
+    Sometimes you need to change a value directly or indirectly without
+    actually calling &#x60;get()&#x60; or &#x60;set()&#x60; on it. In this case, you can use this
+    method and &#x60;propertyDidChange()&#x60; instead. Calling these two methods
+    together will notify all observers that the property has potentially
+    changed value.
+
+    Note that you must always call &#x60;propertyWillChange&#x60; and &#x60;propertyDidChange&#x60;
+    as a pair. If you do not, it may get the property change groups out of
+    order and cause notifications to be delivered more often than you would
+    like.
+
+    @method propertyWillChange
+    @param {String} keyName The property key that is about to change.
+    @return {Ember.Observable}
+  */
+  propertyWillChange: function(keyName) {
+    propertyWillChange(this, keyName);
+    return this;
+  },
+
+  /**
+    Notify the observer system that a property has just changed.
+
+    Sometimes you need to change a value directly or indirectly without
+    actually calling &#x60;get()&#x60; or &#x60;set()&#x60; on it. In this case, you can use this
+    method and &#x60;propertyWillChange()&#x60; instead. Calling these two methods
+    together will notify all observers that the property has potentially
+    changed value.
+
+    Note that you must always call &#x60;propertyWillChange&#x60; and &#x60;propertyDidChange&#x60;
+    as a pair. If you do not, it may get the property change groups out of
+    order and cause notifications to be delivered more often than you would
+    like.
+
+    @method propertyDidChange
+    @param {String} keyName The property key that has just changed.
+    @return {Ember.Observable}
+  */
+  propertyDidChange: function(keyName) {
+    propertyDidChange(this, keyName);
+    return this;
+  },
+
+  /**
+    Convenience method to call &#x60;propertyWillChange&#x60; and &#x60;propertyDidChange&#x60; in
+    succession.
+
+    @method notifyPropertyChange
+    @param {String} keyName The property key to be notified about.
+    @return {Ember.Observable}
+  */
+  notifyPropertyChange: function(keyName) {
+    this.propertyWillChange(keyName);
+    this.propertyDidChange(keyName);
+    return this;
+  },
+
+  addBeforeObserver: function(key, target, method) {
+    addBeforeObserver(this, key, target, method);
+  },
+
+  /**
+    Adds an observer on a property.
+
+    This is the core method used to register an observer for a property.
+
+    Once you call this method, any time the key&#x27;s value is set, your observer
+    will be notified. Note that the observers are triggered any time the
+    value is set, regardless of whether it has actually changed. Your
+    observer should be prepared to handle that.
+
+    You can also pass an optional context parameter to this method. The
+    context will be passed to your observer method whenever it is triggered.
+    Note that if you add the same target/method pair on a key multiple times
+    with different context parameters, your observer will only be called once
+    with the last context you passed.
+
+    ### Observer Methods
+
+    Observer methods you pass should generally have the following signature if
+    you do not pass a &#x60;context&#x60; parameter:
+
+    &#x60;&#x60;&#x60;javascript
+    fooDidChange: function(sender, key, value, rev) { };
+    &#x60;&#x60;&#x60;
+
+    The sender is the object that changed. The key is the property that
+    changes. The value property is currently reserved and unused. The rev
+    is the last property revision of the object when it changed, which you can
+    use to detect if the key value has really changed or not.
+
+    If you pass a &#x60;context&#x60; parameter, the context will be passed before the
+    revision like so:
+
+    &#x60;&#x60;&#x60;javascript
+    fooDidChange: function(sender, key, value, context, rev) { };
+    &#x60;&#x60;&#x60;
+
+    Usually you will not need the value, context or revision parameters at
+    the end. In this case, it is common to write observer methods that take
+    only a sender and key value as parameters or, if you aren&#x27;t interested in
+    any of these values, to write an observer that has no parameters at all.
+
+    @method addObserver
+    @param {String} key The key to observer
+    @param {Object} target The target object to invoke
+    @param {String|Function} method The method to invoke.
+  */
+  addObserver: function(key, target, method) {
+    addObserver(this, key, target, method);
+  },
+
+  /**
+    Remove an observer you have previously registered on this object. Pass
+    the same key, target, and method you passed to &#x60;addObserver()&#x60; and your
+    target will no longer receive notifications.
+
+    @method removeObserver
+    @param {String} key The key to observer
+    @param {Object} target The target object to invoke
+    @param {String|Function} method The method to invoke.
+  */
+  removeObserver: function(key, target, method) {
+    removeObserver(this, key, target, method);
+  },
+
+  /**
+    Returns &#x60;true&#x60; if the object currently has observers registered for a
+    particular key. You can use this method to potentially defer performing
+    an expensive action until someone begins observing a particular property
+    on the object.
+
+    @method hasObserverFor
+    @param {String} key Key to check
+    @return {Boolean}
+  */
+  hasObserverFor: function(key) {
+    return hasListeners(this, key+&#x27;:change&#x27;);
+  },
+
+  /**
+    Retrieves the value of a property, or a default value in the case that the
+    property returns &#x60;undefined&#x60;.
+
+    &#x60;&#x60;&#x60;javascript
+    person.getWithDefault(&#x27;lastName&#x27;, &#x27;Doe&#x27;);
+    &#x60;&#x60;&#x60;
+
+    @method getWithDefault
+    @param {String} keyName The name of the property to retrieve
+    @param {Object} defaultValue The value to return if the property value is undefined
+    @return {Object} The property value or the defaultValue.
+  */
+  getWithDefault: function(keyName, defaultValue) {
+    return getWithDefault(this, keyName, defaultValue);
+  },
+
+  /**
+    Set the value of a property to the current value plus some amount.
+
+    &#x60;&#x60;&#x60;javascript
+    person.incrementProperty(&#x27;age&#x27;);
+    team.incrementProperty(&#x27;score&#x27;, 2);
+    &#x60;&#x60;&#x60;
+
+    @method incrementProperty
+    @param {String} keyName The name of the property to increment
+    @param {Number} increment The amount to increment by. Defaults to 1
+    @return {Number} The new property value
+  */
+  incrementProperty: function(keyName, increment) {
+    if (isNone(increment)) { increment = 1; }
+    Ember.assert(&quot;Must pass a numeric value to incrementProperty&quot;, (!isNaN(parseFloat(increment)) &amp;&amp; isFinite(increment)));
+    set(this, keyName, (parseFloat(get(this, keyName)) || 0) + increment);
+    return get(this, keyName);
+  },
+
+  /**
+    Set the value of a property to the current value minus some amount.
+
+    &#x60;&#x60;&#x60;javascript
+    player.decrementProperty(&#x27;lives&#x27;);
+    orc.decrementProperty(&#x27;health&#x27;, 5);
+    &#x60;&#x60;&#x60;
+
+    @method decrementProperty
+    @param {String} keyName The name of the property to decrement
+    @param {Number} decrement The amount to decrement by. Defaults to 1
+    @return {Number} The new property value
+  */
+  decrementProperty: function(keyName, decrement) {
+    if (isNone(decrement)) { decrement = 1; }
+    Ember.assert(&quot;Must pass a numeric value to decrementProperty&quot;, (!isNaN(parseFloat(decrement)) &amp;&amp; isFinite(decrement)));
+    set(this, keyName, (get(this, keyName) || 0) - decrement);
+    return get(this, keyName);
+  },
+
+  /**
+    Set the value of a boolean property to the opposite of it&#x27;s
+    current value.
+
+    &#x60;&#x60;&#x60;javascript
+    starship.toggleProperty(&#x27;warpDriveEngaged&#x27;);
+    &#x60;&#x60;&#x60;
+
+    @method toggleProperty
+    @param {String} keyName The name of the property to toggle
+    @return {Object} The new property value
+  */
+  toggleProperty: function(keyName) {
+    set(this, keyName, !get(this, keyName));
+    return get(this, keyName);
+  },
+
+  /**
+    Returns the cached value of a computed property, if it exists.
+    This allows you to inspect the value of a computed property
+    without accidentally invoking it if it is intended to be
+    generated lazily.
+
+    @method cacheFor
+    @param {String} keyName
+    @return {Object} The cached value of the computed property, if any
+  */
+  cacheFor: function(keyName) {
+    return cacheFor(this, keyName);
+  },
+
+  // intended for debugging purposes
+  observersForKey: function(keyName) {
+    return observersFor(this, keyName);
+  }
+});
+
+export default Observable;
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

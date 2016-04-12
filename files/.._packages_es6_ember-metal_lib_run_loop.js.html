@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>../packages_es6/ember-metal/lib/run_loop.js - The Ember API</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="The Ember API" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 1.0 pre</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/Ember.html">Ember</a></li>
+                                <li><a href="../classes/Ember._HandlebarsBoundView.html">Ember._HandlebarsBoundView</a></li>
+                                <li><a href="../classes/Ember._Metamorph.html">Ember._Metamorph</a></li>
+                                <li><a href="../classes/Ember._MetamorphView.html">Ember._MetamorphView</a></li>
+                                <li><a href="../classes/Ember._SimpleMetamorphView.html">Ember._SimpleMetamorphView</a></li>
+                                <li><a href="../classes/Ember.ActionHandler.html">Ember.ActionHandler</a></li>
+                                <li><a href="../classes/Ember.Application.html">Ember.Application</a></li>
+                                <li><a href="../classes/Ember.Array.html">Ember.Array</a></li>
+                                <li><a href="../classes/Ember.ArrayController.html">Ember.ArrayController</a></li>
+                                <li><a href="../classes/Ember.ArrayProxy.html">Ember.ArrayProxy</a></li>
+                                <li><a href="../classes/Ember.AutoLocation.html">Ember.AutoLocation</a></li>
+                                <li><a href="../classes/Ember.Binding.html">Ember.Binding</a></li>
+                                <li><a href="../classes/Ember.Checkbox.html">Ember.Checkbox</a></li>
+                                <li><a href="../classes/Ember.CollectionView.html">Ember.CollectionView</a></li>
+                                <li><a href="../classes/Ember.Comparable.html">Ember.Comparable</a></li>
+                                <li><a href="../classes/Ember.Component.html">Ember.Component</a></li>
+                                <li><a href="../classes/Ember.ComponentTemplateDeprecation.html">Ember.ComponentTemplateDeprecation</a></li>
+                                <li><a href="../classes/Ember.ComputedProperty.html">Ember.ComputedProperty</a></li>
+                                <li><a href="../classes/Ember.ContainerDebugAdapter.html">Ember.ContainerDebugAdapter</a></li>
+                                <li><a href="../classes/Ember.ContainerView.html">Ember.ContainerView</a></li>
+                                <li><a href="../classes/Ember.Controller.html">Ember.Controller</a></li>
+                                <li><a href="../classes/Ember.ControllerMixin.html">Ember.ControllerMixin</a></li>
+                                <li><a href="../classes/Ember.Copyable.html">Ember.Copyable</a></li>
+                                <li><a href="../classes/Ember.CoreObject.html">Ember.CoreObject</a></li>
+                                <li><a href="../classes/Ember.CoreView.html">Ember.CoreView</a></li>
+                                <li><a href="../classes/Ember.DataAdapter.html">Ember.DataAdapter</a></li>
+                                <li><a href="../classes/Ember.DefaultResolver.html">Ember.DefaultResolver</a></li>
+                                <li><a href="../classes/Ember.Deferred.html">Ember.Deferred</a></li>
+                                <li><a href="../classes/Ember.Descriptor.html">Ember.Descriptor</a></li>
+                                <li><a href="../classes/Ember.EachProxy.html">Ember.EachProxy</a></li>
+                                <li><a href="../classes/Ember.Enumerable.html">Ember.Enumerable</a></li>
+                                <li><a href="../classes/Ember.EnumerableUtils.html">Ember.EnumerableUtils</a></li>
+                                <li><a href="../classes/Ember.Error.html">Ember.Error</a></li>
+                                <li><a href="../classes/Ember.EventDispatcher.html">Ember.EventDispatcher</a></li>
+                                <li><a href="../classes/Ember.Evented.html">Ember.Evented</a></li>
+                                <li><a href="../classes/Ember.FEATURES.html">Ember.FEATURES</a></li>
+                                <li><a href="../classes/Ember.Freezable.html">Ember.Freezable</a></li>
+                                <li><a href="../classes/Ember.Handlebars.html">Ember.Handlebars</a></li>
+                                <li><a href="../classes/Ember.Handlebars.Compiler.html">Ember.Handlebars.Compiler</a></li>
+                                <li><a href="../classes/Ember.Handlebars.helpers.html">Ember.Handlebars.helpers</a></li>
+                                <li><a href="../classes/Ember.Handlebars.JavaScriptCompiler.html">Ember.Handlebars.JavaScriptCompiler</a></li>
+                                <li><a href="../classes/Ember.HashLocation.html">Ember.HashLocation</a></li>
+                                <li><a href="../classes/Ember.HistoryLocation.html">Ember.HistoryLocation</a></li>
+                                <li><a href="../classes/Ember.Instrumentation.html">Ember.Instrumentation</a></li>
+                                <li><a href="../classes/Ember.LinkView.html">Ember.LinkView</a></li>
+                                <li><a href="../classes/Ember.Location.html">Ember.Location</a></li>
+                                <li><a href="../classes/Ember.Logger.html">Ember.Logger</a></li>
+                                <li><a href="../classes/Ember.Map.html">Ember.Map</a></li>
+                                <li><a href="../classes/Ember.MapWithDefault.html">Ember.MapWithDefault</a></li>
+                                <li><a href="../classes/Ember.Mixin.html">Ember.Mixin</a></li>
+                                <li><a href="../classes/Ember.MutableArray.html">Ember.MutableArray</a></li>
+                                <li><a href="../classes/Ember.MutableEnumerable.html">Ember.MutableEnumerable</a></li>
+                                <li><a href="../classes/Ember.Namespace.html">Ember.Namespace</a></li>
+                                <li><a href="../classes/Ember.NativeArray.html">Ember.NativeArray</a></li>
+                                <li><a href="../classes/Ember.NoneLocation.html">Ember.NoneLocation</a></li>
+                                <li><a href="../classes/Ember.Object.html">Ember.Object</a></li>
+                                <li><a href="../classes/Ember.ObjectController.html">Ember.ObjectController</a></li>
+                                <li><a href="../classes/Ember.ObjectProxy.html">Ember.ObjectProxy</a></li>
+                                <li><a href="../classes/Ember.Observable.html">Ember.Observable</a></li>
+                                <li><a href="../classes/Ember.OrderedSet.html">Ember.OrderedSet</a></li>
+                                <li><a href="../classes/Ember.platform.html">Ember.platform</a></li>
+                                <li><a href="../classes/Ember.PromiseProxyMixin.html">Ember.PromiseProxyMixin</a></li>
+                                <li><a href="../classes/Ember.ReduceComputedProperty.html">Ember.ReduceComputedProperty</a></li>
+                                <li><a href="../classes/Ember.RenderBuffer.html">Ember.RenderBuffer</a></li>
+                                <li><a href="../classes/Ember.Route.html">Ember.Route</a></li>
+                                <li><a href="../classes/Ember.Router.html">Ember.Router</a></li>
+                                <li><a href="../classes/Ember.RSVP.html">Ember.RSVP</a></li>
+                                <li><a href="../classes/Ember.RSVP.EventTarget.html">Ember.RSVP.EventTarget</a></li>
+                                <li><a href="../classes/Ember.RSVP.Promise.html">Ember.RSVP.Promise</a></li>
+                                <li><a href="../classes/Ember.Select.html">Ember.Select</a></li>
+                                <li><a href="../classes/Ember.Set.html">Ember.Set</a></li>
+                                <li><a href="../classes/Ember.SortableMixin.html">Ember.SortableMixin</a></li>
+                                <li><a href="../classes/Ember.State.html">Ember.State</a></li>
+                                <li><a href="../classes/Ember.StateManager.html">Ember.StateManager</a></li>
+                                <li><a href="../classes/Ember.String.html">Ember.String</a></li>
+                                <li><a href="../classes/Ember.SubArray.html">Ember.SubArray</a></li>
+                                <li><a href="../classes/Ember.TargetActionSupport.html">Ember.TargetActionSupport</a></li>
+                                <li><a href="../classes/Ember.Test.html">Ember.Test</a></li>
+                                <li><a href="../classes/Ember.Test.Adapter.html">Ember.Test.Adapter</a></li>
+                                <li><a href="../classes/Ember.Test.QUnitAdapter.html">Ember.Test.QUnitAdapter</a></li>
+                                <li><a href="../classes/Ember.TextArea.html">Ember.TextArea</a></li>
+                                <li><a href="../classes/Ember.TextField.html">Ember.TextField</a></li>
+                                <li><a href="../classes/Ember.TextSupport.html">Ember.TextSupport</a></li>
+                                <li><a href="../classes/Ember.TrackedArray.html">Ember.TrackedArray</a></li>
+                                <li><a href="../classes/Ember.View.html">Ember.View</a></li>
+                                <li><a href="../classes/Ember.ViewTargetActionSupport.html">Ember.ViewTargetActionSupport</a></li>
+                                <li><a href="../classes/Function.html">Function</a></li>
+                                <li><a href="../classes/run.run.html">run.run</a></li>
+                                <li><a href="../classes/String.html">String</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/ember.html">ember</a></li>
+                                <li><a href="../modules/ember-application.html">ember-application</a></li>
+                                <li><a href="../modules/ember-debug.html">ember-debug</a></li>
+                                <li><a href="../modules/ember-extension-support.html">ember-extension-support</a></li>
+                                <li><a href="../modules/ember-handlebars.html">ember-handlebars</a></li>
+                                <li><a href="../modules/ember-handlebars-compiler.html">ember-handlebars-compiler</a></li>
+                                <li><a href="../modules/ember-metal.html">ember-metal</a></li>
+                                <li><a href="../modules/ember-routing.html">ember-routing</a></li>
+                                <li><a href="../modules/ember-runtime.html">ember-runtime</a></li>
+                                <li><a href="../modules/ember-testing.html">ember-testing</a></li>
+                                <li><a href="../modules/ember-views.html">ember-views</a></li>
+                                <li><a href="../modules/RSVP.html">RSVP</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1 class="file-heading">File: ../packages_es6/ember-metal/lib/run_loop.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+import Ember from &#x27;ember-metal/core&#x27;;
+import {apply} from &#x27;ember-metal/utils&#x27;;
+import {indexOf} from &quot;ember-metal/array&quot;;
+import {beginPropertyChanges, endPropertyChanges} from &#x27;ember-metal/property_events&#x27;;
+
+var onBegin = function(current) {
+  run.currentRunLoop = current;
+};
+
+var onEnd = function(current, next) {
+  run.currentRunLoop = next;
+};
+
+// ES6TODO: should Backburner become es6?
+var Backburner = requireModule(&#x27;backburner&#x27;).Backburner,
+    backburner = new Backburner([&#x27;sync&#x27;, &#x27;actions&#x27;, &#x27;destroy&#x27;], {
+      sync: {
+        before: beginPropertyChanges,
+        after: endPropertyChanges
+      },
+      defaultQueue: &#x27;actions&#x27;,
+      onBegin: onBegin,
+      onEnd: onEnd,
+      onErrorTarget: Ember,
+      onErrorMethod: &#x27;onerror&#x27;
+    }),
+    slice = [].slice,
+    concat = [].concat;
+
+// ..........................................................
+// run - this is ideally the only public API the dev sees
+//
+
+/**
+  Runs the passed target and method inside of a RunLoop, ensuring any
+  deferred actions including bindings and views updates are flushed at the
+  end.
+
+  Normally you should not need to invoke this method yourself. However if
+  you are implementing raw event handlers when interfacing with other
+  libraries or plugins, you should probably wrap all of your code inside this
+  call.
+
+  &#x60;&#x60;&#x60;javascript
+  run(function() {
+    // code to be execute within a RunLoop
+  });
+  &#x60;&#x60;&#x60;
+
+  @class run
+  @namespace Ember
+  @static
+  @constructor
+  @param {Object} [target] target of method to call
+  @param {Function|String} method Method to invoke.
+    May be a function or a string. If you pass a string
+    then it will be looked up on the passed target.
+  @param {Object} [args*] Any additional arguments you wish to pass to the method.
+  @return {Object} return value from invoking the passed function.
+*/
+var run = function() {
+  return apply(backburner, backburner.run, arguments);
+};
+
+/**
+  If no run-loop is present, it creates a new one. If a run loop is
+  present it will queue itself to run on the existing run-loops action
+  queue.
+
+  Please note: This is not for normal usage, and should be used sparingly.
+
+  If invoked when not within a run loop:
+
+  &#x60;&#x60;&#x60;javascript
+  run.join(function() {
+    // creates a new run-loop
+  });
+  &#x60;&#x60;&#x60;
+
+  Alternatively, if called within an existing run loop:
+
+  &#x60;&#x60;&#x60;javascript
+  run(function() {
+    // creates a new run-loop
+    run.join(function() {
+      // joins with the existing run-loop, and queues for invocation on
+      // the existing run-loops action queue.
+    });
+  });
+  &#x60;&#x60;&#x60;
+
+  @method join
+  @namespace Ember
+  @param {Object} [target] target of method to call
+  @param {Function|String} method Method to invoke.
+    May be a function or a string. If you pass a string
+    then it will be looked up on the passed target.
+  @param {Object} [args*] Any additional arguments you wish to pass to the method.
+  @return {Object} Return value from invoking the passed function. Please note,
+  when called within an existing loop, no return value is possible.
+*/
+run.join = function(target, method /* args */) {
+  if (!run.currentRunLoop) {
+    return apply(Ember, run, arguments);
+  }
+
+  var args = slice.call(arguments);
+  args.unshift(&#x27;actions&#x27;);
+  apply(run, run.schedule, args);
+};
+
+/**
+  Provides a useful utility for when integrating with non-Ember libraries
+  that provide asynchronous callbacks.
+
+  Ember utilizes a run-loop to batch and coalesce changes. This works by
+  marking the start and end of Ember-related Javascript execution.
+
+  When using events such as a View&#x27;s click handler, Ember wraps the event
+  handler in a run-loop, but when integrating with non-Ember libraries this
+  can be tedious.
+
+  For example, the following is rather verbose but is the correct way to combine
+  third-party events and Ember code.
+
+  &#x60;&#x60;&#x60;javascript
+  var that = this;
+  jQuery(window).on(&#x27;resize&#x27;, function(){
+    run(function(){
+      that.handleResize();
+    });
+  });
+  &#x60;&#x60;&#x60;
+
+  To reduce the boilerplate, the following can be used to construct a
+  run-loop-wrapped callback handler.
+
+  &#x60;&#x60;&#x60;javascript
+  jQuery(window).on(&#x27;resize&#x27;, run.bind(this, this.handleResize));
+  &#x60;&#x60;&#x60;
+
+  @method bind
+  @namespace run
+  @param {Object} [target] target of method to call
+  @param {Function|String} method Method to invoke.
+    May be a function or a string. If you pass a string
+    then it will be looked up on the passed target.
+  @param {Object} [args*] Any additional arguments you wish to pass to the method.
+  @return {Object} return value from invoking the passed function. Please note,
+  when called within an existing loop, no return value is possible.
+  @since 1.4.0
+*/
+run.bind = function(target, method /* args*/) {
+  var args = slice.call(arguments);
+  return function() {
+    return apply(run, run.join, args.concat(slice.call(arguments)));
+  };
+};
+
+run.backburner = backburner;
+run.currentRunLoop = null;
+run.queues = backburner.queueNames;
+
+/**
+  Begins a new RunLoop. Any deferred actions invoked after the begin will
+  be buffered until you invoke a matching call to &#x60;run.end()&#x60;. This is
+  a lower-level way to use a RunLoop instead of using &#x60;run()&#x60;.
+
+  &#x60;&#x60;&#x60;javascript
+  run.begin();
+  // code to be execute within a RunLoop
+  run.end();
+  &#x60;&#x60;&#x60;
+
+  @method begin
+  @return {void}
+*/
+run.begin = function() {
+  backburner.begin();
+};
+
+/**
+  Ends a RunLoop. This must be called sometime after you call
+  &#x60;run.begin()&#x60; to flush any deferred actions. This is a lower-level way
+  to use a RunLoop instead of using &#x60;run()&#x60;.
+
+  &#x60;&#x60;&#x60;javascript
+  run.begin();
+  // code to be execute within a RunLoop
+  run.end();
+  &#x60;&#x60;&#x60;
+
+  @method end
+  @return {void}
+*/
+run.end = function() {
+  backburner.end();
+};
+
+/**
+  Array of named queues. This array determines the order in which queues
+  are flushed at the end of the RunLoop. You can define your own queues by
+  simply adding the queue name to this array. Normally you should not need
+  to inspect or modify this property.
+
+  @property queues
+  @type Array
+  @default [&#x27;sync&#x27;, &#x27;actions&#x27;, &#x27;destroy&#x27;]
+*/
+
+/**
+  Adds the passed target/method and any optional arguments to the named
+  queue to be executed at the end of the RunLoop. If you have not already
+  started a RunLoop when calling this method one will be started for you
+  automatically.
+
+  At the end of a RunLoop, any methods scheduled in this way will be invoked.
+  Methods will be invoked in an order matching the named queues defined in
+  the &#x60;run.queues&#x60; property.
+
+  &#x60;&#x60;&#x60;javascript
+  run.schedule(&#x27;sync&#x27;, this, function() {
+    // this will be executed in the first RunLoop queue, when bindings are synced
+    console.log(&quot;scheduled on sync queue&quot;);
+  });
+
+  run.schedule(&#x27;actions&#x27;, this, function() {
+    // this will be executed in the &#x27;actions&#x27; queue, after bindings have synced.
+    console.log(&quot;scheduled on actions queue&quot;);
+  });
+
+  // Note the functions will be run in order based on the run queues order.
+  // Output would be:
+  //   scheduled on sync queue
+  //   scheduled on actions queue
+  &#x60;&#x60;&#x60;
+
+  @method schedule
+  @param {String} queue The name of the queue to schedule against.
+    Default queues are &#x27;sync&#x27; and &#x27;actions&#x27;
+  @param {Object} [target] target object to use as the context when invoking a method.
+  @param {String|Function} method The method to invoke. If you pass a string it
+    will be resolved on the target object at the time the scheduled item is
+    invoked allowing you to change the target function.
+  @param {Object} [arguments*] Optional arguments to be passed to the queued method.
+  @return {void}
+*/
+run.schedule = function(queue, target, method) {
+  checkAutoRun();
+  apply(backburner, backburner.schedule, arguments);
+};
+
+// Used by global test teardown
+run.hasScheduledTimers = function() {
+  return backburner.hasTimers();
+};
+
+// Used by global test teardown
+run.cancelTimers = function () {
+  backburner.cancelTimers();
+};
+
+/**
+  Immediately flushes any events scheduled in the &#x27;sync&#x27; queue. Bindings
+  use this queue so this method is a useful way to immediately force all
+  bindings in the application to sync.
+
+  You should call this method anytime you need any changed state to propagate
+  throughout the app immediately without repainting the UI (which happens
+  in the later &#x27;render&#x27; queue added by the &#x60;ember-views&#x60; package).
+
+  &#x60;&#x60;&#x60;javascript
+  run.sync();
+  &#x60;&#x60;&#x60;
+
+  @method sync
+  @return {void}
+*/
+run.sync = function() {
+  if (backburner.currentInstance) {
+    backburner.currentInstance.queues.sync.flush();
+  }
+};
+
+/**
+  Invokes the passed target/method and optional arguments after a specified
+  period if time. The last parameter of this method must always be a number
+  of milliseconds.
+
+  You should use this method whenever you need to run some action after a
+  period of time instead of using &#x60;setTimeout()&#x60;. This method will ensure that
+  items that expire during the same script execution cycle all execute
+  together, which is often more efficient than using a real setTimeout.
+
+  &#x60;&#x60;&#x60;javascript
+  run.later(myContext, function() {
+    // code here will execute within a RunLoop in about 500ms with this == myContext
+  }, 500);
+  &#x60;&#x60;&#x60;
+
+  @method later
+  @param {Object} [target] target of method to invoke
+  @param {Function|String} method The method to invoke.
+    If you pass a string it will be resolved on the
+    target at the time the method is invoked.
+  @param {Object} [args*] Optional arguments to pass to the timeout.
+  @param {Number} wait Number of milliseconds to wait.
+  @return {String} a string you can use to cancel the timer in
+    &#x60;run.cancel&#x60; later.
+*/
+run.later = function(target, method) {
+  return apply(backburner, backburner.later, arguments);
+};
+
+/**
+  Schedule a function to run one time during the current RunLoop. This is equivalent
+  to calling &#x60;scheduleOnce&#x60; with the &quot;actions&quot; queue.
+
+  @method once
+  @param {Object} [target] The target of the method to invoke.
+  @param {Function|String} method The method to invoke.
+    If you pass a string it will be resolved on the
+    target at the time the method is invoked.
+  @param {Object} [args*] Optional arguments to pass to the timeout.
+  @return {Object} Timer information for use in cancelling, see &#x60;run.cancel&#x60;.
+*/
+run.once = function(target, method) {
+  checkAutoRun();
+  var args = slice.call(arguments);
+  args.unshift(&#x27;actions&#x27;);
+  return apply(backburner, backburner.scheduleOnce, args);
+};
+
+/**
+  Schedules a function to run one time in a given queue of the current RunLoop.
+  Calling this method with the same queue/target/method combination will have
+  no effect (past the initial call).
+
+  Note that although you can pass optional arguments these will not be
+  considered when looking for duplicates. New arguments will replace previous
+  calls.
+
+  &#x60;&#x60;&#x60;javascript
+  run(function() {
+    var sayHi = function() { console.log(&#x27;hi&#x27;); }
+    run.scheduleOnce(&#x27;afterRender&#x27;, myContext, sayHi);
+    run.scheduleOnce(&#x27;afterRender&#x27;, myContext, sayHi);
+    // sayHi will only be executed once, in the afterRender queue of the RunLoop
+  });
+  &#x60;&#x60;&#x60;
+
+  Also note that passing an anonymous function to &#x60;run.scheduleOnce&#x60; will
+  not prevent additional calls with an identical anonymous function from
+  scheduling the items multiple times, e.g.:
+
+  &#x60;&#x60;&#x60;javascript
+  function scheduleIt() {
+    run.scheduleOnce(&#x27;actions&#x27;, myContext, function() { console.log(&quot;Closure&quot;); });
+  }
+  scheduleIt();
+  scheduleIt();
+  // &quot;Closure&quot; will print twice, even though we&#x27;re using &#x60;run.scheduleOnce&#x60;,
+  // because the function we pass to it is anonymous and won&#x27;t match the
+  // previously scheduled operation.
+  &#x60;&#x60;&#x60;
+
+  Available queues, and their order, can be found at &#x60;run.queues&#x60;
+
+  @method scheduleOnce
+  @param {String} [queue] The name of the queue to schedule against. Default queues are &#x27;sync&#x27; and &#x27;actions&#x27;.
+  @param {Object} [target] The target of the method to invoke.
+  @param {Function|String} method The method to invoke.
+    If you pass a string it will be resolved on the
+    target at the time the method is invoked.
+  @param {Object} [args*] Optional arguments to pass to the timeout.
+  @return {Object} Timer information for use in cancelling, see &#x60;run.cancel&#x60;.
+*/
+run.scheduleOnce = function(queue, target, method) {
+  checkAutoRun();
+  return apply(backburner, backburner.scheduleOnce, arguments);
+};
+
+/**
+  Schedules an item to run from within a separate run loop, after
+  control has been returned to the system. This is equivalent to calling
+  &#x60;run.later&#x60; with a wait time of 1ms.
+
+  &#x60;&#x60;&#x60;javascript
+  run.next(myContext, function() {
+    // code to be executed in the next run loop,
+    // which will be scheduled after the current one
+  });
+  &#x60;&#x60;&#x60;
+
+  Multiple operations scheduled with &#x60;run.next&#x60; will coalesce
+  into the same later run loop, along with any other operations
+  scheduled by &#x60;run.later&#x60; that expire right around the same
+  time that &#x60;run.next&#x60; operations will fire.
+
+  Note that there are often alternatives to using &#x60;run.next&#x60;.
+  For instance, if you&#x27;d like to schedule an operation to happen
+  after all DOM element operations have completed within the current
+  run loop, you can make use of the &#x60;afterRender&#x60; run loop queue (added
+  by the &#x60;ember-views&#x60; package, along with the preceding &#x60;render&#x60; queue
+  where all the DOM element operations happen). Example:
+
+  &#x60;&#x60;&#x60;javascript
+  App.MyCollectionView = Ember.CollectionView.extend({
+    didInsertElement: function() {
+      run.scheduleOnce(&#x27;afterRender&#x27;, this, &#x27;processChildElements&#x27;);
+    },
+    processChildElements: function() {
+      // ... do something with collectionView&#x27;s child view
+      // elements after they&#x27;ve finished rendering, which
+      // can&#x27;t be done within the CollectionView&#x27;s
+      // &#x60;didInsertElement&#x60; hook because that gets run
+      // before the child elements have been added to the DOM.
+    }
+  });
+  &#x60;&#x60;&#x60;
+
+  One benefit of the above approach compared to using &#x60;run.next&#x60; is
+  that you will be able to perform DOM/CSS operations before unprocessed
+  elements are rendered to the screen, which may prevent flickering or
+  other artifacts caused by delaying processing until after rendering.
+
+  The other major benefit to the above approach is that &#x60;run.next&#x60;
+  introduces an element of non-determinism, which can make things much
+  harder to test, due to its reliance on &#x60;setTimeout&#x60;; it&#x27;s much harder
+  to guarantee the order of scheduled operations when they are scheduled
+  outside of the current run loop, i.e. with &#x60;run.next&#x60;.
+
+  @method next
+  @param {Object} [target] target of method to invoke
+  @param {Function|String} method The method to invoke.
+    If you pass a string it will be resolved on the
+    target at the time the method is invoked.
+  @param {Object} [args*] Optional arguments to pass to the timeout.
+  @return {Object} Timer information for use in cancelling, see &#x60;run.cancel&#x60;.
+*/
+run.next = function() {
+  var args = slice.call(arguments);
+  args.push(1);
+  return apply(backburner, backburner.later, args);
+};
+
+/**
+  Cancels a scheduled item. Must be a value returned by &#x60;run.later()&#x60;,
+  &#x60;run.once()&#x60;, &#x60;run.next()&#x60;, &#x60;run.debounce()&#x60;, or
+  &#x60;run.throttle()&#x60;.
+
+  &#x60;&#x60;&#x60;javascript
+  var runNext = run.next(myContext, function() {
+    // will not be executed
+  });
+  run.cancel(runNext);
+
+  var runLater = run.later(myContext, function() {
+    // will not be executed
+  }, 500);
+  run.cancel(runLater);
+
+  var runOnce = run.once(myContext, function() {
+    // will not be executed
+  });
+  run.cancel(runOnce);
+
+  var throttle = run.throttle(myContext, function() {
+    // will not be executed
+  }, 1, false);
+  run.cancel(throttle);
+
+  var debounce = run.debounce(myContext, function() {
+    // will not be executed
+  }, 1);
+  run.cancel(debounce);
+
+  var debounceImmediate = run.debounce(myContext, function() {
+    // will be executed since we passed in true (immediate)
+  }, 100, true);
+  // the 100ms delay until this method can be called again will be cancelled
+  run.cancel(debounceImmediate);
+  &#x60;&#x60;&#x60;
+
+  @method cancel
+  @param {Object} timer Timer object to cancel
+  @return {Boolean} true if cancelled or false/undefined if it wasn&#x27;t found
+*/
+run.cancel = function(timer) {
+  return backburner.cancel(timer);
+};
+
+/**
+  Delay calling the target method until the debounce period has elapsed
+  with no additional debounce calls. If &#x60;debounce&#x60; is called again before
+  the specified time has elapsed, the timer is reset and the entire period
+  must pass again before the target method is called.
+
+  This method should be used when an event may be called multiple times
+  but the action should only be called once when the event is done firing.
+  A common example is for scroll events where you only want updates to
+  happen once scrolling has ceased.
+
+  &#x60;&#x60;&#x60;javascript
+    var myFunc = function() { console.log(this.name + &#x27; ran.&#x27;); };
+    var myContext = {name: &#x27;debounce&#x27;};
+
+    run.debounce(myContext, myFunc, 150);
+
+    // less than 150ms passes
+
+    run.debounce(myContext, myFunc, 150);
+
+    // 150ms passes
+    // myFunc is invoked with context myContext
+    // console logs &#x27;debounce ran.&#x27; one time.
+  &#x60;&#x60;&#x60;
+
+  Immediate allows you to run the function immediately, but debounce
+  other calls for this function until the wait time has elapsed. If
+  &#x60;debounce&#x60; is called again before the specified time has elapsed,
+  the timer is reset and the entire period must pass again before
+  the method can be called again.
+
+  &#x60;&#x60;&#x60;javascript
+    var myFunc = function() { console.log(this.name + &#x27; ran.&#x27;); };
+    var myContext = {name: &#x27;debounce&#x27;};
+
+    run.debounce(myContext, myFunc, 150, true);
+
+    // console logs &#x27;debounce ran.&#x27; one time immediately.
+    // 100ms passes
+
+    run.debounce(myContext, myFunc, 150, true);
+
+    // 150ms passes and nothing else is logged to the console and
+    // the debouncee is no longer being watched
+
+    run.debounce(myContext, myFunc, 150, true);
+
+    // console logs &#x27;debounce ran.&#x27; one time immediately.
+    // 150ms passes and nothing else is logged tot he console and
+    // the debouncee is no longer being watched
+
+  &#x60;&#x60;&#x60;
+
+  @method debounce
+  @param {Object} [target] target of method to invoke
+  @param {Function|String} method The method to invoke.
+    May be a function or a string. If you pass a string
+    then it will be looked up on the passed target.
+  @param {Object} [args*] Optional arguments to pass to the timeout.
+  @param {Number} wait Number of milliseconds to wait.
+  @param {Boolean} immediate Trigger the function on the leading instead
+    of the trailing edge of the wait interval. Defaults to false.
+  @return {Array} Timer information for use in cancelling, see &#x60;run.cancel&#x60;.
+*/
+run.debounce = function() {
+  return apply(backburner, backburner.debounce, arguments);
+};
+
+/**
+  Ensure that the target method is never called more frequently than
+  the specified spacing period. The target method is called immediately.
+
+  &#x60;&#x60;&#x60;javascript
+    var myFunc = function() { console.log(this.name + &#x27; ran.&#x27;); };
+    var myContext = {name: &#x27;throttle&#x27;};
+
+    run.throttle(myContext, myFunc, 150);
+    // myFunc is invoked with context myContext
+    // console logs &#x27;throttle ran.&#x27;
+
+    // 50ms passes
+    run.throttle(myContext, myFunc, 150);
+
+    // 50ms passes
+    run.throttle(myContext, myFunc, 150);
+
+    // 150ms passes
+    run.throttle(myContext, myFunc, 150);
+    // myFunc is invoked with context myContext
+    // console logs &#x27;throttle ran.&#x27;
+  &#x60;&#x60;&#x60;
+
+  @method throttle
+  @param {Object} [target] target of method to invoke
+  @param {Function|String} method The method to invoke.
+    May be a function or a string. If you pass a string
+    then it will be looked up on the passed target.
+  @param {Object} [args*] Optional arguments to pass to the timeout.
+  @param {Number} spacing Number of milliseconds to space out requests.
+  @param {Boolean} immediate Trigger the function on the leading instead
+    of the trailing edge of the wait interval. Defaults to true.
+  @return {Array} Timer information for use in cancelling, see &#x60;run.cancel&#x60;.
+*/
+run.throttle = function() {
+  return apply(backburner, backburner.throttle, arguments);
+};
+
+// Make sure it&#x27;s not an autorun during testing
+function checkAutoRun() {
+  if (!run.currentRunLoop) {
+    Ember.assert(&quot;You have turned on testing mode, which disabled the run-loop&#x27;s autorun. You will need to wrap any code with asynchronous side-effects in an run&quot;, !Ember.testing);
+  }
+}
+
+/**
+  Add a new named queue after the specified queue.
+
+  The queue to add will only be added once.
+
+  @method _addQueue
+  @param {String} name the name of the queue to add.
+  @param {String} after the name of the queue to add after.
+  @private
+*/
+run._addQueue = function(name, after) {
+  if (indexOf.call(run.queues, name) === -1) {
+    run.queues.splice(indexOf.call(run.queues, after)+1, 0, name);
+  }
+}
+
+export default run
+
+    </pre>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
